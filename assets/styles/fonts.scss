@@ -1,0 +1,90 @@
+
+
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot'); // IE9 compat
+		src: url('#{$src}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+			url('#{$src}.woff') format('woff'), // standards
+			url('#{$src}.ttf') format('truetype'), // Safari, Android, iOS
+			url('#{$src}.svg##{$family}') format('svg'); // legacy iOS
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+@include fontFace('bt-icons', '../fonts/bt-icons', 'normal','300');
+
+/*@include font-face("normal", "bt-icons", "normal", "sans-serif");*/
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "bt-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: auto;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+ 
+ 
+ 
+ 
+   font-size: 120%;
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-instagramm:before { content: '\e800'; } /* '' */
+.icon-plus:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-facebook:before { content: '\e803'; } /* '' */
+.icon-plus-1:before { content: '\e804'; } /* '' */
+.icon-flash:before { content: '\e805'; } /* '' */
+.icon-gplus:before { content: '\e806'; } /* '' */
+.icon-mail-alt:before { content: '\e807'; } /* '' */
+.icon-mail:before { content: '\e808'; } /* '' */
+.icon-check:before { content: '\e809'; } /* '' */
+.icon-angle-left:before { content: '\e80a'; } /* '' */
+.icon-angle-right:before { content: '\e80b'; } /* '' */
+.icon-ok:before { content: '\e80c'; } /* '' */
+.icon-plus-circled:before { content: '\e80d'; } /* '' */
+.icon-angle-up:before { content: '\e80e'; } /* '' */
+.icon-angle-down:before { content: '\e80f'; } /* '' */
+.icon-search-1:before { content: '\e810'; } /* '' */
+.icon-plus-2:before { content: '\e811'; } /* '' */
+.icon-angle-circled-left:before { content: '\e812'; } /* '' */
+.icon-angle-circled-right:before { content: '\e813'; } /* '' */
+.icon-right-open-1:before { content: '\e814'; } /* '' */
+.icon-fire:before { content: '\e815'; } /* '' */
+.icon-left-open-1:before { content: '\e816'; } /* '' */
+.icon-print:before { content: '\e817'; } /* '' */
+.icon-user:before { content: '\e818'; } /* '' */
+.icon-search:before { content: '\e819'; } /* '' */
+.icon-down-open:before { content: '\e81a'; } /* '' */
+.icon-left-open:before { content: '\e81b'; } /* '' */
+.icon-right-open:before { content: '\e81c'; } /* '' */
+.icon-up-open:before { content: '\e81d'; } /* '' */
+.icon-dot-circled:before { content: '\e81e'; } /* '' */
+.icon-circle-notch:before { content: '\e81f'; } /* '' */
+.icon-play:before { content: '\e820'; } /* '' */
+.icon-video:before { content: '\e821'; } /* '' */
+.icon-menu:before { content: '\e822'; } /* '' */
+.icon-thumbs-up:before { content: '\e823'; } /* '' */
+

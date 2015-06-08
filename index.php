@@ -7,6 +7,6 @@
 	<link rel="stylesheet" href="/dist/styles/main.css">
 </head>
 <body>
-	Jeg er BT!
+<a href="frontpage.php">Frontpage</a>
 </body>
 </html>

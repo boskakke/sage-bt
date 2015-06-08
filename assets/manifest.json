@@ -12,13 +12,13 @@
       ],
       "main": true
     },
-    "editor-style.css": {
-      "files": [
-        "styles/editor-style.scss"
-      ]
-    },
+    
     "modernizr.js": {
       "bower": ["modernizr"]
+    },
+
+    "jquery.lazyload.js": {
+      "bower": ["jquery.lazyload"]
     }
   },
   "config": {
