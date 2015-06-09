@@ -1,4 +1,5 @@
 .list {
+	@extend .header-font;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -7,7 +8,6 @@
 	}
 	li {
 		margin: 0 0 1em;
-		font-size: 1.9em;
 		font-weight: normal;
 	}
 }
@@ -51,8 +51,27 @@
 	}
 }
 .box {
-	padding: 2em;
+	padding: 20px;
 }
+
+.box-theme-1 {
+	background: $gray-light;
+	.box-title {
+		color: $col-news;
+	}
+	.header {
+		color: #000;
+	}
+	li {
+		line-height: 1.4;
+	}
+	footer {
+		color: rgba(0,0,0,.2);
+		font-size: 12px;
+		margin-top: .5em;
+	}
+}
+
 .box-theme-2 {
 	background: $gray-light;
 	.header {
@@ -88,5 +107,35 @@
 
 .box-title {
 	font-weight: 300;
-	font-size: 4.4em;
+	font-size: 44px;
+}
+
+
+.list-blogs {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		margin: 0 0 25px;
+		padding: 0 20px 0 0;
+		width: 50%;
+		float: left;
+		line-height: 1.4;
+		&:nth-child(odd) {
+			clear: left;
+		}
+	}
+	figure {
+		float: left;
+		margin-left: -70px;
+	}
+	.header {
+		overflow: hidden;
+	}
+	li {
+		padding-left: 70px;
+	}
+	img {
+		border-radius: 50%; 
+	}
 }

@@ -1,0 +1,41 @@
+@mixin deck($col-background, $background-trans, $col-link-header) {
+  background: transparentize($col-background, $background-trans);
+	padding-top: 1em; 
+	.deck-header {
+		strong {
+			display: inline-block;
+			position: relative;
+		}
+		a {
+			color: $col-link-header;
+		}
+	}
+	.deck-header strong,
+	.deck-header a strong,
+	.icon-angle-down {
+		color: $col-link-header;
+	}
+	.deck-menu {
+		a:hover {
+			background-color: $col-link-header;
+		}
+	}
+	.menu-more {
+		background-color: $col-link-header;
+		ul {
+			background-color: $col-link-header;
+			a {
+				background-color: $col-link-header;
+				&:hover {
+					background-color: darken($col-link-header, 10%);
+				}
+			}
+		}
+		
+	}
+	.deck-header a:hover,
+	.deck-header a strong:hover {
+		color: darken($col-link-header, 7%);
+	}
+
+}	

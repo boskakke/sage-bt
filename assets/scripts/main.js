@@ -18,6 +18,17 @@
         placeholder : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBgkAIIMAAAHwAbZIBtGgAAAABJRU5ErkJggg=="
       });
 
+    
+    $('.load-more').on('click', function(e){
+    	e.preventDefault();
+    });
+
+    $('.menu-more').on('click', function(e){
+    	e.preventDefault();
+    	$(this).toggleClass('active');
+    });
+
+    
 
 
 

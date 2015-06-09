@@ -5,15 +5,15 @@
 	display: inline-block;
 	padding: 0 15px;
 	background-color: #fff;
-	box-shadow: 0 .1em .1em rgba(0,0,0,.25);
+	box-shadow: 0 .1em 2px rgba(0,0,0,.25);
 	color: #666;
-	transition: all .1s ease;
+	/*transition: all .05s ease;*/
 	&:hover {
 		text-decoration: none;
 
 	}
 	&:active {
-		box-shadow: 0 .1em .1em rgba(0,0,0,.25), 0 .2em .2em rgba(0,0,0,.25) inset;
+		box-shadow: 0 0px 1px rgba(0,0,0,.25), 0 .2em .2em rgba(0,0,0,.25) inset;
 		outline: none;
 	}
 	&:focus {
