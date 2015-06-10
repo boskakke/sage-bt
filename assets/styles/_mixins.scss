@@ -1,33 +1,36 @@
-@mixin deck($col-background, $background-trans, $col-link-header) {
+// Decks
+@mixin deck($col-background, $background-trans, $col-header-link: #cd0403, $col-header-regular: #000) {
   background: transparentize($col-background, $background-trans);
 	padding-top: 1em; 
 	.deck-header {
+		color: $col-header-regular;
 		strong {
 			display: inline-block;
 			position: relative;
+			color: $col-header-link;
 		}
 		a {
-			color: $col-link-header;
+			color: $col-header-regular;
 		}
 	}
 	.deck-header strong,
 	.deck-header a strong,
 	.icon-angle-down {
-		color: $col-link-header;
+		color: $col-header-link;
 	}
 	.deck-menu {
 		a:hover {
-			background-color: $col-link-header;
+			background-color: $col-header-link;
 		}
 	}
 	.menu-more {
-		background-color: $col-link-header;
+		background-color: $col-header-link;
 		ul {
-			background-color: $col-link-header;
+			background-color: $col-header-link;
 			a {
-				background-color: $col-link-header;
+				background-color: $col-header-link;
 				&:hover {
-					background-color: darken($col-link-header, 10%);
+					background-color: darken($col-header-link, 10%);
 				}
 			}
 		}
@@ -35,7 +38,50 @@
 	}
 	.deck-header a:hover,
 	.deck-header a strong:hover {
-		color: darken($col-link-header, 7%);
+		color: darken($col-header-link, 7%);
 	}
 
 }	
+
+// Buttons
+@mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding: 0 15px) {
+	background-color: $background-color;
+	color: $text-color;
+	font-size: $font-size;
+	line-height: $line-height;
+	display: inline-block;
+	border: 0;
+	font-family: $font-family-header;
+	display: inline-block;
+	box-shadow: 0 .1em 2px rgba(0,0,0,.25);
+	transition: all .1s ease;
+	&:hover {
+		background-color: darken($background-color, 3%);
+		text-decoration: none;
+	}
+	&:active {
+		box-shadow: 0 0px 1px rgba(0,0,0,.25), 0 .2em .2em rgba(0,0,0,.25) inset;
+		outline: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}	
+
+// Teaser Categories
+
+@mixin cat($color: $col-news, $link-color: #fff) {
+	.category {
+		background-color: $color;
+		color: $link-color;
+		&:hover {
+			background-color: darken($color, 5%);
+		}
+
+	}
+	.highlight {
+		color: $color;
+		position: relative;
+
+	}
+}

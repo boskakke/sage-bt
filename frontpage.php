@@ -16,59 +16,21 @@
 	<div class="banner-right"></div>
 </div>
 	<div class="container_24">
+		<div class="row">
+			<div class="grid_24">
+				<div class="main-header"></div>
+			</div>
+		</div>
 		
-	 	<section class="deck clearfix">
-			<div class="grid_16">
-				
-				<article class="teaser <? dummy("text@bt-main-categories") ?> font-1">
-					<figure>
-						<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
-					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
-					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				</article>
-				
-			</div>
-			<div class="grid_8">
-				<? while (dumb_luck("2")): ?>
-				<article class="teaser <? dummy("text@bt-main-categories") ?> font-5">
-					<figure>
-						<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
-					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
-					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-					<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
-				</article>
-				
-			<? endwhile ?>
-			</div>
-		</section><!-- deck -->
-
-		<section class="deck clearfix">
-			<? while (dumb_luck("2")): ?>
-				<div class="grid_12">
-					
-					<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
-						<figure>
-							<a href="article.php"><img src="<? dummy("image@460x,16:9") ?>" width="460" height="258" alt="" /></a>
-						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
-						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-					</article>
-					
-				</div>
-
-			<? endwhile ?>
-			
-		</section><!-- deck -->
-
+		<?php include('includes/topdeck.php'); ?>
+		
 		<section class="deck clearfix">
 			
 				<div class="grid_14">
 					
 					<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
 						<figure>
-							<a href="article.php"><img src="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
 						</figure>
 						<a href="section.php" class="category"><? dummy("text@item") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
@@ -95,10 +57,54 @@
 						<button href="#" class="btn btn-facebook btn-lg btn-block">Like os på Facebook <i class="icon-thumbs-up"></i></button>
 					</aside>
 				</div>
+		</section><!-- deck -->	
+	
+	 	<section class="deck clearfix">
+			<div class="grid_16">
+				
+				<article class="teaser <? dummy("text@bt-main-categories") ?> font-1">
+					<figure>
+						<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
+					</figure>
+					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+				</article>
+				
+			</div>
+			<div class="grid_8">
+				<? while (dumb_luck("2")): ?>
+				<article class="teaser <? dummy("text@bt-main-categories") ?> font-5">
+					<figure>
+						<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+					</figure>
+					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+					<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
+				</article>
+				
+			<? endwhile ?>
+			</div>
+		</section><!-- deck -->
 
-			
+		<section class="deck clearfix">
+			<? while (dumb_luck("2")): ?>
+				<div class="grid_12">
+					
+					<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
+						<figure>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image@460x,16:9") ?>" width="460" height="258" alt="" /></a>
+						</figure>
+						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+					</article>
+					
+				</div>
+
+			<? endwhile ?>
 			
 		</section><!-- deck -->
+
+		
 
 		<div class="row">
 			<div class="grid_24 ">
@@ -191,7 +197,7 @@
 			<? endwhile ?>
 			</div>
 			<div class="row">
-				<? while (dumb_luck("3")): ?>
+				<? while (dumb_luck("2")): ?>
 					<div class="grid_8">
 						<article class="teaser cat-sport font-5">
 							<figure>
@@ -203,6 +209,24 @@
 						</article>
 					</div>
 				<? endwhile ?>
+				<div class="grid_8">
+					<? while (dumb_luck("1-2")): ?>
+					<div class="live-widget-soccer">
+						<span class="live-label">LIVE</span>
+						<div class="team-container">
+							<span class="team team-1"><? dummy("text@team") ?></span>
+							<span class="team team-2"><? dummy("text@team") ?></span>	
+						</div>
+						<div class="score-container">
+							<span><? dummy("text@score") ?></span>
+							<span><? dummy("text@score") ?></span>	
+						</div>
+						<div class="remaining">
+							<span class="time" style="width: <? dummy("text@percent") ?>%"></span>
+						</div>
+					</div>
+				<? endwhile ?>
+				</div>
 			</div>
 			<div class="grid_24">
 				<div class="text-center module-padding">
@@ -252,7 +276,7 @@
 							<span><? dummy("text@score") ?></span>	
 						</div>
 						<div class="remaining">
-							<span class="time" style="width: <? dummy("text@percent") ?>px"></span>
+							<span class="time" style="width: <? dummy("text@percent") ?>%"></span>
 						</div>
 					</div>
 				<? endwhile ?>
@@ -492,7 +516,7 @@
 			<section class="deck clearfix deck-health deck-alt">
 				<div class="grid_24">
 					<h1 class="deck-header ">
-						<a href="section.php"><span class="slash">/</span>LIVSSTIL</a>
+						<a href="section.php"><span class="slash">/</span><strong>LIVSSTIL</strong></a>
 						
 					</h1>
 				</div>
@@ -520,8 +544,8 @@
 			<section class="deck clearfix deck-health deck-alt">
 				<div class="grid_24">
 					<h1 class="deck-header ">
-						<a href="section.php"><span class="slash">/</span>LIVSSTIL</a>
-						<span class="deck-header-right"><a href="#"><img src="/assets/images/egmont.png"></a></span>
+						<a href="section.php"><span class="slash">/</span><strong>LIVSSTIL</strong></a>
+						<span class="deck-header-right"><a href="#"><img src="/dist/images/egmont.png"></a></span>
 					</h1>
 				</div>
 				<? while (dumb_luck("3")): ?>
@@ -550,7 +574,7 @@
 			<section class="deck clearfix deck-entertainment no-cat">
 				<div class="grid_24">
 					<h1 class="deck-header ">
-						<a href="section.php">MELODI GRAND PRIX <span class="small">Lorem ipsum</span></a>
+						<a href="section.php"><strong>MELODI GRAND PRIX</strong> <span class="small">Lorem ipsum</span></a>
 						
 					</h1>
 				</div>
@@ -591,6 +615,17 @@
 								</ul>
 							</li>
 						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="grid_24">
+						<article class="teaser cat-consumer font-1 mb-40">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image@940x,16:9") ?>" width="940" height="528" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@item") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						</article>
 					</div>
 				</div>
 
@@ -670,10 +705,95 @@
 
 			</section>
 
-
-
-
 	</div>
+
+
+<footer class="site-footer">
+	<div class="container_24">
+		<div class="row">
+			<div class="grid_24">
+				<div class="footer-social text-center">
+					<a href="#" class="btn-social-facebook"><i class="icon-facebook"></i></a>
+					<a href="#" class="btn-social-twitter"><i class="icon-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="grid_4">
+				<a href="#" class="bt-logo logo-footer"></a>
+				
+				<p class="small">
+				Berlingske Media<br>
+				Pilestræde 34 <br>
+				1147 København K<br>
+				Danmark  <br>
+				Tlf. +45 3375 7533 <br>
+				CVR 29207313</p>
+
+				<p class="small">
+				<span class="gray">Chefredaktører:</span><br>
+				Olav Skaaning Andersen (ansv.)<br>
+				Flemming Fjeldgaard</p>
+
+				<p class="small">
+				<span class="gray">Digital chef:</span><br>
+				Kevin Walsh </p>
+
+				<p class="small">
+				<span class="gray">Digital nyhedschef:</span> <br>
+				Lars Westh. </p>
+				<a href="#" class="btn btn-alarm">Send tip</a>
+			</div>
+			<div class="grid_4">
+				<h2 class="footer-header-news"><a href="section.php">Nyheder</a></h2>
+				<ul class="sitemap">
+					<? while (dumb_luck("10-14")): ?>
+						<li><a href="section.php"><? dummy("text@item") ?></a></li>
+					<? endwhile ?>
+				</ul>
+			</div>
+			<div class="grid_4">
+				<h2 class="footer-header-sport"><a href="section.php">Sport</a></h2>
+				<ul class="sitemap">
+					<? while (dumb_luck("10-14")): ?>
+						<li><a href="section.php"><? dummy("text@item") ?></a></li>
+					<? endwhile ?>
+				</ul>
+			</div>
+			<div class="grid_4">
+				<h2 class="footer-header-entertainment"><a href="section.php">Underholdning</a></h2>
+				<ul class="sitemap">
+					<? while (dumb_luck("10-14")): ?>
+						<li><a href="section.php"><? dummy("text@item") ?></a></li>
+					<? endwhile ?>
+				</ul>
+			</div>
+			<div class="grid_4">
+				<h2 class="footer-header-health"><a href="section.php">Sundhed</a></h2>
+				<ul class="sitemap">
+					<? while (dumb_luck("10-14")): ?>
+						<li><a href="section.php"><? dummy("text@item") ?></a></li>
+					<? endwhile ?>
+				</ul>
+			</div>
+			<div class="grid_4">
+				<h2 class="footer-header-consumer"><a href="section.php">Forbrug</a></h2>
+				<ul class="sitemap">
+					<? while (dumb_luck("10-14")): ?>
+						<li><a href="section.php"><? dummy("text@item") ?></a></li>
+					<? endwhile ?>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="grid_24">
+				<div class="text-center module-padding">
+					<p class="small gray"><a href="#" class="cookies">Privatlivspolitik</a> - <a href="#">Ophavsret og vilkår</a> - <a href="#">Generelle handelsbetingelser</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="/dist/scripts/jquery.lazyload.js"></script>
 <script src="/dist/scripts/main.js"></script>
