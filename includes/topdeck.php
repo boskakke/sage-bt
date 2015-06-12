@@ -17,21 +17,49 @@
 </div>
 <div class="row">
 	<div class="grid_24">
-		<article class="topstory topstory-upper teaser cat-news">
-			<figure>
-				<a href="article.php"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt="" /></a>
+		<article class="topstory topstory-upper teaser cat-news font-2">
+			<figure class="image-overlay">
+				<a href="article.php"><img src="<? dummy("image@940x,16:9") ?>" width="" height="" alt=""  /></a>
 			</figure>
+			<header>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header">
+					<a href="article.php">Kuffertmanden i retten</a>
+				</h1>
+				<p><? dummy("text@short-teaser") ?></p>
+			</header>
 		</article>
 	</div>
 	
 </div>
 
 <div class="row">
-	<div class="grid_14 topdeck">
-		<div class="topstory topstory-bottom teaser cat-news font-1 <? if (dumb_luck("25%")): ?>teaser-breaking <? endif ?>">
+	<div class="grid_16 topdeck">
+
+
+		<div class="grid_8 alpha">
+			<article class="teaser teaser-regular <? dummy("text@bt-main-categories") ?> font-4">
+				<figure>
+					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><i class="icon-play"></i> <? dummy("text@headline-bt") ?></a></h1>
+			</article>
+		</div>
+		<div class="grid_8 omega">
+			<article class="teaser teaser-regular <? dummy("text@bt-main-categories") ?> font-4">
+				<figure>
+					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+			</article>
+		</div>
+
+		<!-- <div class="topstory topstory-bottom teaser cat-news font-1 <? if (dumb_luck("25%")): ?>teaser-breaking <? endif ?>">
 
 			<div class="header-container">
-				<a href="section.php" class="category"><? dummy("text@item") ?></a>
+				
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				<? if (dumb_luck("50%")): ?>
 				<ul class="related">
@@ -55,61 +83,70 @@
 				<? endif ?>
 				
 			</div>
-		</div>
+		</div> -->
 
 		
-		
-
-
-		<? while (dumb_luck("2")): ?>
-		<div class="grid_7 alpha">
-			<article class="teaser <? dummy("text@bt-main-categories") ?> font-4">
+		<div class="grid_16 alpha omega">
+			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-2">
 				<figure>
-					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+					<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
 				</figure>
-				<a href="section.php" class="category"><? dummy("text@item") ?></a>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
+				
 			</article>
 		</div>
-		<div class="grid_7 omega">
-			<article class="teaser <? dummy("text@bt-main-categories") ?> font-4">
+
+
+		<? while (dumb_luck("1")): ?>
+		<div class="grid_8 alpha">
+			<article class="teaser teaser-regular <? dummy("text@bt-main-categories") ?> font-4">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
-				<a href="section.php" class="category"><? dummy("text@item") ?></a>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
+				
+			</article>
+		</div>
+		<div class="grid_8 omega">
+			<article class="teaser teaser-regular <? dummy("text@bt-main-categories") ?> font-4">
+				<figure>
+					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+				
 			</article>
 		</div>
 		
 		<? if (dumb_luck("50%")): ?>
-		<div class="grid_14 alpha omega ">
+		<div class="grid_16 alpha omega ">
 			<article class="teaser teaser-noimage <? dummy("text@bt-main-categories") ?>">
-				<a href="section.php" class="category"><? dummy("text@item") ?></a>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
-					<a href="article.php"><? dummy("text@headline") ?></a></h1>
+					<a href="article.php"><i class="icon-dot-circled"></i> <? dummy("text@headline") ?></a></h1>
 				</h1>
 			</article>
 		</div>
 		<? endif ?>
 
-		<div class="grid_14 alpha omega">
-			<article class="teaser teaser-bb <? dummy("text@bt-main-categories") ?> font-2">
+		<div class="grid_16 alpha omega">
+			<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
 				</figure>
-				<a href="section.php" class="category"><? dummy("text@item") ?></a>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
+				
 			</article>
 		</div>
 		<? endwhile ?>
 
-
+	
 	</div>
-	<div class="grid_10">
-		<section class="live-ticker">
+	<div class="grid_8">
+		<section class="live-ticker-alt-2" id="live-ticker">
 		<div class="banner">
 			<? dummy("ad@300x250") ?>
 		</div>
@@ -119,8 +156,8 @@
 				<li>
 					<time><? dummy("text@time-ago-bt") ?></time>
 					<h2><a href="article.php"><? dummy("text@headline") ?></a></h2>
-					<? if (dumb_luck("20%")): ?><a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="" height="" alt="" /></a><? endif ?>
-					<p><? dummy("text@teaser") ?></p>
+					<? if (dumb_luck("20%")): ?><a href="article.php"><img src="<? dummy("image@250x,16:9") ?>" width="" height="" alt="" /></a><? endif ?>
+					<p><? dummy("text@short-teaser") ?></p>
 				</li>
 				<? endwhile ?>
 			</ul>
@@ -131,7 +168,7 @@
 </div>
 <div class="row">
 	<div class="grid_24">
-		<div class="banner mb-20">
+		<div class="banner mb-40 mt-40">
 			<? dummy("ad@940x180") ?>
 		</div>
 	</div>

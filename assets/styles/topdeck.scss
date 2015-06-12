@@ -32,8 +32,8 @@
 .topstory {
 	.header-container {
 		background-color: #fff;
-		padding: 10px 10px 0 0;
-		width: 558px;
+		padding: 10px 20px 0 0;
+		width: 638px;
 		margin-top: -67px;
 
 	}
@@ -61,15 +61,85 @@
 
 .topstory-upper {
 	@extend .mb-0;
+	position: relative;
+	header {
+		position: absolute;
+		bottom: 80px;
+		left: 0;
+		width: 638px;
+		padding: 10px 20px 20px;
+		background-color: rgba(0,0,0,.5);
+		transition: background-color .2s ease;
+		&:hover {
+			background-color: rgba(0,0,0,.7);
+		}
+		.category {
+			top: 0;
+		}
+		.header {
+			text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+			margin-bottom: 0;
+			a {
+				color: #fff;
+
+			}
+		}
+		p {
+			color: #fff;
+			margin-top: 10px;
+		}
+		
+	}
 }
+.image-overlay {
+	position: relative;
+	a {
+		&:after {
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			content: '';
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,.8) 100%);
+			transition: all .2s ease;
+		}
+		&:hover{
+			img {
+				opacity: .8;
+			}
+		}
+	}
+}
+
 .topstory-bottom:not(.teaser-breaking) {
 	border-bottom: 4px solid #ccc;
 	margin-bottom: 20px;
 
 }
-
+.topdeck {
+	padding-top: 20px;
+	margin-top: -60px;
+	background-color: #fff;
+	position: relative;
+	&:after{
+		display: inline-block;
+		content: '';
+		width: 20px;
+		height: 60px;
+		position: absolute;
+		right: -20px;
+		top: 0;
+		z-index: 99;
+		background-color: #fff;
+	}
+	.teaser {
+		margin-bottom: 50px!important;
+	}
+}
 .live-ticker {
-	background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 3%) 10px);
+	/*background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);*/
 	padding-right: 10px;
 	border-bottom: 4px solid $col-news;
 	margin-bottom: 10px;
@@ -81,7 +151,7 @@
 		margin-right: -10px;
 		@extend .font-header;
 		font-size: 19px;
-		padding: 10px 5px 10px 10px;
+		padding: 8px 5px 8px 10px;
 		position: relative;
 		&:before {
 			font-family: bt-icons;
@@ -102,7 +172,13 @@
 	ul {
 		list-style: none;
 		padding: 0;
-		overflow: auto;
+		overflow: hidden;
+		padding-right: 16px;
+		&:hover {
+			overflow-y: scroll;
+		}
+		-webkit-overflow-scrolling: touch;
+  		-ms-overflow-style: -ms-autohiding-scrollbar;
 		li {
 			padding: 0 0 10px 70px;
 			position: relative;
@@ -120,7 +196,7 @@
 			}
 		}
 		h2 {
-			font-size: 20px;
+			font-size: 18px;
 			margin: 0 0 10px;
 		}
 		p {
@@ -151,13 +227,13 @@
 				content: '';
 				background-color: $col-news;
 				position: absolute;
-				top: 8px;
+				top: 6px;
 				bottom: 0;
 				right: 4px;
 				width: 7px;
 				height: 7px;
 				border-radius: 50%;
-				border: 2px solid #fff;
+				border: 2px solid darken(#fff, 3%);
 			}
 		}
 	}
@@ -169,9 +245,195 @@
 		line-height: 0;
 		margin-right: -10px;
 		
-		padding: 15px 0;
 	}
 }
+
+.live-ticker-alt {
+	background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);
+	padding-right: 10px;
+	
+	margin-bottom: 10px;
+
+	h1 {
+		background-color: $col-news;
+		background: linear-gradient(to right, darken($col-news, 5%) 0, $col-news 25px);
+		color: #fff;
+		margin-right: -10px;
+		@extend .font-header;
+		font-size: 19px;
+		padding: 8px 5px 8px 10px;
+		position: relative;
+		&:before {
+			font-family: bt-icons;
+			display: inline-block;
+			position: absolute;
+			bottom: -15px;
+			left: 20px;
+			content: '\e820';
+			color: $col-news;
+			transform: rotate(90deg);
+		}
+		span {
+			float: right;
+			font-weight: 300;
+			font-size: 17px;
+		}
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		overflow: hidden;
+		padding-right: 16px;
+		&:hover {
+			overflow-y: scroll;
+		}
+		-webkit-overflow-scrolling: touch;
+  		-ms-overflow-style: -ms-autohiding-scrollbar;
+		li {
+			padding: 0 0 10px 20px;
+			position: relative;
+			margin: 0;
+			
+			&:before {
+				display: none;
+				content: '';
+				background-color: #ccc;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				width: 1px;
+			}
+		}
+		h2 {
+			font-size: 18px;
+			margin: 0 0 10px;
+		}
+		p {
+			font-size: 14px;
+			margin: 0;
+			&:last-child {
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 10px;
+			}
+
+		}
+		a {
+			color: #000;
+		}
+		time {
+			display: block;
+			color: #999;
+			font-size: 12px;
+			margin-bottom: 5px;
+			
+			/*&:before {
+				display: inline-block;
+				content: '';
+				background-color: $col-news;
+				position: absolute;
+				top: 4px;
+				bottom: 0;
+				right: 4px;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				
+			}*/
+		}
+	}
+	.banner {
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		overflow: hidden;
+		margin-bottom: 0;
+		line-height: 0;
+		margin-right: -10px;
+		
+	}
+}
+
+
+.live-ticker-alt-2 {
+	background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 5%) 5px);
+	padding-right: 10px;
+	
+	margin-bottom: 10px;
+
+	h1 {
+		background-color: $col-news;
+		background: linear-gradient(to right, darken($col-news, 5%) 0, $col-news 25px);
+		color: #fff;
+		margin-right: -10px;
+		@extend .font-header;
+		font-size: 19px;
+		padding: 8px 5px 8px 10px;
+		position: relative;
+		&:before {
+			font-family: bt-icons;
+			display: inline-block;
+			position: absolute;
+			bottom: -15px;
+			left: 20px;
+			content: '\e820';
+			color: $col-news;
+			transform: rotate(90deg);
+		}
+		span {
+			float: right;
+			font-weight: 300;
+			font-size: 17px;
+		}
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		overflow: hidden;
+		padding-right: 16px;
+		&:hover {
+			overflow-y: scroll;
+		}
+		-webkit-overflow-scrolling: touch;
+  		-ms-overflow-style: -ms-autohiding-scrollbar;
+		li {
+			padding: 10px;
+			position: relative;
+			margin: 0 0 20px 20px;
+			background-color: #fff;
+		}
+		img {
+			margin: 0 -8px;
+		}
+		h2 {
+			font-size: 18px;
+			margin: 0 0 10px;
+		}
+		p {
+			font-size: 14px;
+			margin: 0;
+
+		}
+		a {
+			color: #000;
+		}
+		time {
+			display: block;
+			color: #999;
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+	}
+	.banner {
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		overflow: hidden;
+		margin-bottom: 0;
+		line-height: 0;
+		margin-right: -10px;
+		
+	}
+}
+
 
 .related {
 	list-style: none;

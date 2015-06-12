@@ -23,6 +23,62 @@
 		</div>
 		
 		<?php include('includes/topdeck.php'); ?>
+
+		<section class="deck clearfix deck-sport no-cat">
+			<div class="grid_24">
+				<h1 class="deck-header deck-header-alt">
+					<a href="section.php"><span class="slash">/</span><strong>SPORT</strong> <span class="small">Danmarks Sportsavis</span></a>
+				</h1>
+			</div>
+			<div class="row">
+				<div class="grid_24">
+					<ul class="deck-menu">
+						<? while (dumb_luck("7")): ?>
+							<li><a href="section.php"><? dummy("text@cat-sport") ?></a></li>
+						<? endwhile ?>
+						<li class="menu-more"><a href="section.php">Mere sport <i class="icon-angle-down"></i></a>
+							<ul>
+								<? while (dumb_luck("8")): ?><li><a href="section.php"><? dummy("text@cat-sport") ?></a></li><? endwhile ?>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="grid_24">
+					<article class="teaser cat-consumer font-1 mb-40">
+						<figure>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@940x,16:9") ?>" width="940" height="528" alt="" /></a>
+						</figure>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+					</article>
+				</div>
+			</div>
+
+			<? while (dumb_luck("3")): ?>
+			<div class="grid_8">
+				<article class="teaser teaser-regular cat-consumer font-3">
+					<figure>
+						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+					</figure>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+					
+				</article>
+			</div>
+			<? endwhile ?>
+			
+			<div class="grid_24">
+				<div class="text-center module-padding-bottom">
+					<a href="#" class="load-more">Hent flere</a>
+				</div>
+			</div>
+
+		</section><!-- deck -->
+
+
+
 		
 		<section class="deck clearfix">
 			
@@ -32,7 +88,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						<p><? dummy("text@short-teaser") ?></p>
 					</article>
@@ -66,7 +122,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 				
@@ -77,7 +133,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 					<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
 				</article>
@@ -94,7 +150,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@460x,16:9") ?>" width="460" height="258" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 					</article>
 					
@@ -137,7 +193,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 			</div>
@@ -146,7 +202,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 			</div>
@@ -155,7 +211,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 			</div>
@@ -188,7 +244,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@460x,16:9") ?>" width="460" height="258" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 				
@@ -203,7 +259,7 @@
 							<figure>
 								<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 							</figure>
-							<a href="section.php" class="category"><? dummy("text@item") ?></a>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 							<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
 						</article>
@@ -247,7 +303,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@620x,16:9") ?>" width="620" height="348" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 				
@@ -258,7 +314,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 					<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
 				</article>
@@ -304,7 +360,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@620x,16:9") ?>" width="620" height="348" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</article>
 				
@@ -315,7 +371,7 @@
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@380x,16:9") ?>" width="380" height="213" alt="" /></a>
 					</figure>
-					<a href="section.php" class="category"><? dummy("text@item") ?></a>
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 					<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 					<? if (dumb_luck("20%")): ?><p><? dummy("text@short-teaser") ?></p><? endif ?>
 				</article>
@@ -340,7 +396,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						<p><? dummy("text@short-teaser") ?></p>
 					</article>
@@ -379,7 +435,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						<p><? dummy("text@short-teaser") ?></p>
 					</article>
@@ -439,7 +495,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -477,7 +533,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -504,7 +560,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -526,7 +582,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -554,7 +610,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -584,7 +640,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -623,7 +679,7 @@
 							<figure>
 								<a href="article.php"><img class="lazy" data-original="<? dummy("image@940x,16:9") ?>" width="940" height="528" alt="" /></a>
 							</figure>
-							<a href="section.php" class="category"><? dummy("text@item") ?></a>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						</article>
 					</div>
@@ -635,7 +691,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>
@@ -662,7 +718,7 @@
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
-						<a href="section.php" class="category"><? dummy("text@item") ?></a>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 						
 					</article>

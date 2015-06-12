@@ -28,9 +28,9 @@
     	$(this).toggleClass('active');
     });
 
-    var tickerHeight = $('.topdeck').height() - 400;
+    var tickerHeight = $('.topdeck').height() - 380;
 
-    $('.live-ticker > ul').css('height',tickerHeight);
+    $('#live-ticker > ul').css('height',tickerHeight);
 
 
 

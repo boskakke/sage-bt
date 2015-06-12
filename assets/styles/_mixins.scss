@@ -79,9 +79,12 @@
 		}
 
 	}
-	.highlight {
+	.header i {
 		color: $color;
+	}
+	.highlight {
+		// color: $color;
+		// font-size: 16px;
 		position: relative;
-
 	}
 }
