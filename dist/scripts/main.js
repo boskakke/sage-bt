@@ -1,0 +1,2 @@
+!function(A){A("img.lazy").lazyload({effect:"fadeIn",placeholder:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBgkAIIMAAAHwAbZIBtGgAAAABJRU5ErkJggg=="}),A(".load-more").on("click",function(A){A.preventDefault()}),A(".menu-more").on("click",function(e){e.preventDefault(),A(this).toggleClass("active")});var e=A(".topdeck").height()-380;A("#live-ticker > ul").css("height",e)}(jQuery);
+//# sourceMappingURL=main.js.map
