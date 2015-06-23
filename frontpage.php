@@ -71,7 +71,7 @@
 			
 			<div class="grid_24">
 				<div class="text-center module-padding-bottom">
-					<a href="#" class="load-more">Hent flere</a>
+					<a href="#" class="load-more">Mere sport <i class="icon-open-circle"></i></a>
 				</div>
 			</div>
 
@@ -82,11 +82,11 @@
 		
 		<section class="deck clearfix">
 			
-				<div class="grid_14">
+				<div class="grid_16">
 					
 					<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
 						<figure>
-							<a href="article.php"><img class="lazy" data-original="<? dummy("image@540x,16:9") ?>" width="540" height="303" alt="" /></a>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="303" alt="" /></a>
 						</figure>
 						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
@@ -95,7 +95,7 @@
 					
 				</div>
 
-				<div class="grid_10">
+				<div class="grid_8">
 					<aside class="box box-theme-2">
 						<h1 class="box-title">
 							Hitter på Facebook
@@ -663,11 +663,11 @@
 					<div class="grid_24">
 						<ul class="deck-menu">
 							<? while (dumb_luck("7")): ?>
-								<li><a href="section.php"><? dummy("text@cat-sport") ?></a></li>
+								<li><a href="section.php"><? dummy("text@item") ?></a></li>
 							<? endwhile ?>
-							<li class="menu-more"><a href="section.php">Mere sport <i class="icon-angle-down"></i></a>
+							<li class="menu-more"><a href="section.php">Flere <i class="icon-angle-down"></i></a>
 								<ul>
-									<? while (dumb_luck("8")): ?><li><a href="section.php"><? dummy("text@cat-sport") ?></a></li><? endwhile ?>
+									<? while (dumb_luck("8")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
 								</ul>
 							</li>
 						</ul>
