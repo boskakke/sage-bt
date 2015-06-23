@@ -62,6 +62,29 @@
 	}
 }
 
+.teaser-text-overlay {
+	position: relative;
+	header {
+		width: 620px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,.5);
+		color: #fff;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		transition: background-color .1s ease;
+		&:hover {
+			background-color: rgba(0,0,0,.7);
+		}
+		h1 {
+			text-shadow: 1px 1px rgba(0,0,0,.5);
+		}
+		a {
+			color: #fff!important;
+		}
+	}
+}
 .topstory-upper {
 	@extend .mb-0;
 	position: relative;

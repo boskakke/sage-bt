@@ -34,7 +34,20 @@
 </div>
 
 <div class="row">
-	<div class="grid_16 topdeck">
+	<div class="grid_16 topdeck" id="topdeck">
+		
+		<div class="grid_16 alpha omega">
+			<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
+				<figure>
+					<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+				
+			</article>
+		</div>
+					
+					
 
 
 		<div class="grid_8 alpha">
@@ -55,6 +68,29 @@
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 			</article>
 		</div>
+
+		<div class="grid_8 alpha">
+						<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+							
+						</article>
+					</div>
+					
+					<div class="grid_8 omega">
+						<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+							
+						</article>
+					</div>
+
 
 		<!-- <div class="topstory topstory-bottom teaser cat-news font-1 <? if (dumb_luck("25%")): ?>teaser-breaking <? endif ?>">
 
@@ -146,24 +182,7 @@
 	
 	</div>
 	<div class="grid_8">
-		<section class="live-ticker-alt-2" id="live-ticker">
-		<div class="banner">
-			<? dummy("ad@300x250") ?>
-		</div>
-			<h1>LIVE <span>Jourhavende: <? dummy("text@author") ?></span></h1>
-			<ul>
-				<? while (dumb_luck("20")): ?>
-				<li>
-					<time><? dummy("text@time-ago-bt") ?></time>
-					<h2><a href="article.php"><? dummy("text@headline") ?></a></h2>
-					<? if (dumb_luck("20%")): ?><a href="article.php"><img src="<? dummy("image@250x,16:9") ?>" width="" height="" alt="" /></a><? endif ?>
-					<p><? dummy("text@short-teaser") ?></p>
-				</li>
-				<? endwhile ?>
-			</ul>
-		</section>
-
-		
+		<?php include('includes/liveticker-1.php') ?>
 	</div>
 </div>
 <div class="row">

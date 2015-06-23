@@ -28,10 +28,25 @@
     	$(this).toggleClass('active');
     });
 
-    var tickerHeight = $('.topdeck').height() - 380;
+    var tickerHeight = $('#topdeck').height() - 380;
 
     $('#live-ticker > ul').css('height',tickerHeight);
 
 
+
+// DEMO menu :
+    $('.liveticker1').on('click', function(e) {
+        e.preventDefault();
+        $('#live-ticker').removeClass().toggleClass('live-ticker');
+    });
+
+    $('.liveticker2').on('click', function(e) {
+        e.preventDefault();
+        $('#live-ticker').removeClass().toggleClass('live-ticker-alt');
+    });
+    $('.liveticker3').on('click', function(e) {
+        e.preventDefault();
+        $('#live-ticker').removeClass().toggleClass('live-ticker-alt-2');
+    });
 
 })(jQuery); // Fully reference jQuery after this point.
