@@ -55,54 +55,21 @@
 	margin-bottom: 2em;
 }
 
+
+
 .box-theme-1 {
-	background: $gray-light;
-	.box-title {
-		color: $col-news;
-	}
-	.header {
-		color: #000;
-	}
-	li {
-		line-height: 1.4;
-	}
-	footer {
-		color: rgba(0,0,0,.2);
-		font-size: 12px;
-		margin-top: .5em;
-	}
+	@include box-theme($gray-light, $col-news, #000);
 }
 
 .box-theme-2 {
-	background: $gray-light;
-	.header {
-		color: #000;
-	}
-	
-	footer {
-		color: rgba(0,0,0,.2);
-		font-size: 12px;
-		margin-top: .5em;
-	}
+	@include box-theme($gray-light, #000, #000);
 }
-
-
 
 .box-theme-3 {
-	background: transparentize($yellow, 0.9);
-	
-	.header {
-		color: #000;
-	}
-	li {
-		line-height: 1.4;
-	}
-	footer {
-		color: rgba(0,0,0,.2);
-		font-size: 12px;
-		margin-top: .5em;
-	}
+	@include box-theme(transparentize($yellow, 0.9), #000, #000);
 }
+
+
 
 
 

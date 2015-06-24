@@ -52,7 +52,7 @@
 }	
 
 // Buttons
-@mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding: 0 15px) {
+@mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding-left: 10px, $padding-right: 10px) {
 	background-color: $background-color;
 	color: $text-color;
 	font-size: $font-size;
@@ -62,6 +62,8 @@
 	font-family: $font-family-header;
 	display: inline-block;
 	box-shadow: 0 .1em 2px rgba(0,0,0,.25);
+	padding-left: $padding-left;
+	padding-right: $padding-right;
 	transition: all .1s ease;
 	&:hover {
 		background-color: darken($background-color, 3%);
@@ -94,5 +96,35 @@
 		// color: $color;
 		// font-size: 16px;
 		position: relative;
+	}
+}
+
+
+// List boxes
+
+@mixin box-theme($background-color: $gray-light, $title-color: $col-news, $header-color: #000, $btn-background-color: $col-news, $btn-text-color: #fff) {
+	
+
+	background: $background-color;
+	.box-title {
+		color: $title-color;
+	}
+	.header {
+		color: $header-color;
+	}
+	li {
+		line-height: 1.4;
+	}
+	footer {
+		color: rgba(0,0,0,.2);
+		font-size: 12px;
+		margin-top: .5em;
+	}
+	.load-more {
+		background-color: $btn-background-color;
+		color: $btn-text-color;
+		&:hover {
+			background-color: darken($btn-background-color, 5%);
+		}
 	}
 }

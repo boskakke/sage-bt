@@ -1,6 +1,14 @@
 .btn-facebook {
 	@include btn($col-facebook, #fff, 16px, 1);
-	
+}
+.btn-twitter {
+	@include btn($col-twitter, #fff, 16px, 1);
+}
+.btn-transparent {
+	@include btn(#eee, #666, 16px, 1);
+}
+.btn-news {
+	@include btn($col-news, #fff, 16px, 1);
 }
 .btn-sm {
 	font-size: 12px;
