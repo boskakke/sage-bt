@@ -1,7 +1,13 @@
 // Decks
 @mixin deck($col-background, $background-trans, $col-header-link: #cd0403, $col-header-regular: #000) {
   background: transparentize($col-background, $background-trans);
+
 	padding-top: 1em; 
+
+	span.small a {
+			color: $col-header-link;
+	}
+
 	.deck-header {
 		color: $col-header-regular;
 		strong {
@@ -12,7 +18,9 @@
 		a {
 			color: $col-header-regular;
 		}
+		
 	}
+
 	.deck-header strong,
 	.deck-header a strong,
 	.icon-angle-down {

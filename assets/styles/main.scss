@@ -9,7 +9,23 @@
 @import "buttons.scss";
 @import "topdeck.scss";
 
+.demo-teaser {
+	background-color: #eee;
+	
 
+	text-align: center;
+	span {
+		display: inline-block;
+		padding: 50px 0;
+
+		vertical-align: middle;
+		
+		color: #999;
+		font-weight: 600;
+		text-shadow: 1px 1px 1px #fff;
+		font-family: $font-family-header;
+	}
+}
 
 * {
 	box-sizing: border-box;
@@ -26,6 +42,9 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+.alpha {
+	clear: left;
 }
 
 .mb-0 {
@@ -396,7 +415,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .deck-sport {
 	@include deck($gray-light, 1, $col-sport);
+	.deck-menu {
+		background-color: rgba(0,0,0,.05);
+		line-height: 1;
+	}
 }
+
 .deck-entertainment {
 	@include deck($col-entertainment, 1, $col-entertainment);
 }

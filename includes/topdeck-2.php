@@ -37,6 +37,16 @@
 	<div class="grid_16" id="topdeck">
 		
 					
+		<div class="grid_16 alpha omega">
+			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-2">
+				<figure>
+					<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+				
+			</article>
+		</div>
 
 
 		<div class="grid_8 alpha">
@@ -59,62 +69,20 @@
 		</div>
 
 		<div class="grid_8 alpha">
-						<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
-							<figure>
-								<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
-							</figure>
-							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-							
-						</article>
-					</div>
-					
-					<div class="grid_8 omega">
-						<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
-							<figure>
-								<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
-							</figure>
-							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-							
-						</article>
-					</div>
-
-
-		<!-- <div class="topstory topstory-bottom teaser cat-news font-1 <? if (dumb_luck("25%")): ?>teaser-breaking <? endif ?>">
-
-			<div class="header-container">
-				
-				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				<? if (dumb_luck("50%")): ?>
-				<ul class="related">
-					<? while (dumb_luck("0-2")): ?>
-						<li class="teaser mega">
-							<a href="#" >
-							<figure><img class="lazy" data-original="<? dummy("image@125x,16:9") ?>" width="" height="" alt="" /></figure>
-							<? dummy("text@headline-bt") ?>
-							</a>
-						</li>
-					<? endwhile ?>
-
-					<? while (dumb_luck("0-2")): ?>
-						<li >
-							<a href="#" class="">
-							<strong>Læs også:</strong> <? dummy("text@headline-bt") ?>
-							</a>
-						</li>
-					<? endwhile ?>
-				</ul>
-				<? endif ?>
-				
-			</div>
-		</div> -->
-
-		
-		<div class="grid_16 alpha omega">
-			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-2">
+			<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
 				<figure>
-					<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
+					<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
+				</figure>
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+				
+			</article>
+		</div>
+					
+		<div class="grid_8 omega">
+			<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
+				<figure>
+					<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="303" alt="" /></a>
 				</figure>
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
@@ -123,7 +91,19 @@
 		</div>
 
 
-		<? while (dumb_luck("1")): ?>
+		
+
+		<div class="grid_16 alpha omega ">
+			<article class="teaser teaser-noimage <? dummy("text@bt-main-categories") ?>">
+				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+				<h1 class="header">
+					<a href="article.php"><i class="icon-dot-circled"></i> <? dummy("text@headline") ?></a></h1>
+				</h1>
+			</article>
+		</div>
+
+
+		
 		<div class="grid_8 alpha">
 			<article class="teaser teaser-regular <? dummy("text@bt-main-categories") ?> font-4">
 				<figure>
@@ -145,33 +125,19 @@
 			</article>
 		</div>
 		
-		<? if (dumb_luck("50%")): ?>
-		<div class="grid_16 alpha omega ">
-			<article class="teaser teaser-noimage <? dummy("text@bt-main-categories") ?>">
-				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-				<h1 class="header">
-					<a href="article.php"><i class="icon-dot-circled"></i> <? dummy("text@headline") ?></a></h1>
-				</h1>
-			</article>
-		</div>
-		<? endif ?>
-
-		<div class="grid_16 alpha omega">
-			<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
-				<figure>
-					<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" height="348" alt="" /></a>
-				</figure>
-				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				
-			</article>
-		</div>
-		<? endwhile ?>
+		
 
 	
 	</div>
 	<div class="grid_8">
 		<?php include('includes/liveticker-1.php') ?>
+
+		<article class="teaser demo-teaser">
+			<span>Facebook teaser</span>
+		</article>
+		<article class="teaser demo-teaser">
+			<span>Leder</span>
+		</article>
 	</div>
 </div>
 <div class="row">
