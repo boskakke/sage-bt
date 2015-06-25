@@ -1,12 +1,43 @@
 
+<? require_once("../dummy/dummy.php") ?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
 	<meta charset="UTF-8">
 	<title>BT.dk</title>
-	<link rel="stylesheet" href="/dist/styles/main.css">
+	<?php include('includes/head.php'); ?>
 </head>
 <body>
-<a href="frontpage.php">Frontpage</a>
+
+
+
+
+<div class="container_24">
+	<div class="row">
+		
+	</div>
+	
+	
+<br><br><br>
+
+<div class="grid_16">
+<div class="bt-logo"></div>
+<ul>
+	<li><a href="frontpage.php">Frontpage</a></li>
+	<li><a href="article.php">Article</a></li>
+</ul>
+
+	</div>
+
+		
+
+</div>
+
+
+
+<?php include('includes/footer.php'); ?>
+
 </body>
 </html>
