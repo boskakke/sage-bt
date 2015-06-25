@@ -68,7 +68,38 @@
 .box-theme-3 {
 	@include box-theme(transparentize($yellow, 0.9), #000, #000);
 }
+.box-theme-4 {
+	@include box-theme(#000, #fff, #fff);
+	.teaser .header a {
+		color: #fff;
+	}
+}
 
+
+.box-icon-video {
+	position: relative;
+	.box-title:before {
+		display: inline-block;
+		background-color: $col-news;
+		color: #fff;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		font-size: 30px;
+		content: '\e820';
+		font-family: bt-icons;
+		text-align: center;
+		
+		
+		border-radius: 50%;
+		
+		margin: 0 auto;
+		position: absolute;
+		top: -20px;
+		left: 50%;
+		margin-left: -20px;
+	}
+}
 
 
 
