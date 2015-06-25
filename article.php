@@ -170,10 +170,22 @@
 		</div>
 	</article>	
 		
-	<div class="grid_24">
-		<h2>Tophistorier</h2>	
+	<div class="row">
+		<div class="grid_12">
+			<h2>Tophistorier</h2>	
+		</div>
+
+		<div class="grid_12">
+			<aside class="marketing-offer">
+				
+				<p><span class="branding"></span><strong>Tilbud </strong>- Prøv BT hver dag i 3 måneder <a href="#">Læs mere</a> </p>	
+			</aside>
+			
+		</div>	
 	</div>
 	
+	
+	<div class="row">
 	<? while (dumb_luck("2")): ?>
 	
 	<div class="grid_8">
@@ -215,13 +227,84 @@
 			</div>
 		</aside>
 	</div>
+	
+	</div>
 
-
-	<div class="grid_24">
-		<div class="banner mb-40">
-			<? dummy("ad@940x180") ?>			
+	<div class="row">
+		<div class="grid_24">
+			<div class="banner mb-40">
+				<? dummy("ad@940x180") ?>			
+			</div>
 		</div>
 	</div>
+
+	
+	<div class="row">
+	
+		<section class="deck clearfix deck-plus ">
+				<div class="grid_24">
+					<h1 class="deck-header deck-header-alt">
+						<a href="section.php"><span class="slash">/</span><strong>PLUS</strong></a> <span class="small">Prøv 30 dage gratis - <a href="#">Prøv PLUS</a></span></a>
+					</h1>
+				</div>
+				<div class="row">
+					<div class="grid_24">
+						<ul class="deck-menu">
+							<? while (dumb_luck("6")): ?>
+								<li><a href="section.php"><? dummy("text@item") ?></a></li>
+							<? endwhile ?>
+							<li class="menu-more"><a href="section.php">Mere plus <i class="icon-angle-down"></i></a>
+								<ul>
+									<? while (dumb_luck("8")): ?><li><a href="section.php"><? dummy("text@item") ?></a></li><? endwhile ?>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="grid_12">
+						<article class="teaser cat-plus font-2 mb-40">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image/!plus@620x,16:9") ?>" width="940" height="528" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						</article>
+					</div>
+
+					<div class="grid_12">
+						<article class="teaser cat-plus font-2 mb-40">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image/!plus@620x,16:9") ?>" width="940" height="528" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						</article>
+					</div>
+
+				</div>
+
+				<? while (dumb_luck("3")): ?>
+				<div class="grid_8">
+					<article class="teaser teaser-regular cat-plus font-3">
+						<figure>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!plus@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+						</figure>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						
+					</article>
+				</div>
+				<? endwhile ?>
+				
+				<div class="grid_24">
+					<div class="text-center module-padding-bottom">
+						<a href="#" class="load-more">Mere PLUS <i class="icon-open-circle"></i></a>
+					</div>
+				</div>
+
+			</section><!-- deck -->
+		</div>
 
 </div>
 

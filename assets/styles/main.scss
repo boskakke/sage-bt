@@ -39,8 +39,10 @@ body {
 
 a {
 	text-decoration: none;
+	color: $col-news;
 	&:hover {
 		text-decoration: underline;
+		color: darken($col-news, 5%);
 	}
 }
 .alpha {
@@ -756,6 +758,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 .article-embedded-link {
+	line-height: 1.4;
 	@extend .header-font;
 	a {
 		color: $col-news;
@@ -899,5 +902,26 @@ $btn-social-size: 54px;
 	background-color: $col-twitter;
 	&:hover {
 		background-color: darken($col-twitter, 5%);
+	}
+}
+
+.marketing-offer {
+	text-align: right;
+	p {
+		font-weight: 300;
+		line-height: 34px;
+		@extend .header-font;
+		height: auto;
+		.branding {
+			@extend .bt-logo;
+			width: 42px;
+			height: 34px;
+			display: inline-block;
+			height: auto;
+			height: 20px;
+			margin-top: 2px;
+			margin-right: 10px;
+			background-position: center 5px;
+		}
 	}
 }

@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer ">
 	<div class="container_24">
 		<div class="row">
 			<div class="grid_24">
@@ -31,7 +31,7 @@
 
 				<p class="small">
 				<span class="gray">Digital nyhedschef:</span> <br>
-				Lars Westh. </p>
+				Michael Jensen </p>
 				<a href="#" class="btn btn-alarm">Send tip</a>
 			</div>
 			<div class="grid_4">
