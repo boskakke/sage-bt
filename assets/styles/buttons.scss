@@ -1,3 +1,13 @@
+form label {
+	cursor: pointer;
+}
+.form-item {
+	margin-bottom: 5px;
+}
+button {
+	border: 0;
+	background-color: transparent;
+}
 .btn-facebook {
 	@include btn($col-facebook, #fff, 16px, 1);
 }
@@ -10,6 +20,13 @@
 .btn-news {
 	@include btn($col-news, #fff, 16px, 1);
 }
+.btn {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
 .btn-sm {
 	font-size: 12px;
 	line-height: 30px;
@@ -17,6 +34,8 @@
 .btn-lg {
 	font-size: 19px;
 	line-height: 41px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .btn-block {
 	display: block;

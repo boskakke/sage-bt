@@ -1,6 +1,7 @@
 
 <? require_once("../dummy/dummy.php") ?>
 
+<?php $image_size = rand(0,1); ?>
 
 <!DOCTYPE html>
 <html lang="da">
@@ -33,6 +34,17 @@
 						<time>Onsdag d. <? dummy("text@date") ?> kl. <? dummy("text@time") ?></time>
 					</div>
 
+					<div class="article-byline-container mb-20">
+					<? while (dumb_luck("1-2")): ?>
+						<div class="article-byline">
+							<figure><img src="<? dummy("image/!author@35x,1:1") ?>" width="" height="" alt="" /></figure>
+							<span class="article-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a href="#" itemprop="name"><? dummy("text@author") ?></a></span>
+							<a href="#">Følg</a>
+						</div>
+					<? endwhile ?>
+					</div>
+
+
 					<div class="social-container">
 						<button class="btn btn-lg btn-facebook"><i class="icon-facebook"></i> Del</button>
 						<button class="btn btn-lg btn-twitter"><i class="icon-twitter"></i> Tweet</button>
@@ -53,11 +65,12 @@
 
 				
 				
-				
-				<figure class="article-image">
-					<img data-original="<? dummy("image@940x,16:9") ?>" class="lazy" width="940" height="" alt="" />
-					<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
-				</figure>
+				<?php if($image_size == 0): ?>
+					<figure class="article-image">
+						<img data-original="<? dummy("image@940x,16:9") ?>" class="lazy" width="940" height="" alt="" />
+						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
+					</figure>
+				<?php endif; ?>
 				
 				
 
@@ -68,10 +81,12 @@
 
 		<div class="grid_16">
 			
+			<?php if($image_size == 1): ?>
 			<figure class="article-image">
 				<img data-original="<? dummy("image@620x,16:9") ?>" class="lazy" width="620" height="" alt="" />
 				<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
 			</figure>
+			<?php endif; ?>
 
 			<div class="grid_4 alpha">
 				<div class="banner mb-20">
@@ -81,22 +96,16 @@
 					<? dummy("ad@140x250") ?>
 				</div>
 			</div>
-			<div class="grid_12 omega">
-				<div class="article-byline-container mb-20">
-					<? while (dumb_luck("1-2")): ?>
-						<div class="article-byline">
-							<span class="article-author" itemprop="author" itemscope="" itemtype="http://schema.org/Person"><a href="#" itemprop="name"><? dummy("text@author") ?></a></span>
-							<a href="#">Følg</a>
-						</div>
-					<? endwhile ?>
-				</div>
+			<div class="grid_12 omega article-content">
+				
 				
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
 				<div class="article-embedded-link">
 					<strong>Læs også:</strong> <a href="article.php"><? dummy("text@headline") ?></a>
 				</div>
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
-				<aside class="box-poll box-small">
+				<aside class="box box-poll box-small box-theme-1">
 					<h1 class="box-title">
 						Afstemning
 					</h1>
@@ -105,13 +114,27 @@
 						
 						<div class="form-item">
 							<label><input type="radio" value="" name="vote"> <? dummy("text@item") ?></label>
+						</div>
+						<div class="form-item">
 							<label><input type="radio" value="" name="vote"> <? dummy("text@item") ?></label>
 						</div>
+						
+						<div class="text-center module-padding">
+							<button class="btn-news btn">Stem</button>	
+						</div>
+						
+						
 
 					</form>
 
 				</aside>
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
+
+				<div class="article-comments mb-20">
+					<button class="btn btn-news show-comments">Vis kommentarer</button>
+	 				<div id="disqus_thread"></div>		
+				</div>
+
 			</div>
 
 
@@ -120,7 +143,10 @@
 		<div class="grid_8">
 			<aside class="article-fact mb-20">
 				<h2>Hvad er Bipolar</h2>
-				<? dummy("text@paragraph") ?>
+				<figure>
+					<img src="<? dummy("image@300x,") ?>" width="" height="" alt="" />
+				</figure>
+				<? while (dumb_luck("1-2")): ?><p><? dummy("text@teaser") ?></p><? endwhile ?>
 			</aside>
 
 			<div class="banner mb-20">
@@ -145,8 +171,8 @@
 			</aside>
 			<aside class="box box-theme-4 box-icon-video">
 			
-				<h1 class="box-title">Mest populære video</h1>
-				<article class="teaser">
+				<h1 class="box-title">Mest populære videoer</h1>
+				<article class="teaser teaser-border ">
 					<figure><a href="article.php"><img data-original="<? dummy("image@300x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
 
 					<h3 class="header">
@@ -154,8 +180,23 @@
 						<? dummy("text@headline") ?>
 						</a>
 					</h3>
-
 				</article>
+				<article class="teaser teaser-regular font-5 teaser-border">
+					<h3 class="header">
+					<a href="#">
+						<? dummy("text@headline") ?>
+						</a>
+					</h3>
+				</article>
+
+				<article class="teaser teaser-regular font-5 teaser-border">
+					<h3 class="header">
+					<a href="#">
+						<? dummy("text@headline") ?>
+						</a>
+					</h3>
+				</article>
+
 				<div class="text-center module-padding">
 					<a href="#"  class="load-more">Se alle</a>
 				</div>
@@ -172,13 +213,12 @@
 		
 	<div class="row">
 		<div class="grid_12">
-			<h2>Tophistorier</h2>	
+			<h2>TOPHISTORIER</h2>	
 		</div>
 
 		<div class="grid_12">
-			<aside class="marketing-offer">
-				
-				<p><span class="branding"></span><strong>Tilbud </strong>- Prøv BT hver dag i 3 måneder <a href="#">Læs mere</a> </p>	
+			<aside class="marketing-offer summer-offer">
+				<p><a href="#"><span class="branding"></span><strong>Sommertilbud </strong>- Prøv BT hver dag i 3 måneder <span>Læs mere</span></a> </p>	
 			</aside>
 			
 		</div>	
@@ -186,26 +226,37 @@
 	
 	
 	<div class="row">
-	<? while (dumb_luck("2")): ?>
 	
-	<div class="grid_8">
+	<div class="grid_16">
 		
-		<? while (dumb_luck("5")): ?>
-
-		<article class="teaser teaser-img-left-100 font-6 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
-			
-			<div class="teaser-body">
-			<figure><a href="article.php"><img data-original="<? dummy("image@135x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
-				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-				<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
-			</div>
-		</article>
-
+		<ul class="teaser-list-300">
+		<? while (dumb_luck("8")): ?>
+			<li class="teaser teaser-img-left-100 font-6 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
+				<figure><a href="article.php"><img data-original="<? dummy("image@135x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
+				<div class="teaser-body">
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+					<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
+				</div>
+			</li>	
 		<? endwhile ?>
+		</ul>
+		
+
+		<h2>HITTER PÅ FACEBOOK</h2>
+
+		<ul class="teaser-list-300 list-top-cirle">
+		<? while (dumb_luck("4")): ?>
+			<li class="teaser  font-5 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
+				<figure><a href="article.php"><img data-original="<? dummy("image@300x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
+				<div class="teaser-body">
+					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+					<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
+					<footer><i class="icon-thumbs-up"></i> <? dummy("text@number") ?> likes</footer>
+				</div>
+			</li>	
+		<? endwhile ?>
+		</ul>
 	</div>
-
-
-	<? endwhile ?>
 
 	<div class="grid_8">
 		<aside class="box box-theme-3">
@@ -237,6 +288,9 @@
 			</div>
 		</div>
 	</div>
+
+	
+	
 
 	
 	<div class="row">
@@ -311,6 +365,19 @@
 
 <?php include('includes/main-footer.php'); ?>
 <?php include('includes/footer.php'); ?>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'btredesign';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
 </body>
 </html>

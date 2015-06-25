@@ -45,6 +45,12 @@ a {
 		color: darken($col-news, 5%);
 	}
 }
+
+.img-responsive {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
 .alpha {
 	clear: left;
 }
@@ -85,7 +91,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .banner {
-	text-align: center;line-height: 1;
+	text-align: center;
+	line-height: 0;
 }
 .topbanner {
 	margin: 0 auto 10px;
@@ -134,6 +141,12 @@ h1, h2, h3, h4, h5, h6 {
 		&:hover {
 			opacity: .9;
 		}
+	}
+	footer {
+		@extend .header-font;
+		color: rgba(0,0,0,.4);
+		font-size: 13px;
+		margin-top: 5px;
 	}
 	.category {
 		@extend .header-font;
@@ -187,7 +200,17 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 	}
 }
-
+.teaser-border {
+	border-bottom: 1px solid rgba(0,0,0,.4);
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	figure {
+		margin-bottom: 10px;
+	}
+	.header {
+		margin-top: 0;
+	}
+}
 .teaser-noimage {
 	background-color: #eee;
 	padding-top: 20px;
@@ -198,8 +221,10 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 10px;
 	}
 }
+.teaser-body {
+	overflow: hidden;
+}
 .teaser-img-left-100 {
-	clear: both;
 	figure {
 		float: left;
 		margin-right: 10px;
@@ -209,9 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 		float: none;
 		display: inline-block;
 	}
-	.teaser-body {
-		overflow: hidden;
-	}
+	
 	.header {
 		clear: inherit;
 		margin: 0;
@@ -693,6 +716,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // ARTICLE 
+.article-content {
+	.box {
+		margin-bottom: 20px;
+	}
+	p {
+		margin: 0 0 20px;
+	}
+}
 .article-image {
 	margin-bottom: 2em;
 	.image-caption {
@@ -733,7 +764,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-right: 20px;
 	display: inline-block;
 	font-size: 14px;
-	
 	img {
 		border-radius: 50%;
 	}
@@ -749,6 +779,7 @@ h1, h2, h3, h4, h5, h6 {
 		display: block;
 		white-space: nowrap;
 		text-transform: uppercase;
+		overflow: hidden;
 		a {
 			color: #999;
 			&:hover{
@@ -759,6 +790,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .article-embedded-link {
 	line-height: 1.4;
+	margin-bottom: 20px;
 	@extend .header-font;
 	a {
 		color: $col-news;
@@ -768,6 +800,10 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #eee;
 	padding: 10px;
 	font-size: 15px;
+
+	img {
+		@extend .img-responsive;
+	}
 	h2 {
 		background: #000;
 		color: #fff;
@@ -907,7 +943,15 @@ $btn-social-size: 54px;
 
 .marketing-offer {
 	text-align: right;
+	a {
+		color: #000;
+	}
+	span {
+		color: $col-news;
+	}
 	p {
+		z-index: 2;
+		position: relative;
 		font-weight: 300;
 		line-height: 34px;
 		@extend .header-font;
@@ -924,4 +968,24 @@ $btn-social-size: 54px;
 			background-position: center 5px;
 		}
 	}
+}
+.summer-offer:after {
+	@extend .sun;
+	display: inline-block;
+	content: '';
+	width: 25px;
+	height: 25px;
+	background-position: center center;
+	position: absolute;
+	left: 22px;
+	top: 17px;
+	z-index: 1;
+	animation:glow 2s linear infinite;
+}
+@keyframes glow { 
+	0% {  } 
+	50% { 
+		transform: scale(1.4);
+	 } 
+	100% { } 
 }

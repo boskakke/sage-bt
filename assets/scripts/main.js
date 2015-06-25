@@ -33,8 +33,25 @@
     $('#live-ticker > ul').css('height',tickerHeight);
 
 
+    // DISQUSS
 
-// DEMO menu :
+    $('.show-comments').on('click', function(){
+          var disqus_shortname = 'elskak'; // Replace this value with *your* username.
+ 
+          // ajax request to load the disqus javascript
+          $.ajax({
+                  type: "GET",
+                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                  dataType: "script",
+                  cache: true
+          });
+          // hide the button once comments load
+          $(this).fadeOut();
+    });
+
+
+// DEMO MENU - DO NOT COPY!!! :-) :
+
     $('.liveticker1').on('click', function(e) {
         e.preventDefault();
         $('#live-ticker').removeClass().toggleClass('live-ticker');
@@ -48,5 +65,7 @@
         e.preventDefault();
         $('#live-ticker').removeClass().toggleClass('live-ticker-alt-2');
     });
+
+// END DEMO
 
 })(jQuery); // Fully reference jQuery after this point.

@@ -28,6 +28,33 @@
 		}
 	}
 }
+.list-top-cirle {
+	counter-reset: counter;
+	figure {
+		position: relative;
+		
+		&:after {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			left: -10px;
+			
+			font-size: 16px;
+			border: 3px solid #fff;
+			font-weight: 600;
+			position: absolute;
+			bottom: -16px;
+			background-color: $col-facebook;
+			line-height: 25px;
+			color: #fff;
+			counter-increment: counter;
+			content: counter(counter);
+			border-radius: 50%;
+			text-align: center;
+			@extend .header-font;
+		}
+	}
+}
 
 .list-time {
 	li {
@@ -73,8 +100,28 @@
 	.teaser .header a {
 		color: #fff;
 	}
+	.teaser-border {
+		border-color: rgba(255,255,255,.4);
+	}
 }
 
+.teaser-list-300 {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	li {
+		width: 310px;
+
+		float: left;
+		display: inline-block;
+		margin: 0 0 30px;
+		padding: 0 20px 0 0;
+		&:nth-child(odd) {
+			clear: left;
+		}
+	}
+}
 
 .box-icon-video {
 	position: relative;
@@ -102,12 +149,18 @@
 }
 
 
-
+.box-small {
+	padding: 20px;
+	.box-title {
+		font-size: 33px;
+	}
+}
 
 .box-title {
 	font-weight: 300;
 	font-size: 44px;
 }
+
 
 
 .list-blogs {
