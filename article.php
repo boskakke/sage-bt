@@ -13,6 +13,8 @@
 <body>
 <?php include('includes/testmenu.php'); ?>
 
+<?php include('includes/sticky-menu.php'); ?>
+
 <?php include('includes/topbanner.php'); ?>
 
 <div class="container_24">
@@ -67,8 +69,10 @@
 				
 				<?php if($image_size == 0): ?>
 					<figure class="article-image">
+						
 						<img data-original="<? dummy("image@940x,16:9") ?>" class="lazy" width="940" height="" alt="" />
 						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
 					</figure>
 				<?php endif; ?>
 				
@@ -83,6 +87,7 @@
 			
 			<?php if($image_size == 1): ?>
 			<figure class="article-image">
+				<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
 				<img data-original="<? dummy("image@620x,16:9") ?>" class="lazy" width="620" height="" alt="" />
 				<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
 			</figure>
@@ -130,10 +135,11 @@
 				</aside>
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
-				<div class="article-comments mb-20">
-					<button class="btn btn-news show-comments">Vis kommentarer</button>
-	 				<div id="disqus_thread"></div>		
-				</div>
+				<figure class="article-image">
+					<img src="<? dummy("image@620x,") ?>" width="" height="" alt="" />
+				</figure>
+
+				
 
 			</div>
 
@@ -142,11 +148,26 @@
 
 		<div class="grid_8">
 			<aside class="article-fact mb-20">
-				<h2>Hvad er Bipolar</h2>
+				<h2 class="fact-header">Hvad er Bipolar</h2>
 				<figure>
 					<img src="<? dummy("image@300x,") ?>" width="" height="" alt="" />
 				</figure>
 				<? while (dumb_luck("1-2")): ?><p><? dummy("text@teaser") ?></p><? endwhile ?>
+				<ul>
+					<? while (dumb_luck("1-3")): ?>
+					<li>
+						<? dummy("text@item") ?>
+					</li>
+					<? endwhile ?>
+				</ul>
+
+				<ol>
+					<? while (dumb_luck("1-3")): ?>
+					<li>
+						<? dummy("text@item") ?>
+					</li>
+					<? endwhile ?>
+				</ol>
 			</aside>
 
 			<div class="banner mb-20">
@@ -155,7 +176,7 @@
 
 			<aside class="box box-theme-1">
 				<h1 class="box-title">
-					Populære lige nu
+					Det læser andre
 				</h1>
 				<ul class="list list-top">
 					<? while (dumb_luck("5")): ?>
@@ -171,7 +192,7 @@
 			</aside>
 			<aside class="box box-theme-4 box-icon-video">
 			
-				<h1 class="box-title">Mest populære videoer</h1>
+				<h1 class="box-title">Mest sete TV</h1>
 				<article class="teaser teaser-border ">
 					<figure><a href="article.php"><img data-original="<? dummy("image@300x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
 
@@ -212,11 +233,9 @@
 	</article>	
 		
 	<div class="row">
-		<div class="grid_12">
-			<h2>TOPHISTORIER</h2>	
-		</div>
+		
 
-		<div class="grid_12">
+		<div class="grid_24">
 			<aside class="marketing-offer summer-offer">
 				<p><a href="#"><span class="branding"></span><strong>Sommertilbud </strong>- Prøv BT hver dag i 3 måneder <span>Læs mere</span></a> </p>	
 			</aside>
@@ -228,34 +247,44 @@
 	<div class="row">
 	
 	<div class="grid_16">
-		
-		<ul class="teaser-list-300">
-		<? while (dumb_luck("8")): ?>
-			<li class="teaser teaser-img-left-100 font-6 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
-				<figure><a href="article.php"><img data-original="<? dummy("image@135x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
-				<div class="teaser-body">
-					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-					<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
-				</div>
-			</li>	
-		<? endwhile ?>
+		<ul class="tabs">
+			<li class="tab-active tab-teasers"><a href="#">Tophistorier</a></li>
+			<li class="tab-comments"><span>Vis kommentarer</span></li>
 		</ul>
 		
+		<aside class="tab-content tab-content-teasers tab-content-active box box-theme-2 box-small-alt" id="tab-content-teasers">
+		
+			<ul class="teaser-list-300">
+			<? while (dumb_luck("8")): ?>
+				<li class="teaser teaser-img-left-100 font-6 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
+					<figure><a href="article.php"><img data-original="<? dummy("image@115x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
+					<div class="teaser-body">
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
+					</div>
+				</li>	
+			<? endwhile ?>
+			</ul>
+			
+			<h1 class="box-title">Hitter på Facebook</h1>
 
-		<h2>HITTER PÅ FACEBOOK</h2>
+			<ul class="teaser-list-300 list-top-cirle">
+			<? while (dumb_luck("4")): ?>
+				<li class="teaser  font-5 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
+					<figure><a href="article.php"><img data-original="<? dummy("image@300x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
+					<div class="teaser-body">
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
+						<footer><i class="icon-thumbs-up"></i> <? dummy("text@number") ?> likes</footer>
+					</div>
+				</li>	
+			<? endwhile ?>
+			</ul>
 
-		<ul class="teaser-list-300 list-top-cirle">
-		<? while (dumb_luck("4")): ?>
-			<li class="teaser  font-5 teaser-regular <? dummy("text@bt-main-categories") ?> no-cat">
-				<figure><a href="article.php"><img data-original="<? dummy("image@300x,16:9") ?>" class="lazy" width="" height="" alt="" /></a></figure>
-				<div class="teaser-body">
-					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-					<h3 class="header"><a href="article.php"><? dummy("text@headline") ?></a></h3>	
-					<footer><i class="icon-thumbs-up"></i> <? dummy("text@number") ?> likes</footer>
-				</div>
-			</li>	
-		<? endwhile ?>
-		</ul>
+		</aside>
+		<aside class="tab-content box box-theme-2 box-small-alt" id="tab-content-comments">
+			<div id="disqus_thread"></div>		
+		</aside>
 	</div>
 
 	<div class="grid_8">
@@ -367,10 +396,9 @@
 <?php include('includes/footer.php'); ?>
 
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
+    
     var disqus_shortname = 'btredesign';
     
-    /* * * DON'T EDIT BELOW THIS LINE * * */
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';

@@ -12,7 +12,30 @@
 
 (function($) {
 
-  
+    
+    // STICKY HEADER
+    var sticky_navigation_offset_top = $('.main-header').offset().top;
+    
+    var sticky_navigation = function()  {
+        
+        var scroll_top = $(window).scrollTop(); 
+
+        if (scroll_top > sticky_navigation_offset_top) {
+            $('.menu-sticky').addClass('fixed-menu');
+        } else {
+            $('.menu-sticky').removeClass('fixed-menu');
+        }
+    };
+           
+    sticky_navigation();
+      $(window).on('resize scroll', function() {
+      sticky_navigation();
+      }).resize();
+    
+
+
+
+
     $("img.lazy").lazyload({
         effect : "fadeIn",
         placeholder : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBgkAIIMAAAHwAbZIBtGgAAAABJRU5ErkJggg=="
@@ -20,12 +43,12 @@
 
     
     $('.load-more').on('click', function(e){
-    	e.preventDefault();
+      e.preventDefault();
     });
 
     $('.menu-more').on('click', function(e){
-    	e.preventDefault();
-    	$(this).toggleClass('active');
+      e.preventDefault();
+      $(this).toggleClass('active');
     });
 
     var tickerHeight = $('#topdeck').height() - 380;
@@ -33,24 +56,40 @@
     $('#live-ticker > ul').css('height',tickerHeight);
 
 
-    // DISQUSS
+    
 
-    $('.show-comments').on('click', function(){
-          var disqus_shortname = 'elskak'; // Replace this value with *your* username.
- 
-          // ajax request to load the disqus javascript
+    
+
+      // tab-active tab-teasers
+      // tab-comments
+
+      $('.tab-comments span').on('click', function(e){
+          e.preventDefault();
+          $('#tab-content-comments').addClass('tab-content-active');
+          $(this).closest('li').addClass('tab-active');
+          $('.tab-teasers').removeClass('tab-active');
+          $('#tab-content-teasers').removeClass('tab-content-active');
           $.ajax({
-                  type: "GET",
-                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",
-                  dataType: "script",
-                  cache: true
+              type: "GET",
+              url: "http://elskak.disqus.com/embed.js",
+              dataType: "script",
+              cache: true
           });
-          // hide the button once comments load
-          $(this).fadeOut();
-    });
+          return false;
+      });
 
+      
+      $('.tab-teasers a').on('click', function(e){
+          e.preventDefault();
+          $(this).closest('li').addClass('tab-active');
+          $('.tab-comments').removeClass('tab-active');
+          $('#tab-content-comments').removeClass('tab-content-active');
+          $('#tab-content-teasers').addClass('tab-content-active');
+          
 
-// DEMO MENU - DO NOT COPY!!! :-) :
+      });
+
+    // DEMO MENU - DO NOT COPY!!! :-) :
 
     $('.liveticker1').on('click', function(e) {
         e.preventDefault();
@@ -67,5 +106,7 @@
     });
 
 // END DEMO
+
+
 
 })(jQuery); // Fully reference jQuery after this point.

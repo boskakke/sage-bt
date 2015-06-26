@@ -419,12 +419,14 @@
 						<? while (dumb_luck("6")): ?>
 							<li class="teaser teaser-blogs">
 								<figure><a href="#"><img class="lazy" data-original="<? dummy("image/!author-bw@58x,1:1") ?>" width="" height="" alt="" /></a></figure>
-								<footer class="teaser-byline">
-									<? dummy("text@author") ?>
-								</footer>
-								<a href="article.php" class="header">
-									<? dummy("text@headline") ?>
-								</a>
+								<div class="teaser-body">
+									<footer class="teaser-byline">
+										<? dummy("text@author") ?>
+									</footer>
+									<a href="article.php" class="header">
+										<? dummy("text@headline") ?>
+									</a>
+								</div>
 							</li>
 						<? endwhile ?>
 					</ul>		

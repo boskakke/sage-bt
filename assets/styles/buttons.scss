@@ -15,7 +15,8 @@ button {
 	@include btn($col-twitter, #fff, 16px, 1);
 }
 .btn-transparent {
-	@include btn(#eee, #666, 16px, 1);
+	@include btn(#fff, #666, 16px, 1);
+	box-shadow: none;
 }
 .btn-news {
 	@include btn($col-news, #fff, 16px, 1);
