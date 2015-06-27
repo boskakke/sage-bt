@@ -18,14 +18,14 @@
 <?php include('includes/topbanner.php'); ?>
 
 <div class="container_24">
-	<div class="row">
+	
 		<div class="grid_24">
 			<?php include('includes/main-header.php'); ?>
 		</div>
-	</div>
+	
 
 	<article class="<? dummy("text@bt-main-categories") ?>">
-		<div class="row">
+		<div class="r ow">
 			<div class="grid_24">
 				
 				<header class="article-header">
@@ -81,7 +81,7 @@
 				
 
 			</div>
-		</div>
+		
 
 		<div class="row">
 
@@ -251,7 +251,7 @@
 	<div class="grid_16">
 		<ul class="tabs">
 			<li class="tab-active tab-teasers"><a href="#">Tophistorier</a></li>
-			<li class="tab-comments"><span>Vis kommentarer</span></li>
+			<li class="tab-comments"><span>Kommentarer <i class="comments-count"><? dummy("text@number") ?></i></span></li>
 		</ul>
 		
 		<aside class="tab-content tab-content-teasers tab-content-active box box-theme-2 box-small-alt" id="tab-content-teasers">

@@ -1,6 +1,6 @@
 <? if (dumb_luck("25%")): ?>
 
-	<div class="row">
+	<div class="r ow">
 		<div class="grid_24">
 			<article class="teaser-oneliner-breaking oneliner-size-1">
 				<a href="article.php"><span>Breaking</span> <? dummy("text@headline") ?></a>
@@ -18,7 +18,7 @@
 		</div>
 	</div>
 <? endif ?>
-<div class="row">
+<div class="r ow">
 	<div class="grid_24">
 		<article class="teaser cat-news font-2 teaser-overlay teaser-text-overlay">
 			<figure class="image-overlay">
@@ -36,7 +36,7 @@
 	
 </div>
 
-<div class="row">
+<div class="ro w">
 	<div class="grid_16" id="topdeck">
 		
 					
@@ -143,7 +143,7 @@
 		</article>
 	</div>
 </div>
-<div class="row">
+<div class="ro w">
 	<div class="grid_24">
 		<div class="banner mb-40 mt-40">
 			<? dummy("ad@940x180") ?>

@@ -57,7 +57,8 @@
 
 
     
-    $('.show-hide').on('click', function(){
+    $('.show-hide').on('click', function(e){
+      e.preventDefault();
       $(this).closest('li').toggleClass('li-active');
     });
     

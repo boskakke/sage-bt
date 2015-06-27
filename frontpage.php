@@ -15,16 +15,16 @@
 <?php include('includes/topbanner.php'); ?>
 
 	<div class="container_24">
-		<div class="row">
-			<div class="grid_24">
-				<?php include('includes/main-header.php'); ?>
-			</div>
+		
+		<div class="grid_24">
+			<?php include('includes/main-header.php'); ?>
 		</div>
+		
 		
 		<?php include('includes/topdeck-2.php'); ?>
 	
 
-		<div class="row">
+		
 			<section class="deck clearfix">
 					
 				<div class="grid_16">
@@ -62,7 +62,7 @@
 				</div>
 			</section><!-- deck -->	
 
-		</div>
+		
 		
 
 		<div class="row">

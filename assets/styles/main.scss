@@ -29,6 +29,10 @@
 	}
 }
 
+.row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
 * {
 	box-sizing: border-box;
 }
@@ -91,6 +95,19 @@ h1, h2, h3, h4, h5, h6 {
 	height: 60px;
 	margin-bottom: 5px;
 	position: relative;
+	
+	.cookies {
+		display: inline-block;
+		padding-right: 20px;
+		background: url(../images/cookies.png) right center no-repeat;
+		background-size: 13px;
+		position: absolute;
+		top: -2px;
+		right: 0;
+		font-size: 12px;
+		color: #999;
+	}
+
 	.logo {
 		@extend .bt-logo;
 		height: 60px;
@@ -98,9 +115,15 @@ h1, h2, h3, h4, h5, h6 {
 		display: inline-block;
 		float: left;
 	}
-	> nav > ul {
+	
+	.nav-primary {
+		[class*=" icon-"]:before, 
+		[class^=icon-]:before {
+			line-height: 1;
+		}
+
 		display: inline-block;
-		width: 758px;
+		
 		height: 60px;
 		line-height: 60px;
 		margin: 0;
@@ -114,7 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 			margin: 0;
 			line-height: 60px;
 			padding: 0;
-			font-weight: 400;
+			font-size: 25px;
+			font-weight: 600;
 			vertical-align: middle;
 			> a {
 				display: block;
@@ -128,13 +152,44 @@ h1, h2, h3, h4, h5, h6 {
 			&.site-search {
 				text-align: center;
 				padding: 0;
-				font-size: 22px;
+
+				i {
+					
+					&:before {
+						width: 25px;
+					}
+				}
 			}
-			&.site-login {
-				float: right;
 			
+		}
+	}
+	.nav-right {
+		height: inherit;
+		line-height: 1;
+		float: right;
+		width: inherit;
+		margin-top: 14px;
+		li {
+			@extend .header-font;
+			position: relative;
+			line-height: 1;
+			padding: 0;
+			display: inline-block;
+			text-align: center;
+			margin: 0;
+			a {
+				padding: 0;
+			}
+		}
+		.site-login {
+				position: relative;
+				top: -7px;				
+				display: inline-block;
+				font-size: 15px;
 				&> a {
 					display: inline-block;
+					padding: 8px 10px;
+					text-transform: uppercase;
 					background-color: $col-news;
 					color: #fff;
 					&:hover {
@@ -142,15 +197,44 @@ h1, h2, h3, h4, h5, h6 {
 					}
 				}
 			}
-		}
 	}
 }
+
+.toggle-menu{
+	text-align: center;
+	&:after {
+		content: "INDHOLD";
+		font-size: 12px;
+		display: block;
+		color: #333;
+		text-align: center;
+		
+	}
+}
+
+.toggle-search {
+	text-align: center;
+	&:after {
+		content: "SØG";
+		font-size: 12px;
+		display: block;
+		color: #333;
+		width: 50px;
+		text-align: center;
+		
+	}
+}
+
 .site-login {
 	position: relative;
 	li {
 		line-height: 1.5;
 		font-size: .77778rem;
 		margin: 5px 0 0;
+		font-weight: 400;
+		&:first-child {
+			margin-top: 8px;
+		}
 		a {
 			color: rgba(0, 0, 0, 0.75);
 		}
@@ -163,13 +247,48 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 10px;
 	background-color: #fff;
 	position: absolute;
+	text-align: left;
 	right: 0;
-	top: 50px;
+	top: 45px;
 	width: 150px;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	border: 2px solid #333;
 	transition: all .2s ease;
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 8px 10px 8px;
+		border-color: transparent transparent $col-news transparent;
+		position: absolute;
+		right: 17px;
+		top: -10px;
+	}
+	.clean .icon-angle-right {
+		color: $col-news;
+	}
 }
-
+.menu-item-plus {
+	a {
+		position: relative;
+	}
+	a:after {
+		position: absolute;
+		top: 10px;
+		right: 2px;
+		content: '\e801';
+		font-family: bt-icons;
+		background-color: $col-plus;
+		color: #fff;
+		height: 20px;
+		width: 20px;
+		line-height: 20px;
+		text-align: center;
+		font-size: 15px;
+		border-radius: 50%;
+	}
+}
 .search-form {
 	position: absolute;
 	opacity: 0;
@@ -180,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 60px;
 	padding: 10px;
 	width: 270px;
-	border: 2px solid $col-news;
+	border: 2px solid #333;
 	background-color: #fff;
 	white-space: nowrap;
 	box-shadow: 2px 2px 2px rgba(0,0,0,.4);
@@ -195,7 +314,6 @@ h1, h2, h3, h4, h5, h6 {
 		position: absolute;
 		right: 17px;
 		top: -12px;
-
 	}
 	button {
 		position: absolute;
@@ -217,11 +335,12 @@ h1, h2, h3, h4, h5, h6 {
 	.login-form,
 	.search-form {
 		opacity: 1;
-		top: 55px;
+		top: 50px;
 		visibility: visible;
 	}
 
 }
+
 .header-low {
 	text-align: right;
 	margin-bottom: 10px;
@@ -230,12 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 	a {
 		color: #999;
 	}
-	.cookies {
-		display: inline-block;
-		padding-right: 20px;
-		background: url(../images/cookies.png) right center no-repeat;
-		background-size: contain;
-	}
+	
 }
 
 .banner {
@@ -1005,7 +1119,9 @@ h1, h2, h3, h4, h5, h6 {
 	color: #999;
 	text-transform: uppercase;
 	font-size: 14px;
-
+	strong {
+		color: #333;
+	}
 }
 
 .social-container {
@@ -1225,6 +1341,7 @@ $btn-social-size: 54px;
 				color: #fff;
 				margin-right: 5px;
 				font-weight: 600;
+				text-decoration: underline;
 
 			}
 			span {
@@ -1269,5 +1386,31 @@ $btn-social-size: 54px;
 				}
 			}
 		}
+	}
+}
+
+.comments-count {
+	background-color: orange;
+	display: inline-block;
+	position: relative;
+	top: -30px;
+	right: 5px;
+	font-size: 15px;
+	width: 40px;
+	line-height: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	&:before {
+		width: 0;
+		height: 0;
+		border-style: solid;
+		content: '';
+		border-width: 13px 0 0 13px;
+		border-color: transparent transparent transparent orange;
+		position: absolute;
+		bottom: 1px;
+		left: 0;
+		transform: skew(-20deg,-10deg);
 	}
 }
