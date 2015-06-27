@@ -30,11 +30,13 @@
 				
 				<header class="article-header">
 					<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+					<span class="article-date">
+						<time>Onsdag d. <? dummy("text@date") ?> kl. <? dummy("text@time") ?> <? if (dumb_luck("50%")): ?>- <strong>Opdateret</strong> Onsdag d. <? dummy("text@date") ?> kl. <? dummy("text@time") ?><? endif ?></time>
+					</span>
+
 					<h1 itemprop="headline"><? dummy("text@headline") ?></h1>
 					
-					<div class="article-date">
-						<time>Onsdag d. <? dummy("text@date") ?> kl. <? dummy("text@time") ?></time>
-					</div>
+					
 
 					<div class="article-byline-container mb-20">
 					<? while (dumb_luck("1-2")): ?>

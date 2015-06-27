@@ -2,12 +2,14 @@
 @import "_normalize.scss";
 @import "demo.scss";
 @import "grid_24.scss";
+@import "forms.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
 @import "fonts.scss";
 @import "lists.scss";
 @import "buttons.scss";
 @import "topdeck.scss";
+
 
 .demo-teaser {
 	background-color: #eee;
@@ -45,6 +47,7 @@ a {
 		color: darken($col-news, 5%);
 	}
 }
+
 
 .img-responsive {
 	vertical-align: middle;
@@ -84,10 +87,155 @@ h1, h2, h3, h4, h5, h6 {
 	@extend .header-font;
 }
 
-.main-header {
+.header-up {
 	height: 60px;
-	background-color: $gray-light;
+	margin-bottom: 5px;
+	position: relative;
+	.logo {
+		@extend .bt-logo;
+		height: 60px;
+		width: 182px;
+		display: inline-block;
+		float: left;
+	}
+	> nav > ul {
+		display: inline-block;
+		width: 758px;
+		height: 60px;
+		line-height: 60px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		> li {	
+			position: relative;
+			@extend .header-font;
+			text-transform: uppercase;
+			display: inline-block;
+			margin: 0;
+			line-height: 60px;
+			padding: 0;
+			font-weight: 400;
+			vertical-align: middle;
+			> a {
+				display: block;
+				color: #000;
+				padding: 0 20px;
+				text-decoration: none;
+				&:hover {
+					color: $col-news;
+				}
+			}
+			&.site-search {
+				text-align: center;
+				padding: 0;
+				font-size: 22px;
+			}
+			&.site-login {
+				float: right;
+			
+				&> a {
+					display: inline-block;
+					background-color: $col-news;
+					color: #fff;
+					&:hover {
+						background-color: darken($col-news, 5%);
+					}
+				}
+			}
+		}
+	}
+}
+.site-login {
+	position: relative;
+	li {
+		line-height: 1.5;
+		font-size: .77778rem;
+		margin: 5px 0 0;
+		a {
+			color: rgba(0, 0, 0, 0.75);
+		}
+	}
+}
+.login-form {
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	padding: 10px;
+	background-color: #fff;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 150px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	transition: all .2s ease;
+}
+
+.search-form {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	top: 50px;
+	right: 0px;
+	height: 60px;
+	padding: 10px;
+	width: 270px;
+	border: 2px solid $col-news;
+	background-color: #fff;
+	white-space: nowrap;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+	transition: all .2s ease;
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 8px 10px 8px;
+		border-color: transparent transparent $col-news transparent;
+		position: absolute;
+		right: 17px;
+		top: -12px;
+
+	}
+	button {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		background-color: $col-news;
+		color: #fff;
+		height: 2.05556rem;
+		padding: 0.44444rem;
+		width: 40px;
+		line-height: 0;
+	}
+}
+.li-active {
+	a .icon-search:before {
+		content: '\e829';
+		color: $col-news;
+	}
+	.login-form,
+	.search-form {
+		opacity: 1;
+		top: 55px;
+		visibility: visible;
+	}
+
+}
+.header-low {
+	text-align: right;
 	margin-bottom: 10px;
+	font-size: 12px;
+	line-height: 1.2;
+	a {
+		color: #999;
+	}
+	.cookies {
+		display: inline-block;
+		padding-right: 20px;
+		background: url(../images/cookies.png) right center no-repeat;
+		background-size: contain;
+	}
 }
 
 .banner {
@@ -121,14 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-.bt-logo {
-	height: 70px;
-	width: 240px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	overflow: hidden;
-}
+
 .highlight {
 	background: transparent;
 }
@@ -732,6 +873,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
+#thread-subscribe-button {
+	display: none;
+}
 .article-image {
 	margin-bottom: 2em;
 	position: relative;
@@ -746,7 +890,7 @@ h1, h2, h3, h4, h5, h6 {
 		background-color: #fff;
 		line-height: 0;
 		border-radius: 50%;
-		color: $col-news;
+		color: #000;
 		position: absolute;
 		right: 15px;
 		top: 15px;
@@ -870,9 +1014,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-footer {
 	clear: both;
-	background-color: #e5e5e5;
+	background-color: #222;
 	padding-bottom: 40px;
 	@extend .header-font;
+	color: #fff;
 	p {
 		line-height: 1.4;
 	}
@@ -880,11 +1025,11 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 13px;
 	}
 	.gray {
-		color: #666;
+		color: #999;
 		a {
-			color: #666;
+			color: #999;
 			&:hover {
-				color: #333;
+				color: #eee;
 			}
 		}
 	}
@@ -907,7 +1052,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 20px 0;
 	text-transform: uppercase;
 	a {
-		color: #000;
+		color: #fff;
 		text-decoration: none;
 	}
 }
@@ -930,7 +1075,7 @@ h1, h2, h3, h4, h5, h6 {
 			color: #999;
 		}
 		a {
-			color: #000;
+			color: #fff;
 		}
 	}
 }

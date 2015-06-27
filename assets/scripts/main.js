@@ -14,7 +14,7 @@
 
     
     // STICKY HEADER
-    var sticky_navigation_offset_top = $('.main-header').offset().top;
+    var sticky_navigation_offset_top = $('.site-header').offset().top;
     
     var sticky_navigation = function()  {
         
@@ -57,7 +57,9 @@
 
 
     
-
+    $('.show-hide').on('click', function(){
+      $(this).closest('li').toggleClass('li-active');
+    });
     
 
       // tab-active tab-teasers

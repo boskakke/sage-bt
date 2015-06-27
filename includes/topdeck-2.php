@@ -1,20 +1,23 @@
-<div class="row">
-	<div class="grid_24">
-		<article class="teaser-oneliner-breaking oneliner-size-1">
-			<a href="article.php"><span>Breaking</span> <? dummy("text@headline") ?></a>
-		</article>
-		<!-- <article class="teaser-oneliner-comingup">
-			<a href="article.php"><span>Opdateres</span> <? dummy("text@headline") ?></a>
-		</article>
-		<article class="teaser-oneliner-live">
-			<a href="article.php"><span>Live</span> <? dummy("text@headline") ?></a>
-		</article>
-		<article class="teaser-oneliner-live-sport">
-			<a href="article.php"><span>Live</span> <? dummy("text@headline") ?></a>
-		</article> -->
+<? if (dumb_luck("25%")): ?>
 
+	<div class="row">
+		<div class="grid_24">
+			<article class="teaser-oneliner-breaking oneliner-size-1">
+				<a href="article.php"><span>Breaking</span> <? dummy("text@headline") ?></a>
+			</article>
+			<!-- <article class="teaser-oneliner-comingup">
+				<a href="article.php"><span>Opdateres</span> <? dummy("text@headline") ?></a>
+			</article>
+			<article class="teaser-oneliner-live">
+				<a href="article.php"><span>Live</span> <? dummy("text@headline") ?></a>
+			</article>
+			<article class="teaser-oneliner-live-sport">
+				<a href="article.php"><span>Live</span> <? dummy("text@headline") ?></a>
+			</article> -->
+
+		</div>
 	</div>
-</div>
+<? endif ?>
 <div class="row">
 	<div class="grid_24">
 		<article class="teaser cat-news font-2 teaser-overlay teaser-text-overlay">
