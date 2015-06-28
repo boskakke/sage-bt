@@ -32,8 +32,22 @@
       sticky_navigation();
       }).resize();
     
+  
+
+    
 
 
+    // $('.article-gallery-small').royalSlider({
+    //   fullscreen: {
+    //     enabled: true,
+    //     nativeFS: true
+    //   },
+    //   keyboardNavEnabled: true,
+    //   imgHeight: '348',
+    //   imgWidth: '620',
+    //   globalCaption: true,
+
+    // });
 
 
     $("img.lazy").lazyload({
@@ -113,3 +127,30 @@
 
 
 })(jQuery); // Fully reference jQuery after this point.
+$( window ).load(function() {
+  $('.article-gallery').royalSlider({
+        fullscreen: {
+          enabled: true,
+          nativeFS: true
+        },
+        // autoScaleSliderHeight: '600',
+        // keyboardNavEnabled: true,
+        // globalCaption: true,
+        // autoScaleSlider: true,
+        // autoHeight: true
+    autoHeight: true,
+    imageAlignCenter: false,
+    arrowsNav: true,
+    fadeinLoadedSlide: false,
+    controlNavigationSpacing: 0,
+    controlNavigation: 'bullets',
+    controlsInside: false,
+    imageScaleMode: 'none',
+    loop: false,
+    loopRewind: false,
+    numImagesToPreload: 2,
+    keyboardNavEnabled: true,
+    usePreloader: true
+    });
+
+});

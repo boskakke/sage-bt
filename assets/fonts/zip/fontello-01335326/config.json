@@ -449,6 +449,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "91426c82d94428a33353e495418435e3",
+      "css": "share",
+      "code": 59436,
+      "src": "entypo"
+    },
+    {
       "uid": "8663320a860b00f26e94d3d15c9ba99a",
       "css": "clock",
       "code": 59429,
@@ -458,6 +464,18 @@
       "uid": "7f6916533c0842b6cec699fd773693d3",
       "css": "hourglass",
       "code": 59428,
+      "src": "entypo"
+    },
+    {
+      "uid": "3a3f65b92c9b2fcbb3a8dcd0d42ee806",
+      "css": "resize-full",
+      "code": 59434,
+      "src": "entypo"
+    },
+    {
+      "uid": "108c8ac13badc00ce66da014436e6eb1",
+      "css": "resize-small",
+      "code": 59435,
       "src": "entypo"
     },
     {
@@ -477,12 +495,6 @@
       "css": "video",
       "code": 59425,
       "src": "elusive"
-    },
-    {
-      "uid": "9990c2588fd50406f36987e80e1e905b",
-      "css": "resize-full-circle",
-      "code": 59434,
-      "src": "websymbols"
     },
     {
       "uid": "e160a7e42e4e818463fd5a8607b9f608",

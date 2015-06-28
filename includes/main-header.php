@@ -14,7 +14,7 @@
 				<li class="menu-item site-search"><a href="#" class="toggle-search show-hide"><i class="icon-search"></i></a>
 					<div class="search-form">
 						<form action="">
-							<input type="search" placeholder="Søg på BT">
+							<input type="search" placeholder="Søg på BT" id="site-search">
 							<button class="btn"><i class="icon-search"></i></button>
 						</form>
 					</div>

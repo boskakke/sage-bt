@@ -1,15 +1,15 @@
 {
-  "name": "sage",
+  "name": "BT",
   "version": "8.2.1",
-  "author": "Ben Word <ben@benword.com>",
-  "homepage": "https://roots.io/sage/",
+  "author": "Bo Skakke <bo@skakke.dk>",
+  "homepage": "http://www.marginmedia.dk/",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/roots/sage.git"
+    "url": "git://github.com/boskakke/sage.git"
   },
   "bugs": {
-    "url": "https://github.com/roots/sage/issues"
+    "url": "https://github.com/boskakke/sage/issues"
   },
   "licenses": [
     {

@@ -1,7 +1,9 @@
 
 <? require_once("../dummy/dummy.php") ?>
 
-<?php $image_size = rand(0,1); ?>
+<?php $image_size = rand(0,1);
+	
+?>
 
 <!DOCTYPE html>
 <html lang="da">
@@ -67,15 +69,20 @@
 
 				<div class="banner bb-20"><? dummy("ad@940x180") ?></div>
 
+
 				
 				
 				<?php if($image_size == 0): ?>
+					<? if (dumb_luck("50%")): ?>
+					<?php include('includes/article-slider.php'); ?>
+					<? else: ?>
 					<figure class="article-image">
 						
 						<img data-original="<? dummy("image@940x,16:9") ?>" class="lazy" width="940" height="" alt="" />
 						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
-						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
 					</figure>
+					<? endif ?>
 				<?php endif; ?>
 				
 				
@@ -83,16 +90,20 @@
 			</div>
 		
 
-		<div class="row">
+		<div class="r ow">
 
 		<div class="grid_16">
 			
 			<?php if($image_size == 1): ?>
-			<figure class="article-image">
-				<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
-				<img data-original="<? dummy("image@620x,16:9") ?>" class="lazy" width="620" height="" alt="" />
-				<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
-			</figure>
+				<? if (dumb_luck("50%")): ?>
+					<?php include('includes/article-slider-small.php'); ?>
+				<? else: ?>
+					<figure class="article-image">
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
+						<img data-original="<? dummy("image@620x,16:9") ?>" class="lazy" width="620" height="" alt="" />
+						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
+					</figure>
+				<?php endif; ?>
 			<?php endif; ?>
 
 			<div class="grid_4 alpha">

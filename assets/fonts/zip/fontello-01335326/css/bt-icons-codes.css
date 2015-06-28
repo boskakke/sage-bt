@@ -41,4 +41,6 @@
 .icon-down-micro:before { content: '\e827'; } /* '' */
 .icon-down-circle:before { content: '\e828'; } /* '' */
 .icon-cancel:before { content: '\e829'; } /* '' */
-.icon-resize-full-circle:before { content: '\e82a'; } /* '' */
+.icon-resize-full:before { content: '\e82a'; } /* '' */
+.icon-resize-small:before { content: '\e82b'; } /* '' */
+.icon-share:before { content: '\e82c'; } /* '' */
