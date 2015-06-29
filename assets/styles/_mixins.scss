@@ -1,13 +1,10 @@
 // Decks
-@mixin deck($col-background, $background-trans, $col-header-link: #cd0403, $col-header-regular: #000) {
+@mixin deck($col-background: #c00, $background-trans: 0, $col-header-link: #cd0403, $col-header-regular: #000, $font-small-color: #000, $headernav-link-color: false, $slash-color: false ) {
   background: transparentize($col-background, $background-trans);
-
 	padding-top: 1em; 
-
 	span.small a {
 			color: $col-header-link;
 	}
-
 	.deck-header {
 		color: $col-header-regular;
 		strong {
@@ -18,13 +15,16 @@
 		a {
 			color: $col-header-regular;
 		}
-		
 	}
 
 	.deck-header strong,
 	.deck-header a strong,
 	.icon-angle-down {
 		color: $col-header-link;
+	}
+	.deck-header small,
+	.deck-header a small {
+		color: $font-small-color;
 	}
 	.deck-menu {
 		a:hover {
@@ -41,15 +41,40 @@
 					background-color: darken($col-header-link, 10%);
 				}
 			}
-		}
-		
+		}		
 	}
 	.deck-header a:hover,
 	.deck-header a strong:hover {
 		color: darken($col-header-link, 7%);
 	}
-
+	.teaser .header a {
+		color: $font-small-color;
+	}
+	mark {
+		color: $col-header-link;
+	}
+	@if $headernav-link-color {
+    	.deck-menu a {
+			color: $headernav-link-color;
+		}
+	}
+	@if $slash-color {
+		.slash {
+			color: $slash-color
+		}
+	}
+	
 }	
+
+// TAGS
+
+@mixin teaser-tag($col-background: #000, $col-text: #fff, $col-icon: #fff) {
+	background-color: $col-background;
+	color: $col-text;
+	i {
+		color: $col-icon!important;
+	}
+}
 
 // Buttons
 @mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding-left: 10px, $padding-right: 10px) {

@@ -65,9 +65,10 @@
       $(this).toggleClass('active');
     });
 
-    var tickerHeight = $('#topdeck').height() - 380;
+    var tickerHeight = $('#topdeck').height() - 600;
 
-    $('#live-ticker > ul').css('height',tickerHeight);
+     $('#live-ticker > ul').css('height',tickerHeight);
+    //$('#live-ticker > ul').css('height','800');
 
 
     

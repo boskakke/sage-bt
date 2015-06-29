@@ -65,14 +65,14 @@
 		
 		
 
-		<div class="row">
-			<section class="deck clearfix deck-sport no-cat">
+		<div class="r ow">
+			<section class="deck clearfix deck-sport-alt ">
 				<div class="grid_24">
 					<h1 class="deck-header deck-header-alt">
 						<a href="section.php"><span class="slash">/</span><strong>SPORT</strong> <span class="small">Danmarks Sportsavis</span></a>
 					</h1>
 				</div>
-				<div class="row">
+				<div class="r ow">
 					<div class="grid_24">
 						<ul class="deck-menu">
 							<? while (dumb_luck("7")): ?>
@@ -86,9 +86,9 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row">
+				<div class="r ow">
 					<div class="grid_24">
-						<article class="teaser cat-consumer font-1 mb-40">
+						<article class="teaser cat-sport font-1 mb-40">
 							<figure>
 								<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@940x,16:9") ?>" width="940" height="528" alt="" /></a>
 							</figure>
@@ -100,7 +100,7 @@
 
 				<? while (dumb_luck("3")): ?>
 				<div class="grid_8">
-					<article class="teaser teaser-regular cat-consumer font-3">
+					<article class="teaser teaser-regular cat-sport font-3">
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
@@ -539,7 +539,7 @@
 						<a href="section.php"><span class="slash">/</span><strong>DIGITAL</strong> </a>
 					</h1>
 				</div>
-				<div class="row">
+				<div class="ro w">
 					<div class="grid_24">
 						<ul class="deck-menu">
 							<? while (dumb_luck("6")): ?>
@@ -553,7 +553,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="row">
+				<div class="ro w">
 					<div class="grid_24">
 						<article class="teaser cat-consumer font-1 mb-40">
 							<figure>

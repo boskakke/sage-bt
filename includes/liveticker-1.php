@@ -1,8 +1,8 @@
-<section class="live-ticker-alt-2" id="live-ticker">
+<section class="live-ticker" id="live-ticker">
 		<div class="banner">
 			<? dummy("ad@300x250") ?>
 		</div>
-			<h1>LIVE <span>Jourhavende: <? dummy("text@author") ?></span></h1>
+			<h1>LIGE NU <span>Jourhavende: <? dummy("text@author") ?></span></h1>
 			<ul>
 				<? while (dumb_luck("20")): ?>
 				<li>

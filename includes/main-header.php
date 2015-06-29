@@ -7,6 +7,7 @@
 				<li class="menu-item"><a href="section.php">Nyheder</a></li>
 				<li class="menu-item"><a href="section.php">Sport</a></li>
 				<li class="menu-item menu-item-plus"><a href="section.php">PLUS</a></li>
+				<li class="menu-item "><a href="section.php">TV</a></li>
 			</ul>
 
 			<ul class="nav-right">

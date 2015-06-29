@@ -40,7 +40,8 @@
 					
 					
 
-					<div class="article-byline-container mb-20">
+					
+					<div class="article-byline-container mb-20 ">
 					<? while (dumb_luck("1-2")): ?>
 						<div class="article-byline">
 							<figure><img src="<? dummy("image/!author@35x,1:1") ?>" width="" height="" alt="" /></figure>
@@ -50,21 +51,29 @@
 					<? endwhile ?>
 					</div>
 
+					<div class="clearfix">
+						<div class="grid_16 alpha">
+							<div class="social-container">
+								<button class="btn btn-lg btn-facebook"><i class="icon-facebook"></i> Del</button>
+								<button class="btn btn-lg btn-twitter"><i class="icon-twitter"></i> Tweet</button>
+								<button class="btn btn-lg btn-news"><i class="icon-comments"></i> Kommentarer</button>
+								<button class="btn btn-lg btn-transparent"><i class="icon-print"></i> Print</button>
+								<button class="btn btn-lg btn-transparent"><i class="icon-mail"></i> Send</button>
+							</div>
+							
+						</div>
+						
+						<div class="grid_8 omega">
+							<div class="signup-form">
+								<form action="">
+									<input type="email" class="">
+									<button class="btn btn-news">OK</button>
+								</form>
+							</div>
 
-					<div class="social-container">
-						<button class="btn btn-lg btn-facebook"><i class="icon-facebook"></i> Del</button>
-						<button class="btn btn-lg btn-twitter"><i class="icon-twitter"></i> Tweet</button>
-						<button class="btn btn-lg btn-news"><i class="icon-comments"></i> Kommentarer</button>
-						<button class="btn btn-lg btn-transparent"><i class="icon-print"></i> Print</button>
-						<button class="btn btn-lg btn-transparent"><i class="icon-mail"></i> Send</button>
+						</div>
 					</div>
-
-					<div class="signup-form">
-						<form action="">
-							<input type="email" class="">
-							<button class="btn btn-news">OK</button>
-						</form>
-					</div>
+					
 				</header>
 
 				<div class="banner bb-20"><? dummy("ad@940x180") ?></div>

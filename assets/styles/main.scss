@@ -453,6 +453,44 @@ h1, h2, h3, h4, h5, h6 {
 [class*="grid_"] .teaser:last-child {
 	margin-bottom: 40px;
 }
+.teaser-editorial {
+	
+	margin-top: 20px;
+	.header {
+		font-size: 35px;
+		a {
+	
+		}
+	}
+}
+.editorial-tag {
+	@extend .bt-logo;
+	background-position: left center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 25px;
+	@extend .header-font;
+	padding-left: 80px;	
+	text-transform: uppercase;
+	
+}
+.teaser-social {
+	margin-bottom: 1px;
+	margin-top: 1px;
+	@extend .header-font;
+	background-color: #000;
+	color: #fff;
+	padding: 5px 10px;
+
+
+}
+.teaser-tipbt {
+	background-color: #000;
+	padding: 5px 10px;
+	color: #fff;
+	margin-bottom: 0;
+	@extend .header-font;
+}
 .no-cat .teaser .header {
 	margin-top: .5em;
 }
@@ -473,16 +511,8 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
 	}
 }
-.teaser-noimage {
-	background-color: #eee;
-	padding-top: 20px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	
-	.header {
-		margin-bottom: 10px;
-	}
-}
+
+
 .teaser-body {
 	overflow: hidden;
 }
@@ -535,6 +565,9 @@ h1, h2, h3, h4, h5, h6 {
 .cat-news {
 	@include cat($col-news);
 }
+.cat-breaking {
+	@include cat($col-breaking, #000);
+}
 .cat-sport {
 	@include cat($col-sport, #000);
 }
@@ -555,6 +588,31 @@ h1, h2, h3, h4, h5, h6 {
 	@include cat($col-plus);
 }
 
+[class*="teaser-tag-"]{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	padding: 3px 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1;
+	@extend .header-font;
+	font-weight: 600;
+	z-index: 99;
+}
+.teaser-tag-breaking {
+	@include teaser-tag($col-breaking, #000, #000);	
+}
+.teaser-tag-live, 
+.teaser-tag-comingup {
+	@include teaser-tag($col-news, #fff, #fff);	
+}
+
+
+.cat-sport .teaser-tag-live {
+	@include teaser-tag($col-sport, #000, #000);	
+}
 
 .font-1 .header {
 	font-size: 54px;
@@ -681,10 +739,7 @@ h1, h2, h3, h4, h5, h6 {
 	.slash {
 		color: rgba(0,0,0,.2);
 	}
-	.small {
-		color: #000;
-		font-size: 75%;
-	}
+	
 }
 
 .deck-header-right {
@@ -732,19 +787,28 @@ h1, h2, h3, h4, h5, h6 {
 .deck-sport {
 	@include deck($gray-light, 1, $col-sport);
 	.deck-menu {
-		background-color: rgba(0,0,0,.05);
 		line-height: 1;
 	}
 }
 
+.deck-sport-alt {
+	@include deck(#333, 0, $col-sport, #fff, #fff, $headernav-link-color: #fff, $slash-color: #999);
+}
+
+.deck-consumersales {
+	@include deck(#333, 0, $col-news, #fff, #fff, $headernav-link-color: #fff, $slash-color: #999);
+}
+
+
+
 .deck-entertainment {
-	@include deck($col-entertainment, 1, $col-entertainment);
+	@include deck(#eee, 0, $col-entertainment, 1, #000);
 }
 .deck-health {
 	@include deck($col-health-alt, .4, $col-health);
 }
 .deck-consumer {
-	@include deck(#fff, .0, $col-consumer);
+	@include deck($col-consumer, 0, #fff, #fff, #000, #fff, #fff);
 }
 .deck-plus {
 	@include deck($gray-light, .0, $col-plus);
@@ -1045,6 +1109,23 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
+.teaser-noimage {
+	background-color: #eee;
+	padding: 20px 10px 10px;
+	
+	.header {
+		margin-bottom: 10px;
+	}
+}
+.teaser-noimage-breaking {
+	background-color: $col-breaking;
+	i {
+		color: $col-news!important;
+	}
+	.category {
+		background-color: $col-news;
+	}
+}
 
 .article-byline-container	{
 	font-size: 14px;
@@ -1077,6 +1158,20 @@ h1, h2, h3, h4, h5, h6 {
 				color: #666;
 			}
 		}
+	}
+}
+.signup-form {
+	position: relative;
+	input[type='email'] {
+		margin: 0;
+	}
+	button {
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-size: .77778rem;
+		height: 2.05556rem;
+		padding: .44444rem 1rem;
 	}
 }
 .article-embedded-link {
@@ -1291,13 +1386,8 @@ $btn-social-size: 54px;
 		background-repeat: no-repeat;
 	}
 }
-@keyframes glow { 
-	0% {  } 
-	50% { 
-		transform: scale(1.4);
-	 } 
-	100% { } 
-}
+
+
 .container-wide {
 	max-width: 1280px;
 	margin: 0 auto;

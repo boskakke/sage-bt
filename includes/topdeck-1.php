@@ -1,9 +1,9 @@
 <div class="row">
 	<div class="grid_24">
 		<article class="teaser-oneliner-breaking oneliner-size-1">
-			<a href="article.php"><span>Breaking</span> <? dummy("text@headline") ?></a>
+			<a href="article.php"><i class="icon-dot-circled"></i> <span>Breaking</span> <? dummy("text@headline") ?></a>
 		</article>
-		<!-- <article class="teaser-oneliner-comingup">
+		<article class="teaser-oneliner-comingup">
 			<a href="article.php"><span>Opdateres</span> <? dummy("text@headline") ?></a>
 		</article>
 		<article class="teaser-oneliner-live">
@@ -11,7 +11,7 @@
 		</article>
 		<article class="teaser-oneliner-live-sport">
 			<a href="article.php"><span>Live</span> <? dummy("text@headline") ?></a>
-		</article> -->
+		</article>
 
 	</div>
 </div>
