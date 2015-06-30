@@ -6,7 +6,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	opacity: 0;
+	opacity: .1;
 	margin: 0;
 	padding: 0;
 	transition : opacity .2s ease;
@@ -28,4 +28,29 @@
 			text-decoration: none;
 		}
 	}
+}
+
+h1.demo {
+	font-size: 70px;
+	font-weight: 400;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+	margin-top: 40px;
+	text-transform: uppercase;
+	
+}
+.demo small {
+	color: #999;
+}
+h2.demo {
+	font-size: 50px;
+	font-weight: 100;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+h3.demo {
+	font-size: 30px;
+	font-weight: 100;
+	
+	margin-bottom: 20px;	
 }

@@ -19,15 +19,17 @@
 		
 	</article>
 </div>
-					
-<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
-	<figure>
-		<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="303" alt="" /></a>
-	</figure>
-	<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-	<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-	<p><? dummy("text@short-teaser") ?></p>
-</article>
+
+<div class="grid_16 alpha omega">			
+	<article class="teaser <? dummy("text@bt-main-categories") ?> font-2">
+		<figure>
+			<a href="article.php"><img class="lazy" data-original="<? dummy("image@620x,16:9") ?>" width="620" height="303" alt="" /></a>
+		</figure>
+		<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+		<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+		<p><? dummy("text@short-teaser") ?></p>
+	</article>
+</div>
 
 
 

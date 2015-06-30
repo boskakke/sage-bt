@@ -54,7 +54,5 @@
 	
 	
 
-	<nav class="header-low">
-		
-	</nav>
+	
 </header>

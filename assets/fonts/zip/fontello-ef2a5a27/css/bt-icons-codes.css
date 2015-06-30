@@ -42,3 +42,8 @@
 .icon-down-circle:before { content: '\e828'; } /* '' */
 .icon-attention-alt:before { content: '\e829'; } /* '' */
 .icon-resize-full-circle:before { content: '\e82a'; } /* '' */
+.icon-down-dir:before { content: '\e82b'; } /* '' */
+.icon-up-dir:before { content: '\e82c'; } /* '' */
+.icon-left-dir:before { content: '\e82d'; } /* '' */
+.icon-right-dir:before { content: '\e82e'; } /* '' */
+.icon-cancel:before { content: '\e82f'; } /* '' */

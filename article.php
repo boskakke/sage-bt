@@ -240,8 +240,10 @@
 					</h3>
 				</article>
 
-				<div class="text-center module-padding">
-					<a href="#"  class="load-more">Se alle</a>
+				<div class="grid_24">
+					<div class="text-center ">
+						<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+					</div>
 				</div>
 				
 			</aside>
@@ -403,8 +405,8 @@
 				<? endwhile ?>
 				
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
-						<a href="#" class="load-more">Mere PLUS <i class="icon-open-circle"></i></a>
+					<div class="text-center deck-footer">
+						<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
 					</div>
 				</div>
 

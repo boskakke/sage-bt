@@ -1,11 +1,17 @@
 <ul class="demomenu">
 	<li>
-		<a href="#" class="liveticker1">Liveticker 1</a>
+		<a href="frontpage.php">Frontpage</a>	
 	</li>
 	<li>
-		<a href="#" class="liveticker2">Liveticker 2</a>
+		<a href="article.php">Article</a>	
+	</li>
+
+	<li>
+		<a href="decks.php">Decks</a>	
 	</li>
 	<li>
-		<a href="#" class="liveticker3">Liveticker 3</a>
+		<a href="teaser-types.php">Teasers</a>	
 	</li>
+
+	
 </ul>

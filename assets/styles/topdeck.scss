@@ -39,7 +39,7 @@
 	background-color: $col-sport;
 }
 
-.topstory {
+/*.topstory {
 	.header-container {
 		background-color: #fff;
 		padding: 10px 20px 0 0;
@@ -67,36 +67,9 @@
 	.header-container {
 
 	}
-}
+}*/
 
-.teaser-breaking {
-	position: relative;
 
-	figure a:before{
-			content: 'BREAKING';
-			display: inline-block;
-			position: absolute;
-			top: 5px;
-			left: 5px;
-			background-color: $col-breaking;
-			color: #000;
-			padding: 5px 10px;
-			font-size: 25px;
-			@extend .header-font;
-			font-weight: 600;
-			z-index: 99;
-		}
-	
-	header {
-		background-color: $col-breaking;
-		padding: 15px;
-
-		.category {
-			display: none;
-		}
-
-	}
-}
 .topstory-upper {
 	@extend .mb-0;
 	position: relative;
@@ -180,7 +153,18 @@
 	/*background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);*/
 	padding-right: 10px;
 	border-bottom: 4px solid $col-news;
-
+	position: relative;
+	&:after {
+		position: absolute;
+		height: 8px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(to top, #999 0, rgba(0,0,0,0) 100%);
+		
+		z-index: 99;
+		content: '';
+	}
 	h1 {
 		background-color: $col-news;
 		background: linear-gradient(to right, darken($col-news, 5%) 0, $col-news 25px);
@@ -202,8 +186,13 @@
 		}
 		span {
 			float: right;
-			font-weight: 300;
-			font-size: 17px;
+			font-weight: 400;
+			width: 220px;
+			font-size: 15px;
+			text-align: right;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 	}
 	ul {
@@ -283,191 +272,7 @@
 	}
 }
 
-.live-ticker-alt {
-	background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);
-	padding-right: 10px;
-	
-	margin-bottom: 10px;
 
-	h1 {
-		background-color: $col-news;
-		background: linear-gradient(to right, darken($col-news, 5%) 0, $col-news 25px);
-		color: #fff;
-		margin-right: -10px;
-		@extend .font-header;
-		font-size: 19px;
-		padding: 8px 5px 8px 10px;
-		position: relative;
-		&:before {
-			font-family: bt-icons;
-			display: inline-block;
-			position: absolute;
-			bottom: -15px;
-			left: 20px;
-			content: '\e820';
-			color: $col-news;
-			transform: rotate(90deg);
-		}
-		span {
-			float: right;
-			font-weight: 300;
-			font-size: 17px;
-		}
-	}
-	ul {
-		list-style: none;
-		padding: 0;
-		overflow: hidden;
-		padding-right: 16px;
-		&:hover {
-			overflow-y: scroll;
-		}
-		-webkit-overflow-scrolling: touch;
-  		-ms-overflow-style: -ms-autohiding-scrollbar;
-		li {
-			padding: 0 0 10px 20px;
-			position: relative;
-			margin: 0;
-			
-			&:before {
-				display: none;
-				content: '';
-				background-color: #ccc;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				width: 1px;
-			}
-		}
-		h2 {
-			font-size: 18px;
-			margin: 0 0 10px;
-		}
-		p {
-			font-size: 14px;
-			margin: 0;
-			&:last-child {
-				border-bottom: 1px solid #ccc;
-				padding-bottom: 10px;
-			}
-
-		}
-		a {
-			color: #000;
-		}
-		time {
-			display: block;
-			color: #999;
-			font-size: 12px;
-			margin-bottom: 5px;
-			
-			/*&:before {
-				display: inline-block;
-				content: '';
-				background-color: $col-news;
-				position: absolute;
-				top: 4px;
-				bottom: 0;
-				right: 4px;
-				width: 7px;
-				height: 7px;
-				border-radius: 50%;
-				
-			}*/
-		}
-	}
-	.banner {
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
-		overflow: hidden;
-		margin-bottom: 0;
-		line-height: 0;
-		margin-right: -10px;
-		
-	}
-}
-
-
-.live-ticker-alt-2 {
-	background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 5%) 5px);
-	padding-right: 10px;
-	
-	margin-bottom: 10px;
-
-	h1 {
-		background-color: $col-news;
-		background: linear-gradient(to right, darken($col-news, 5%) 0, $col-news 25px);
-		color: #fff;
-		margin-right: -10px;
-		@extend .font-header;
-		font-size: 19px;
-		padding: 8px 5px 8px 10px;
-		position: relative;
-		&:before {
-			font-family: bt-icons;
-			display: inline-block;
-			position: absolute;
-			bottom: -15px;
-			left: 20px;
-			content: '\e820';
-			color: $col-news;
-			transform: rotate(90deg);
-		}
-		span {
-			float: right;
-			font-weight: 300;
-			font-size: 17px;
-		}
-	}
-	ul {
-		list-style: none;
-		padding: 0;
-		overflow: hidden;
-		padding-right: 16px;
-		&:hover {
-			overflow-y: scroll;
-		}
-		-webkit-overflow-scrolling: touch;
-  		-ms-overflow-style: -ms-autohiding-scrollbar;
-		li {
-			padding: 10px;
-			position: relative;
-			margin: 0 0 20px 20px;
-			background-color: #fff;
-		}
-		img {
-			margin: 0 -8px;
-		}
-		h2 {
-			font-size: 18px;
-			margin: 0 0 10px;
-		}
-		p {
-			font-size: 14px;
-			margin: 0;
-
-		}
-		a {
-			color: #000;
-		}
-		time {
-			display: block;
-			color: #999;
-			font-size: 12px;
-			margin-bottom: 5px;
-		}
-	}
-	.banner {
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
-		overflow: hidden;
-		margin-bottom: 0;
-		line-height: 0;
-		margin-right: -10px;
-		
-	}
-}
 
 
 

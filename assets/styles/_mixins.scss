@@ -1,5 +1,5 @@
 // Decks
-@mixin deck($col-background: #c00, $background-trans: 0, $col-header-link: #cd0403, $col-header-regular: #000, $font-small-color: #000, $headernav-link-color: false, $slash-color: false ) {
+@mixin deck($col-background: #eee, $background-trans: 0, $col-header-link: #cd0403, $col-header-regular: #000, $font-small-color: #000, $headernav-link-color: false, $slash-color: false, $category-background-color: false, $category-text-color: false, $menu-color-hover:$col-header-link) {
   background: transparentize($col-background, $background-trans);
 	padding-top: 1em; 
 	span.small a {
@@ -16,7 +16,7 @@
 			color: $col-header-regular;
 		}
 	}
-
+	
 	.deck-header strong,
 	.deck-header a strong,
 	.icon-angle-down {
@@ -28,11 +28,12 @@
 	}
 	.deck-menu {
 		a:hover {
-			background-color: $col-header-link;
+			color: $menu-color-hover;
 		}
 	}
-	.menu-more {
-		background-color: $col-header-link;
+	.menu-more i:before {
+		color: $col-header-link;
+
 		ul {
 			background-color: $col-header-link;
 			a {
@@ -47,11 +48,27 @@
 	.deck-header a strong:hover {
 		color: darken($col-header-link, 7%);
 	}
-	.teaser .header a {
+	.teaser {
+		background-color: transparent;
+		padding: 0;
+		@if $category-background-color {	
+			.category {
+				background-color: $category-background-color;
+				color: $category-text-color;
+			}
+		}
+	}
+	.teaser .header a, 
+	.related a,
+	.related-mega a {
 		color: $font-small-color;
 	}
 	mark {
 		color: $col-header-link;
+	}
+	.load-more {
+		background-color: $col-header-link;
+		color: $category-text-color;
 	}
 	@if $headernav-link-color {
     	.deck-menu a {
@@ -111,6 +128,7 @@
 		color: $link-color;
 		&:hover {
 			background-color: darken($color, 5%);
+			color: $link-color;
 		}
 
 	}
@@ -118,7 +136,7 @@
 		color: $color;
 	}
 	.highlight {
-		// color: $color;
+		color: $color;
 		// font-size: 16px;
 		position: relative;
 	}
@@ -152,4 +170,33 @@
 			background-color: darken($btn-background-color, 5%);
 		}
 	}
+}
+
+// Teaser background colors 
+
+@mixin teaser-color($background-color, $link-color, $text-color, $highlight-color, $icon-color, $category-background-color, $category-link-color ) {
+	background-color: $background-color;
+	padding: 5px 5px 10px;
+	color: $text-color;
+	&>figure {
+		margin-left: -5px;
+		margin-right: -5px;
+		margin-top: -5px;
+	}
+	.header a, 
+	a, a:hover {
+		color: $link-color;
+	}
+
+	.category {
+		background-color: $category-background-color;
+		color: $category-link-color;
+	}
+	.highlight {
+		color: $icon-color;
+	}
+	.header i:before {
+		color: $icon-color;
+		@extend .blink;
+	}	
 }

@@ -40,7 +40,7 @@
 							<? while (dumb_luck("5")): ?>
 							<li class="teaser">
 								<div class="list-body">
-									<a href="article.php" class="header"><? dummy("text@headline") ?></a>
+									<a href="article.php" class="header"><? dummy("text@headline-bt") ?></a>
 									<footer><i class="icon-thumbs-up"></i> <? dummy("text@number") ?></footer>
 								</div>
 							</li>
@@ -65,14 +65,14 @@
 		
 		
 
-		<div class="r ow">
-			<section class="deck clearfix deck-sport-alt ">
+		<div class="row">
+			<section class="deck clearfix deck-sport ">
 				<div class="grid_24">
 					<h1 class="deck-header deck-header-alt">
 						<a href="section.php"><span class="slash">/</span><strong>SPORT</strong> <span class="small">Danmarks Sportsavis</span></a>
 					</h1>
 				</div>
-				<div class="r ow">
+				<div class="row">
 					<div class="grid_24">
 						<ul class="deck-menu">
 							<? while (dumb_luck("7")): ?>
@@ -86,7 +86,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="r ow">
+				<div class="row">
 					<div class="grid_24">
 						<article class="teaser cat-sport font-1 mb-40">
 							<figure>
@@ -112,8 +112,8 @@
 				<? endwhile ?>
 				
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
-						<a href="#" class="load-more">Mere sport <i class="icon-open-circle"></i></a>
+					<div class="text-center deck-footer">
+						<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
 					</div>
 				</div>
 
@@ -138,15 +138,15 @@
 						<li class="teaser">
 							<div class="list-body">
 								<time><? dummy("text@time") ?></time>
-								<a href="article.php" class="header"><? dummy("text@headline") ?></a>
+								<a href="article.php" class="header"><? dummy("text@headline-bt") ?></a>
 							</div>
 						</li>
 						<? endwhile ?>
 					</ul>
 					
-					<div class="text-center module-padding">
-						<a href="#" class="load-more">Hent flere</a>
-					</div>
+						<div class="text-center deck-footer">
+								<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+							</div>
 				</aside>
 
 					<div class="banner mb-20">
@@ -219,7 +219,7 @@
 				<? endwhile ?>
 				
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
+					<div class="text-center deck-footer">
 						<a href="#" class="load-more">Mere PLUS <i class="icon-open-circle"></i></a>
 					</div>
 				</div>
@@ -412,7 +412,7 @@
 	
 			<section class="deck clearfix deck-news ">
 				<div class="grid_24">
-					<h1 class="deck-header module-padding-bottom"><a href="#"><strong>BLOGS</strong></a></h1>
+					<h1 class="deck-header deck-footer"><a href="#"><strong>BLOGS</strong></a></h1>
 				</div>
 				<div class="grid_24">
 					<ul class="list-blogs">
@@ -424,7 +424,7 @@
 										<? dummy("text@author") ?>
 									</footer>
 									<a href="article.php" class="header">
-										<? dummy("text@headline") ?>
+										<? dummy("text@headline-bt") ?>
 									</a>
 								</div>
 							</li>
@@ -433,7 +433,7 @@
 				</div>
 			
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
+					<div class="text-center deck-footer">
 						<a href="#" class="load-more">Hent flere</a>
 					</div>
 				</div>
@@ -472,7 +472,7 @@
 				</div>
 				<? while (dumb_luck("3")): ?>
 				<div class="grid_8">
-					<article class="teaser teaser-regular cat-news font-3">
+					<article class="teaser teaser-regular cat-health font-3">
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
@@ -484,7 +484,7 @@
 				<? endwhile ?>
 
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
+					<div class="text-center deck-footer">
 						<a href="#" class="load-more">Hent flere</a>
 					</div>
 				</div>
@@ -509,15 +509,17 @@
 							<li class="teaser">
 								<div class="list-body">
 									<time><? dummy("text@time") ?></time>
-									<a href="article.php" class="header"><? dummy("text@headline") ?></a>
+									<a href="article.php" class="header"><? dummy("text@headline-bt") ?></a>
 								</div>
 							</li>
 							<? endwhile ?>
 						</ul>
 						
-						<div class="text-center module-padding">
-							<a href="#" class="load-more">Hent flere</a>
-						</div>
+					
+							<div class="text-center deck-footer">
+								<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+							</div>
+				
 					</aside>
 
 						<div class="banner mb-20">
@@ -579,9 +581,9 @@
 				<? endwhile ?>
 				
 				<div class="grid_24">
-					<div class="text-center module-padding-bottom">
-						<a href="#" class="load-more">Hent flere</a>
-					</div>
+						<div class="text-center deck-footer">
+							<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+						</div>
 				</div>
 
 			</section><!-- deck -->
@@ -603,15 +605,15 @@
 							<li class="teaser">
 								<div class="list-body">
 									<time><? dummy("text@time") ?></time>
-									<a href="article.php" class="header"><? dummy("text@headline") ?></a>
+									<a href="article.php" class="header"><? dummy("text@headline-bt") ?></a>
 								</div>
 							</li>
 							<? endwhile ?>
 						</ul>
 						
-						<div class="text-center module-padding">
-							<a href="#" class="load-more">Hent flere</a>
-						</div>
+							<div class="text-center deck-footer">
+								<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+							</div>
 					</aside>
 
 						<div class="banner mb-20">

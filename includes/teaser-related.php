@@ -1,3 +1,4 @@
+<? if (dumb_luck("50%")): ?>
 <ul class="related-mega">
 	<? while (dumb_luck("1-2")): ?>
 	<li >
@@ -10,10 +11,9 @@
 			</a>
 		</div>
 	</li>
-
 	<? endwhile ?>
-
 </ul>
+<? endif ?>
 <ul class="related list-inline">
 	<? while (dumb_luck("1-3")): ?>
 	<li><a href="article.php"><? dummy("text@headline") ?></a></li>

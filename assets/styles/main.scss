@@ -30,10 +30,10 @@
 	}
 }
 
-.row {
+/*.row {
 	margin-left: -10px;
 	margin-right: -10px;
-}
+}*/
 * {
 	box-sizing: border-box;
 }
@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .li-active {
 	a .icon-search:before {
-		content: '\e829';
+		content: '\e82f';
 		color: $col-news;
 	}
 	.login-form {
@@ -392,6 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 	background: transparent;
 }
 .teaser {
+	position: relative;
 	margin-bottom: 30px;
 	img {
 		transition: opacity .1s ease;
@@ -430,6 +431,9 @@ h1, h2, h3, h4, h5, h6 {
 		a {
 			color: #000;
 		}
+		i:before {
+			transform: translateY(-.1em);
+		}
 	}
 	figure {
 		line-height: 0;
@@ -450,6 +454,8 @@ h1, h2, h3, h4, h5, h6 {
 		margin-top: -10px
 	}*/
 }
+
+
 [class*="grid_"] .teaser:last-child {
 	margin-bottom: 40px;
 }
@@ -585,7 +591,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cat-plus {
-	@include cat($col-plus);
+	@include cat($col-plus, #fff);
 }
 
 [class*="teaser-tag-"]{
@@ -600,6 +606,9 @@ h1, h2, h3, h4, h5, h6 {
 	@extend .header-font;
 	font-weight: 600;
 	z-index: 99;
+	i:before {
+		transform: translateY(-1px);
+	}
 }
 .teaser-tag-breaking {
 	@include teaser-tag($col-breaking, #000, #000);	
@@ -691,15 +700,24 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 }
+.deck-footer {
+	position: relative;
+	height: 19px;
+}
 .load-more {
 	background-color: rgba(0,0,0,.05);
-	padding: 5px 0;
+	position: relative;
+	padding: 7px 20px;
+	border-radius: 2px;
+	border-bottom: 2px solid rgba(0,0,0,.2);
 	color: #000;
-	display: block; 
+	display: inline-block; 
 	font-size: 90%;
+	
+	z-index: 3;
 	text-decoration: none;
-	transition: background-color .1s ease;
-	box-shadow: 0 1px 0 rgba(0,0,0,.15);
+	transition: all .1s ease;
+	box-shadow: 2px 1px 4px rgba(0,0,0,.25), 0 18px 0 rgba(255,255,255,.15) inset;
 	@extend .header-font;
 	text-transform: uppercase;
 	&:hover{
@@ -708,7 +726,7 @@ h1, h2, h3, h4, h5, h6 {
 		color: #000;
 	}
 	&:active {
-		box-shadow: 0 0px 0px rgba(0,0,0,.20), 0 2px 2px rgba(0,0,0,.10) inset;
+		box-shadow: 0 0px 0px rgba(0,0,0,.20), 0 20px 0 rgba(255,255,255,.15) inset;
 	}
 
 }
@@ -723,7 +741,9 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: -10px;
 		margin-right: -10px;
 		margin-top: -20px;
-
+		font-size: 34px;
+		text-transform: none;
+		margin-bottom: 10px;
 	}
 }
 
@@ -733,6 +753,9 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	margin: 0 0 15px;
 	position: relative;
+	i:before {
+		transform: translateY(-.1em);
+	}
 	a {
 		text-decoration: none;
 	}
@@ -758,11 +781,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
-.deck-header-small {
-	font-size: 34px;
-	text-transform: none;
-	margin-bottom: 10px;
-}
+
 
 .deck-border-bottom {
 	border-bottom: 4px solid rgba(0,0,0,.05);
@@ -780,38 +799,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-.deck-news {
-	@include deck($gray-light, 0, $col-news);
-}
-.deck-sport {
-	@include deck($gray-light, 1, $col-sport);
-	.deck-menu {
-		line-height: 1;
+/*
+DECKS:
+1  $col-background: #eee
+2  $background-trans: 0 
+3  $col-header-link: #cd0403
+4  $col-header-regular: #000
+5  $font-small-color: #000
+6  $headernav-link-color: false
+7  $slash-color: false
+8  $category-background-color: false
+9  $category-text-color: false
+10 $menu-color-hover:$col-header-link
+*/
+.deck .related-mega li {
+	width: 50%;
+	float: left;
+	&:nth-child(odd){
+		clear: left;
 	}
 }
+.deck .grid_8 .related-mega li {
+	width: 100%;
+	float: none;
+}
+.deck-breaking-black {
+	@include deck(#000, 0, $col-breaking, #fff, #fff, #fff, $col-breaking);
+}
+.deck-breaking {
+	@include deck($col-breaking, 0, #000, $col-news, #000, #000, $col-breaking, $menu-color-hover: $col-news, $category-text-color: #fff);
+}
+.deck-news {
+	@include deck(#000, 0, $col-news, #fff, #fff, #fff, $col-news, $category-text-color: #fff);
+}
 
-.deck-sport-alt {
-	@include deck(#333, 0, $col-sport, #fff, #fff, $headernav-link-color: #fff, $slash-color: #999);
+.deck-sport {
+	@include deck(#333, 0, $col-sport, #fff, #fff, $headernav-link-color: #fff, $slash-color: #999, $category-background-color:$col-sport, $category-text-color: #000);
 }
 
 .deck-consumersales {
-	@include deck(#333, 0, $col-news, #fff, #fff, $headernav-link-color: #fff, $slash-color: #999);
+	@include deck(#eee, 0, $col-news, #000, #000, $headernav-link-color: #fff, $slash-color: #999, $category-text-color: #fff);
+	.header {
+		font-weight: 300;
+	}
 }
-
-
 
 .deck-entertainment {
-	@include deck(#eee, 0, $col-entertainment, 1, #000);
+	@include deck(#eee, 0, $col-entertainment, #000, #000, $headernav-link-color: #000, $slash-color: #999, $category-text-color: #fff);
 }
 .deck-health {
-	@include deck($col-health-alt, .4, $col-health);
+	@include deck($col-health-alt, .4, $col-health, $category-text-color: #fff);
+	.header {
+		font-weight: 400;
+	}
 }
 .deck-consumer {
-	@include deck($col-consumer, 0, #fff, #fff, #000, #fff, #fff);
+	@include deck($col-consumer, .85, $col-consumer, #000, #000, #000, $category-text-color: #fff);
 }
 .deck-plus {
-	@include deck($gray-light, .0, $col-plus);
+	@include deck($gray-light, .0, $col-plus, $category-text-color: #fff);
 }
 
 .deck-bite {
@@ -1117,15 +1163,54 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 10px;
 	}
 }
-.teaser-noimage-breaking {
-	background-color: $col-breaking;
-	i {
-		color: $col-news!important;
+
+
+ /*
+ @mixin teaser-color:
+	$background-color, 
+	$link-color, 
+	$text-color, 
+	$highlight-color, 
+	$icon-color (+ highlight color)
+	$category-background-color, 
+	$category-link-color
+*/
+
+
+.teaser-breaking {
+	@include teaser-color($col-breaking, #000, #000, $col-news, $col-news, $col-news, #fff);
+}
+.teaser-sport {
+	@include teaser-color($col-sport, #000, #000, #fff, #fff, #000, #fff);
+}
+
+.teaser-black {
+	@include teaser-color(#000, #fff, #fff, $col-news, $col-news, $col-news, #fff);
+}
+
+/*
+.teaser-black {
+	
+	background-color: #000;
+	padding: 5px 5px 10px;
+	&>figure {
+		margin-left: -5px;
+		margin-right: -5px;
+		margin-top: -5px;
+	}
+	.header a, 
+	a {
+		color: #fff;
 	}
 	.category {
 		background-color: $col-news;
+		color: #fff;
 	}
-}
+	.header i:before {
+		color: $col-news;
+		@extend .blink;
+	}	
+}*/
 
 .article-byline-container	{
 	font-size: 14px;
