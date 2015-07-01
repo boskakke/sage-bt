@@ -132,7 +132,7 @@
 		}
 
 	}
-	.header i {
+	.header i, i {
 		color: $color;
 	}
 	.highlight {
@@ -149,7 +149,7 @@
 	
 
 	background: $background-color;
-	.box-title {
+	.box-title, .header i {
 		color: $title-color;
 	}
 	.header {

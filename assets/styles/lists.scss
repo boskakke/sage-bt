@@ -193,10 +193,10 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-
+	clear: left;
 	li {
 		margin: 0 0 25px;
-		padding: 0 20px 0 0;
+		padding: 0 20px 0 70px!important;
 		width: 50%;
 		float: left;
 		line-height: 1.4;
@@ -211,9 +211,7 @@
 	.header {
 		overflow: hidden;
 	}
-	li {
-		padding-left: 70px;
-	}
+	
 	img {
 		border-radius: 50%; 
 	}
@@ -340,6 +338,12 @@
 		strong {
 			text-transform: uppercase;
 			color: $col-news;
+		}
+		.highlight {
+			font-weight: 600;
+		}
+		i:before {
+			transform: translateY(-2px);
 		}
 	}
 	a {

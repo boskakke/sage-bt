@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'bt-icons';
-  src: url('../font/bt-icons.eot?69416586');
-  src: url('../font/bt-icons.eot?69416586#iefix') format('embedded-opentype'),
-       url('../font/bt-icons.woff?69416586') format('woff'),
-       url('../font/bt-icons.ttf?69416586') format('truetype'),
-       url('../font/bt-icons.svg?69416586#bt-icons') format('svg');
+  src: url('../font/bt-icons.eot?87992765');
+  src: url('../font/bt-icons.eot?87992765#iefix') format('embedded-opentype'),
+       url('../font/bt-icons.woff?87992765') format('woff'),
+       url('../font/bt-icons.ttf?87992765') format('truetype'),
+       url('../font/bt-icons.svg?87992765#bt-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'bt-icons';
-    src: url('../font/bt-icons.svg?69416586#bt-icons') format('svg');
+    src: url('../font/bt-icons.svg?87992765#bt-icons') format('svg');
   }
 }
 */
@@ -101,3 +101,6 @@
 .icon-up-dir:before { content: '\e82c'; } /* '' */
 .icon-left-dir:before { content: '\e82d'; } /* '' */
 .icon-right-dir:before { content: '\e82e'; } /* '' */
+.icon-cancel:before { content: '\e82f'; } /* '' */
+.icon-picture:before { content: '\e830'; } /* '' */
+.icon-camera:before { content: '\e831'; } /* '' */

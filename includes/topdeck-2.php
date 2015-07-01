@@ -20,7 +20,7 @@
 				<h1 class="header">
 					<a href="article.php"><? dummy("text@headline-bt") ?></a>
 				</h1>
-				<p><? dummy("text@headline-bt") ?></p>
+				<p><? dummy("text@teaser") ?></p>
 
 				<ul class="related-mega">
 					<? while (dumb_luck("1-3")): ?>
@@ -38,12 +38,13 @@
 					<? endwhile ?>
 
 				</ul>
+				<? if (dumb_luck("50%")): ?>
 				<ul class="related list-inline">
-					<? while (dumb_luck("1-10")): ?>
+					<? while (dumb_luck("2-10")): ?>
 					<li><a href="article.php"><? dummy("text@headline-bt") ?></a></li>
 					<? endwhile ?>
 				</ul>
-			
+				<? endif ?>
 		</article>
 	</div>
 	
@@ -55,7 +56,7 @@
 		<article class="teaser teaser-noimage teaser-noimage-breaking no-cat font-2 <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
-					<a href="article.php"><i class="icon-dot-circled"></i> Live: <? dummy("text@headline-bt") ?></a></h1>
+					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</h1>
 				<?php include('includes/teaser-related.php'); ?>
 		</article>
@@ -80,7 +81,7 @@
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
-				<h1 class="header"><a href="article.php"><i class="icon-play"></i> <? dummy("text@headline-bt") ?></a></h1>
+				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				<?php include('includes/teaser-related.php'); ?>
 			</article>
 		</div>
@@ -123,7 +124,7 @@
 			<article class="teaser teaser-noimage <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
-					<a href="article.php"><i class="icon-dot-circled"></i> <? dummy("text@headline-bt") ?></a></h1>
+					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
 				</h1>
 				<?php include('includes/teaser-related.php'); ?>
 			</article>

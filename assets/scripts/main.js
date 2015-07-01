@@ -55,6 +55,10 @@
         placeholder : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBgkAIIMAAAHwAbZIBtGgAAAABJRU5ErkJggg=="
       });
 
+    $('.send-tip a, .tip-form .close-tip').on('click', function(e){
+      e.preventDefault();
+      $('#tip-form').toggle();
+    });
     
     $('.load-more').on('click', function(e){
       e.preventDefault();
@@ -65,7 +69,7 @@
       $(this).toggleClass('active');
     });
 
-    var tickerHeight = $('#topdeck').height() - 600;
+    var tickerHeight = $('#topdeck').height() - 800;
 
      $('#live-ticker > ul').css('height',tickerHeight);
     //$('#live-ticker > ul').css('height','800');

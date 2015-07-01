@@ -100,7 +100,7 @@
 
 				<? while (dumb_luck("3")): ?>
 				<div class="grid_8">
-					<article class="teaser teaser-regular cat-sport font-3">
+					<article class="teaser  cat-sport font-3">
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!sport@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
@@ -207,7 +207,7 @@
 
 				<? while (dumb_luck("3")): ?>
 				<div class="grid_8">
-					<article class="teaser teaser-regular cat-plus font-3">
+					<article class="teaser  cat-plus font-3">
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image/!plus@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>
@@ -340,7 +340,7 @@
 		</section><!-- deck -->
 
 		
-		<section class="deck clearfix deck-health no-cat">
+		<section class="deck clearfix deck-health no-cat deck-alt">
 				<div class="grid_24">
 					<h1 class="deck-header deck-header-small">
 						<strong>I FORM:</strong> Marathon-klar på fire uger
@@ -410,9 +410,9 @@
 			</section><!-- deck -->
 
 	
-			<section class="deck clearfix deck-news ">
+			<section class="deck clearfix deck-blogs ">
 				<div class="grid_24">
-					<h1 class="deck-header deck-footer"><a href="#"><strong>BLOGS</strong></a></h1>
+					<h1 class="deck-header"><a href="#"><strong>BLOGS</strong></a></h1>
 				</div>
 				<div class="grid_24">
 					<ul class="list-blogs">
@@ -569,7 +569,7 @@
 
 				<? while (dumb_luck("3")): ?>
 				<div class="grid_8">
-					<article class="teaser teaser-regular cat-consumer font-3">
+					<article class="teaser cat-consumer font-3">
 						<figure>
 							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 						</figure>

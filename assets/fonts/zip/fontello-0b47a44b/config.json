@@ -479,6 +479,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "3def559c3c39b8500882e02892b7daa8",
+      "css": "picture",
+      "code": 59440,
+      "src": "entypo"
+    },
+    {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera",
+      "code": 59441,
+      "src": "entypo"
+    },
+    {
       "uid": "8663320a860b00f26e94d3d15c9ba99a",
       "css": "clock",
       "code": 59429,

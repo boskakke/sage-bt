@@ -46,3 +46,6 @@
 .icon-up-dir:before { content: '\e82c'; } /* '' */
 .icon-left-dir:before { content: '\e82d'; } /* '' */
 .icon-right-dir:before { content: '\e82e'; } /* '' */
+.icon-cancel:before { content: '\e82f'; } /* '' */
+.icon-picture:before { content: '\e830'; } /* '' */
+.icon-camera:before { content: '\e831'; } /* '' */

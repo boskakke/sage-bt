@@ -479,6 +479,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "3def559c3c39b8500882e02892b7daa8",
+      "css": "picture",
+      "code": 59440,
+      "src": "entypo"
+    },
+    {
+      "uid": "85017ab6ca074831a8de771b40e9640c",
+      "css": "camera",
+      "code": 59441,
+      "src": "entypo"
+    },
+    {
       "uid": "8663320a860b00f26e94d3d15c9ba99a",
       "css": "clock",
       "code": 59429,
@@ -495,6 +507,12 @@
       "css": "play",
       "code": 59424,
       "src": "entypo"
+    },
+    {
+      "uid": "rrhco7mfj6ro9yzhe4a1rbln9flw47re",
+      "css": "cancel",
+      "code": 59439,
+      "src": "modernpics"
     },
     {
       "uid": "31accb20e8819b200c297df608e68830",

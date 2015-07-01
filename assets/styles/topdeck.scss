@@ -27,47 +27,21 @@
 
 .teaser-oneliner-breaking {
 	background-color: $col-breaking;
+	i {
+		font-size: 34px;
+	}
 }
 .teaser-oneliner-comingup {
 	background-color: $col-news;
-	a {
+	a, a:hover {
 		color: #fff;
+
 	}
 }
 
 .teaser-oneliner-live-sport {
 	background-color: $col-sport;
 }
-
-/*.topstory {
-	.header-container {
-		background-color: #fff;
-		padding: 10px 20px 0 0;
-		width: 638px;
-		margin-top: -67px;
-
-	}
-	.category {
-		margin-top: -20px!important;
-	}
-	.header {
-		margin: 0;
-	}
-}
-
-.topstory.teaser-breaking {
-	.header-container {
-		background-color: $yellow;
-		padding-left: 10px;
-		padding-bottom: 10px;
-	}
-}
-
-.topstory.teaser-color {
-	.header-container {
-
-	}
-}*/
 
 
 .topstory-upper {

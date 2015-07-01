@@ -21,6 +21,9 @@ button {
 .btn-news {
 	@include btn($col-news, #fff, 16px, 1);
 }
+.btn-breaking {
+	@include btn($col-breaking, #000, 16px, 1);
+}
 .btn {
 	padding-left: 10px;
 	padding-right: 10px;
