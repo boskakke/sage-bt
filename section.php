@@ -83,9 +83,26 @@
         
     </div>
     <div class="grid_8">
-    	<div class="banner">
+    	<div class="banner mb-20">
     		<? dummy("ad@300x250") ?>
     	</div>
+
+    	<aside class="box box-theme-1">
+			<h1 class="box-title">
+				Det læser andre
+			</h1>
+			<ul class="list list-top">
+				<? while (dumb_luck("5")): ?>
+				<li class="teaser">
+					<div class="list-body">
+						<a href="article.php" class="header"><? dummy("text@headline") ?></a>
+						<footer><? dummy("text@number") ?> læser lige nu</footer>
+					</div>
+				</li>
+				<? endwhile ?>
+			</ul>
+		</aside>
+
     </div>
 
 
