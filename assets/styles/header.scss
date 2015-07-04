@@ -189,7 +189,7 @@
 }
 .login-form {
 	right: 0;
-	width: 150px;
+	width: 200px;
 	.clean .icon-angle-right {
 		color: $col-news;
 	}
@@ -352,7 +352,7 @@
 	font-size: 19px;
 	margin: 0 0 20px 0;
 	text-transform: uppercase;
-	a {
+	a, a:hover {
 		color: #fff;
 		text-decoration: none;
 	}
