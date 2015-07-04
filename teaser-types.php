@@ -354,6 +354,40 @@
 
 <div class="grid_24">
 	<h2 class="demo">
+		Tip-tag
+	</h2>
+</div>
+<div class="grid_16 ">
+	<article class="teaser cat-news font-2">
+		<figure>
+			<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+		</figure>
+		<a href="section.php" class="category">Krimi</a>
+		<span class="teaser-tag-tip"><b>Tip BT</b>  SMS 1929</span>
+		<h1 class="header">
+
+		<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+		
+	</article>
+</div>	
+<div class="grid_8">
+	
+	<article class="teaser cat-news font-3">
+		<figure>
+			
+			<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+		</figure>
+		<a href="section.php" class="category">Krimi</a>
+		<span class="teaser-tag-tip"><b>Tip BT</b>  SMS 1929</span>
+		<h1 class="header">
+		<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+		
+	</article>
+
+</div>
+
+<div class="grid_24">
+	<h2 class="demo">
 		Live-tag when article category is "sport"
 	</h2>
 </div>
