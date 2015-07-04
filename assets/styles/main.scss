@@ -4,7 +4,119 @@
 @import "_mixins.scss";
 @import "header.scss";
 @import "fonts.scss";
+@import "menu.scss";
+
+* {
+	box-sizing: border-box;
+}
 
 
+[class*="__title"] {
+	@extend .header-font;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 0 10px;
+	display: block;
+}
 
 
+.p-templater-tag,
+.p-entertainment {
+	display: none;
+}
+
+.section-flow {
+	.teaser-content__title {
+		font-size: 18px;
+	}
+}
+
+.teaser-content__image {
+	width: 100%;
+	height: auto;
+
+}
+.section-flow .section-flow-table {
+	@extend .clearfix;
+}
+
+.section-flow-row > .teaser {
+	width: 50%;
+	padding: 5px;
+	float: left;
+	margin-bottom: 20px;
+	&:nth-child(odd) {
+		clear: left;
+	}
+	.teaser-content__title {
+		padding: 0;
+	}
+}
+
+.teaser-content {
+	color: #000;
+	text-decoration: none;
+}
+
+.noimage {
+	img {
+		display: none;
+	}
+	.teaser-content__title {
+		font-size: 30px;
+		padding: 0;
+
+	}
+}
+
+
+.header {
+	background: $col-news;
+	
+	text-align: center;
+	padding: 10px 0;
+
+}
+.logo {
+	display: inline-block;
+	height: 30px;
+	width: 120px;
+	margin: 0 auto;
+	background-color: orange;
+	background: url(../images/bt-header-logo.png) center center no-repeat;
+	background-size: contain;
+	img {
+		display: none;
+	}
+}
+
+
+.related {
+	margin: 10px 0 0 0;
+	padding: 0 0 0 10px;
+	list-style: none;
+	li {
+		margin-bottom: 0 0 10px;
+		&.image {
+			padding-left: 70px;
+			.teaser-related-image-wrapper {
+				margin-left: -70px;
+				float: left;
+				max-width: 60px;
+				height: auto;
+				display: inline-block;
+				img {
+					max-width: 100%;
+				}
+				
+			}
+		}
+
+	}
+	.teaser-related__title {
+		display: inline;
+		padding: 0;
+		font-size: 15px;
+		color: #000;
+	}
+}

@@ -1,0 +1,60 @@
+.menu {
+    -webkit-backface-visibility: hidden;
+  width: 280px;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f1f1f;
+  z-index: 100;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-transform: translate(-280px); 
+  transform: translateX(-280px);
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  a {
+    color: #fff;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 0;
+      margin: 0;
+      @extend .header-font;
+      text-transform: uppercase;
+      font-size: 22px;
+      > a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+
+      }
+    }
+  }
+}
+
+.show-menu {
+  .menu {
+    visibility: visible;
+    opacity: 1;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    transform: translateX(0px);
+  }
+}
+
+.icon-menu {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  background-color: orange;
+}

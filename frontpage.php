@@ -19,9 +19,12 @@ var _sf_startpt=(new Date()).getTime()
 	"width=100%, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
 	name="viewport">
 	<meta content="true" name="HandheldFriendly">
-	<link href=
+	<!-- <link href=
 	"/css/bt.css?ver=bt WEBAPP | 2015-06-02 07:35:55 | source: /Users/berlingske/Desktop/A-11.1/prod2015052901"
-	rel="stylesheet">
+	rel="stylesheet"> -->
+	
+	<link rel="stylesheet" href="/dist/styles/main.css">
+
 	<link href="/img/bt/bt-logo-57x57.png" rel="apple-touch-icon-precomposed">
 	<link href="/img/bt/bt-logo-114x114.png" rel="apple-touch-icon-precomposed"
 	sizes="114x114">
@@ -31,13 +34,16 @@ var _sf_startpt=(new Date()).getTime()
 var app = {  serverVars: {   phonegap: '',   splashScreenTime: '2',    innerWindowExternalLink: {   '0': 'bt.kundeunivers.dk',   '1': 'sat1.dibspayment.com',  },  ComscoreKey: 'http://int.sitestat.com/berlingske/m-bt/s?',   articleId: '',   articleEmbededImagePreset: '620x',   galleryImagePreset: '608x403-l',   galleryImageFullViewPreset: '608x',   sectionName: '',   isSSOEnabled: '',   currentDomain: 'm.bt.dk',   isPaywallEnabled: '',   FreeViewsNumber: '100',   FreeViewsNumberPaywall: '300000',   LoginSessionTime: '720',   userOpenId: '',   userStatus: '',   userSubscriptionValid: '0',   LoginCreateAccHref: 'http://www.bt.dk/iframe/user/register?mobile=false',   PaywallCreateAccHref: '',   SubscriptionRoles: 'null',   PaywallTypes: 'null',   ScrollToTop: '1',   ScrollTime: '300',   ButtonAnimationTime: '300',   ButtonAppearPosition: '0.2',   geoLocation: '1',   defaultLatitude: '55.680777',   defaultLongitude: '12.580465',   locationCookiesExpiration: '60',   chartbeatUid: '49449',   chartbeatDomain: 'bt.dk',   chartbeatUseCanonical: '1',   isStickyBannerEnable: '1',    StickyBanner: {   'GeneralBuy': 'http://sjma.dk/lpcms/landingpage/mobil-bt1.php?cid=BT-140923-CP-MALEDIT1MS&ns_campaign=mkt_BT_bladsag_abonnement_BT&ns_mchannel=none&ns_source=mobil&ns_linkname=m_sticky_mbt&ns_fee=0',   'GeneralLogin': 'http://bt.kundeunivers.dk/mobile/login?r=UGx1cyBtZW1iZXI=',   'PlusBuy': 'http://bt.kundeunivers.dk/koeb-abonnement/bt-plus?r=UGx1cyBtZW1iZXI=',   'Logout': 'http://login.berlingskemedia.net/sso/server/multisite-logout/sso-',   'type': 'General',  },  PaywallSessionTime: '720',   isUserHaveASubscription: '0',   ComscoreSrc: 'http://int.sitestat.com/berlingske/m-bt/s?main.panel',   pageTitle: 'main',   chartbeatSection: 'main',   author: 'Default Author',   chartbeatPath: 'http://www.bt.dk/',   weatherEnabled: '1',    weatherIcons: {   'default': 'wi-thermometer-exterior',   '01d': 'wi-day-sunny',   '02d': 'wi-day-cloudy',   '03d': 'wi-cloudy',   '04d': 'wi-cloudy',   '09d': 'wi-rain',   '10d': 'wi-rain',   '11d': 'wi-thunderstorm',   '13d': 'wi-snow',   '50d': 'wi-fog',   '01n': 'wi-night-clear',   '02n': 'wi-night-cloudy',   '03n': 'wi-cloudy',   '04n': 'wi-cloudy',   '09n': 'wi-rain',   '10n': 'wi-rain',   '11n': 'wi-thunderstorm',   '13n': 'wi-snow',   '50n': 'wi-fog',  },   weatherLocationsMap: {   'Kingdom of Denmark': 'Danmark',   'Denmark': 'Danmark',   'Kingdom of Spain': 'Spanien',   'Kyyiv': 'Kiev',  },  weatherCookiesExpiration: '10',   OWMAPPID: '353950eafdc813d008651b54f16654d4',   page: 'section'  } }   
 	</script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src="/js/third-party/jquery.cookie.min.js"></script>
+	
+
 	<script type="text/javascript">
 app.currentWeather = $.cookie("currentWeather") || ""; app.currentTemperature = $.cookie("currentTemperature") || "";   
 	</script>
 	<script src="http://ad1.emediate.dk/EAS_tag.1.0.js"></script>
-	<script defer src="/js.php" type="text/javascript"></script>
+	<!-- <script defer src="http://m.bt.dk/js.php" type="text/javascript"></script> -->
+	
+
+	<script src="/dist/scripts/main.js"></script>
 	<script type="text/javascript">
 var ghmxy_align = 'center'; var ghmxy_type = 'absolute'; var ghmxy_identifier = 'AprlFO_aJPUen0G3ubBiicVl.KfNlkyAMuQ1ZxHQLU3.i7'; var ghmxy_hitcollector = 'ghmdk.hit.gemius.pl'; 
 	</script>
@@ -229,9 +235,8 @@ var springq = springq || [];   springq.push({   "s":"bt",   "cp":"/",   "url": d
 
 			<div class="icon icon-menu">
 				<span class='menu-button'></span>
-			</div><a class="logo q-fix" href="/" target="_self"><img alt=
-			"Main - BT.dk" class="logo-image q-fix" height="36" src=
-			"/img/bt/bt-header-logo.png" title="Main - BT.dk"></a>
+			</div>
+			<a class="logo q-fix" href="/" target="_self"><img alt="Main - BT.dk" class="logo-image q-fix" height="36" src="/dist/images/bt-header-logo.png" title="Main - BT.dk"></a>
 		</div>
 
 		<div class="sticky-banner">
@@ -2154,5 +2159,13 @@ if (typeof EAS_load_fif != 'undefined') { EAS_load_fif(  "cu-28830",  "/EAS_fif.
 	var pp_gemius_identifier = new String('cjfrO0cwJKzu8B4s1jApPcPJ7xeKdQ9gm7p26JTVIkf.O7');  function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};  gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');  (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');  gt.setAttribute('defer','defer'); gt.src=l+'://gadk.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');  
 	//--><!]]>
 	</script>
+
+	<script>	
+	$('.icon-menu').on('click', function(e){
+      e.preventDefault();
+      $('body').toggleClass('show-menu');
+      // $('div').remove();
+    });
+    </script>
 </body>
 </html>
