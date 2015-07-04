@@ -32,22 +32,6 @@
       sticky_navigation();
       }).resize();
     
-  
-
-    
-
-
-    // $('.article-gallery-small').royalSlider({
-    //   fullscreen: {
-    //     enabled: true,
-    //     nativeFS: true
-    //   },
-    //   keyboardNavEnabled: true,
-    //   imgHeight: '348',
-    //   imgWidth: '620',
-    //   globalCaption: true,
-
-    // });
 
 
     $("img.lazy").lazyload({
@@ -67,6 +51,12 @@
         e.preventDefault();
         $('#tip-form').removeClass('show');
         $('#header-sitemap').toggleClass('show');
+    });
+
+    $('.toggle-tip-footer').on('click', function(e){
+      
+       $('.tip-form').addClass('show');
+       $('.tip-form textarea').focus();
     });
     
     $('.load-more').on('click', function(e){

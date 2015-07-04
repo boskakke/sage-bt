@@ -66,7 +66,7 @@
 						<div class="grid_8 omega">
 							<div class="signup-form">
 								<form action="">
-									<input type="email" class="">
+									<input type="email" class="" placeholder="Få nyhedsbrevet. Indtast din mail">
 									<button class="btn btn-news">OK</button>
 								</form>
 							</div>
@@ -240,11 +240,11 @@
 					</h3>
 				</article>
 
-				<div class="grid_24">
-					<div class="text-center ">
-						<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
-					</div>
+				
+				<div class="text-center ">
+					<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
 				</div>
+				
 				
 			</aside>
 			
