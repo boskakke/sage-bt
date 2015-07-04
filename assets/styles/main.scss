@@ -237,8 +237,9 @@ h1, h2, h3, h4, h5, h6 {
 
 	p {
 		@extend .header-font;
-		font-weight: 300;
+		font-weight: 400;
 		margin: 10px 0 0;
+		color: #666;
 	}
 	a {
 		color: #000;
@@ -1149,56 +1150,7 @@ DECKS:
 	display: inline-block;
 }
 
-[class*="footer-header-"]{
-	line-height: 35px;
-	border-bottom: 4px solid;
-	font-weight: 600;
-	font-size: 19px;
-	margin: 0 0 20px 0;
-	text-transform: uppercase;
-	a {
-		color: #fff;
-		text-decoration: none;
-	}
-}
-.sitemap {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	li {
-		margin: 0 0 10px;
-		padding: 0 0 0 15px;
-		font-size: 16px;
-		&:before {
-			display: inline-block;
-			width: 15px;
-			float: left;
-			margin-left: -15px;
-			height: 20px;
-			content: '\e80b';
-			font-family: bt-icons;
-			color: #999;
-		}
-		a {
-			color: #fff;
-		}
-	}
-}
-.footer-header-news {
-	border-color: $col-news;
-}
-.footer-header-sport {
-	border-color: $col-sport;
-}
-.footer-header-entertainment {
-	border-color: $col-entertainment;
-}
-.footer-header-health {
-	border-color: $col-health;
-}
-.footer-header-consumer {
-	border-color: $col-consumer;
-}
+
 .btn-alarm {
 	@include btn($yellow, #000, 16px, 30px, 0);
 	@extend .btn-block;	

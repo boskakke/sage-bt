@@ -26,7 +26,7 @@
 				text-decoration: none;
 				border-right: 1px solid rgba(255,255,255,.2);
 				&:hover {
-					background-color: #222;
+					background-color: #333;
 				}
 				> span {
 					font-weight: 100;
@@ -163,8 +163,10 @@
 	
 }
 
-
-.login-form {
+.header-dropdown {
+	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+	border: 2px solid #333;
+	transition: all .2s ease;
 	opacity: 0;
 	visibility: hidden;
 	z-index: 99;
@@ -172,12 +174,7 @@
 	background-color: #fff;
 	position: absolute;
 	text-align: left;
-	right: 0;
 	top: 45px;
-	width: 150px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,.2);
-	border: 2px solid #333;
-	transition: all .2s ease;
 	&:before {
 		content: '';
 		width: 0;
@@ -189,6 +186,10 @@
 		right: 17px;
 		top: -10px;
 	}
+}
+.login-form {
+	right: 0;
+	width: 150px;
 	.clean .icon-angle-right {
 		color: $col-news;
 	}
@@ -260,9 +261,18 @@
 		visibility: visible;
 		right: 40px;
 	}
+	.share-options {
+		opacity: 1;
+		top: 50px;
+		visibility: visible;
+	}
 
 }
 
+.tip-form.show,
+.header-sitemap.show {
+	display: block;
+}
 .tip-form {
 	background-color: #222;
 	min-height: 300px;
@@ -317,3 +327,74 @@
 	}
 }
 
+.share-options {
+	right: 0;
+	width: 200px;
+	height: 120px;
+	h2 {
+		font-size: 20px;
+		margin: 0 0 10px;
+	}	
+}
+
+.header-sitemap {
+	@extend .clearfix;
+	background-color: #333;
+	padding: 20px 0;
+	display: none;
+}
+
+
+[class*="sitemap-header-"]{
+	line-height: 35px;
+	border-bottom: 4px solid;
+	font-weight: 600;
+	font-size: 19px;
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+.sitemap {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0 0 5px;
+		padding: 0 0 0 15px;
+		font-size: 13px;
+		&:before {
+			display: inline-block;
+			width: 15px;
+			float: left;
+			margin-left: -15px;
+			height: 20px;
+			content: '\e80b';
+			font-family: bt-icons;
+			color: #999;
+		}
+		a {
+			color: #fff;
+		}
+	}
+}
+.sitemap-header-news {
+	border-color: $col-news;
+}
+.sitemap-header-sport {
+	border-color: $col-sport;
+}
+.sitemap-header-entertainment {
+	border-color: $col-entertainment;
+}
+.sitemap-header-health {
+	border-color: $col-health;
+}
+.sitemap-header-consumer {
+	border-color: $col-consumer;
+}
+.sitemap-header-plus {
+	border-color: $col-plus;
+}

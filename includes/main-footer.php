@@ -34,46 +34,7 @@
 				Michael Jensen </p>
 				<a href="#" class="btn btn-alarm">Send tip</a>
 			</div>
-			<div class="grid_4">
-				<h2 class="footer-header-news"><a href="section.php">Nyheder</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="grid_4">
-				<h2 class="footer-header-sport"><a href="section.php">Sport</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="grid_4">
-				<h2 class="footer-header-entertainment"><a href="section.php">Underholdning</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="grid_4">
-				<h2 class="footer-header-health"><a href="section.php">Sundhed</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="grid_4">
-				<h2 class="footer-header-consumer"><a href="section.php">Forbrug</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
+			
 		</div>
 		<div class="row">
 			<div class="grid_24">

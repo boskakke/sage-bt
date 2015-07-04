@@ -44,85 +44,8 @@
 }
 
 
-.topstory-upper {
-	@extend .mb-0;
-	position: relative;
-	header {
-		position: absolute;
-		bottom: 80px;
-		left: 0;
-		width: 638px;
-		padding: 10px 20px 20px;
-		background-color: rgba(0,0,0,.5);
-		transition: background-color .2s ease;
-		&:hover {
-			background-color: rgba(0,0,0,.7);
-		}
-		.category {
-			top: 0;
-		}
-		.header {
-			text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-			margin-bottom: 0;
-			a {
-				color: #fff;
 
-			}
-		}
-		p {
-			color: #fff;
-			margin-top: 10px;
-		}
-		
-	}
-}
-.image-overlay {
-	position: relative;
-	a {
-		/*&:after {
-			display: block;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			content: '';
-			background: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,.8) 100%);
-			transition: all .2s ease;
-		}*/
-		&:hover{
-			img {
-				opacity: .8;
-			}
-		}
-	}
-}
 
-.topstory-bottom:not(.teaser-breaking) {
-	border-bottom: 4px solid #ccc;
-	margin-bottom: 20px;
-
-}
-.topdeck {
-	padding-top: 20px;
-	margin-top: -60px;
-	background-color: #fff;
-	position: relative;
-	&:after{
-		display: inline-block;
-		content: '';
-		width: 20px;
-		height: 60px;
-		position: absolute;
-		right: -20px;
-		top: 0;
-		z-index: 99;
-		background-color: #fff;
-	}
-	.teaser {
-		margin-bottom: 50px!important;
-	}
-}
 .live-ticker {
 	/*background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);*/
 	padding-right: 10px;
