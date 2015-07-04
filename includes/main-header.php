@@ -78,7 +78,7 @@
 			<h1>
 				Send tip til BT 
 			</h1>
-			<span class="close-tip"><i class="icon-cancel"></i></span>
+			<span class="close-layer"><i class="icon-cancel"></i></span>
 			<div class="col-row">
 				
 				<div class="col_3">
@@ -133,53 +133,59 @@
 
 
 	<section class="header-sitemap" id="header-sitemap">
-		<div class="col_2">
-				<h2 class="sitemap-header-news"><a href="section.php">Nyheder</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
+		
+			<h1>Alt indhold på BT.dk</h1>
+			<span class="close-layer"><i class="icon-cancel"></i></span>
+		
+		<div class="col-row">
 			<div class="col_2">
-				<h2 class="sitemap-header-sport"><a href="section.php">Sport</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="col_2">
-				<h2 class="sitemap-header-entertainment"><a href="section.php">Underholdning</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="col_2">
-				<h2 class="sitemap-header-health"><a href="section.php">Sundhed</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="col_2">
-				<h2 class="sitemap-header-consumer"><a href="section.php">Forbrug</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
-			</div>
-			<div class="col_2">
-				<h2 class="sitemap-header-plus"><a href="section.php">Plus</a></h2>
-				<ul class="sitemap">
-					<? while (dumb_luck("10-14")): ?>
-						<li><a href="section.php"><? dummy("text@item") ?></a></li>
-					<? endwhile ?>
-				</ul>
+					<h2 class="sitemap-header-news"><a href="section.php">Nyheder</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
+				<div class="col_2">
+					<h2 class="sitemap-header-sport"><a href="section.php">Sport</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
+				<div class="col_2">
+					<h2 class="sitemap-header-entertainment"><a href="section.php">Underholdning</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
+				<div class="col_2">
+					<h2 class="sitemap-header-health"><a href="section.php">Sundhed</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
+				<div class="col_2">
+					<h2 class="sitemap-header-consumer"><a href="section.php">Forbrug</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
+				<div class="col_2">
+					<h2 class="sitemap-header-plus"><a href="section.php">Plus</a></h2>
+					<ul class="sitemap">
+						<? while (dumb_luck("10-14")): ?>
+							<li><a href="section.php"><? dummy("text@item") ?></a></li>
+						<? endwhile ?>
+					</ul>
+				</div>
 			</div>
 	</section>
 	

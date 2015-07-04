@@ -274,7 +274,7 @@
 	display: block;
 }
 .tip-form {
-	background-color: #222;
+	background-color: #333;
 	min-height: 300px;
 	font-size: 20px;
 	color: #999;
@@ -314,16 +314,18 @@
 	.tip-footer {
 		border-top: 1px solid rgba(255,255,255,.1);
 		padding-top: 10px;
-	}
-	.close-tip {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-		font-size: 30px;
-		cursor: pointer;
-		&:hover {
-			color: #ddd;
-		}
+	}	
+}
+
+.close-layer {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 30px;
+	cursor: pointer;
+	color: #999;
+	&:hover {
+		color: #ddd;
 	}
 }
 
@@ -340,8 +342,13 @@
 .header-sitemap {
 	@extend .clearfix;
 	background-color: #333;
-	padding: 20px 0;
+	padding: 20px;
 	display: none;
+	position: relative;
+	h1 {
+		font-weight: 300;
+		color: #fff;
+	}
 }
 
 
