@@ -145,15 +145,18 @@
 
 // List boxes
 
-@mixin box-theme($background-color: $gray-light, $title-color: $col-news, $header-color: #000, $btn-background-color: $col-news, $btn-text-color: #fff) {
+@mixin box-theme($background-color: $gray-light, $title-color: $col-news, $header-color: #000, $btn-background-color: $col-news, $btn-text-color: #fff, $counter-color: false) {
 	
-
 	background: $background-color;
 	.box-title, .header i {
 		color: $title-color;
 	}
-	.header {
+	.teaser .header,
+	.teaser .header a {
 		color: $header-color;
+		&:hover {
+			color: transparentize($header-color, .4);
+		}
 	}
 	li {
 		line-height: 1.4;
@@ -168,8 +171,17 @@
 		color: $btn-text-color;
 		&:hover {
 			background-color: darken($btn-background-color, 5%);
+			color: darken($btn-text-color, 5%);
 		}
 	}
+
+	@if $counter-color {	
+		.list-top li:before {
+			color: $counter-color;
+		}
+	}
+
+
 }
 
 // Teaser background colors 

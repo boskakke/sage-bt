@@ -95,6 +95,15 @@
 
 
 
+/* 
+1. $background-color: $gray-light
+2. $title-color: $col-news
+3. $header-color: #000
+4. $btn-background-color: $col-news,
+5. $btn-text-color: #fff
+6: counter-color: false;
+*/
+
 .box-theme-1 {
 	@include box-theme($gray-light, $col-news, #000);
 }
@@ -109,15 +118,37 @@
 		color: #fff;
 	}
 }
+// Video
 .box-theme-4 {
-	@include box-theme(#000, #fff, #fff);
-	.teaser .header a {
-		color: #fff;
-	}
+	@include box-theme(#000, #fff, #fff, $col-news);
 	.teaser-border {
 		border-color: rgba(255,255,255,.4);
 	}
 }
+
+// Gaffa
+.box-theme-5 {
+	@include box-theme(#740075, #ffe300, #fff, #ffe300, #000, $counter-color: #ffe300);
+	.load-more:hover {
+		// color: #fff;
+	}
+}
+
+// Sport
+.box-theme-6 {
+	@include box-theme($col-sport, #000, #000, #000, #fff);
+	.load-more:hover {
+		// color: #fff;
+	}
+}
+
+
+/*.box-theme-6 {
+	@include box-theme(#f9bf00, #e45000, #fff);
+	.load-more:hover {
+		color: #fff;
+	}
+}*/
 
 .teaser-list-300 {
 	display: block;
@@ -154,10 +185,7 @@
 		content: '\e820';
 		font-family: bt-icons;
 		text-align: center;
-		
-		
 		border-radius: 50%;
-		
 		margin: 0 auto;
 		position: absolute;
 		top: -20px;
@@ -186,8 +214,6 @@
 	font-weight: 300;
 	font-size: 44px;
 }
-
-
 
 .list-blogs {
 	list-style-type: none;

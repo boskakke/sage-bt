@@ -6,7 +6,7 @@
 <html lang="da">
 <head>
 	<meta charset="UTF-8">
-	<title>BT.dk</title>
+	<title>Frontpage - BT.dk</title>
 	<?php include('includes/head.php'); ?>
 </head>
 <body>
@@ -32,7 +32,7 @@
 				</div>
 
 				<div class="grid_8">
-					<aside class="box box-theme-2">
+					<aside class="box box-theme-6">
 						<h1 class="box-title">
 							Hitter på Facebook
 						</h1>

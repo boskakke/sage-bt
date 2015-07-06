@@ -9,7 +9,7 @@
 <html lang="da">
 <head>
 	<meta charset="UTF-8">
-	<title>BT.dk</title>
+	<title>Article - BT.dk</title>
 	<?php include('includes/head.php'); ?>
 </head>
 <body>

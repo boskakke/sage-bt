@@ -12,7 +12,7 @@
 <body>
 
 
-
+<?php include('includes/demomenu.php'); ?>
 
 <div class="container_24">
 	<div class="row">
@@ -24,12 +24,7 @@
 
 <div class="grid_16">
 <div class="bt-logo"></div>
-<ul>
-	<li><a href="frontpage.php">Frontpage</a></li>
-	<li><a href="article.php">Article</a></li>
-	<li><a href="decks.php">Decks</a></li>
-	<li><a href="teaser-types.php">Teaser types</a></li>
-</ul>
+
 
 	</div>
 

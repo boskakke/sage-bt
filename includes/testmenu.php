@@ -15,10 +15,11 @@
 	<li>
 		<a href="teaser-types.php">Teasers</a>	
 	</li>
+
+	<li>
+		<a href="list-types.php">Lists</a>	
+	</li>
 	<li>
 		<a href="footer.php">Footer</a>	
 	</li>
-
-
-	
 </ul>
