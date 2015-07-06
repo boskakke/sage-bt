@@ -304,7 +304,6 @@
 				background-color: $col-breaking;
 				color: #000;
 				content: 'BREAKING';
-				@extend .blink;
 			}
 		}
 	}
@@ -315,7 +314,6 @@
 				background-color: $col-news;
 				color: #fff;
 				content: 'LIVE';
-				@extend .blink;
 			}
 		}
 	}
@@ -332,7 +330,6 @@
 				content: 'LIVE';
 				background-color: $col-sport;
 				color: #000;
-				@extend .blink;
 			}
 		}
 	}

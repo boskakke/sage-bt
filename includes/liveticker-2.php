@@ -6,7 +6,7 @@
 			<ul>
 				<? while (dumb_luck("10")): ?>
 				<? if (dumb_luck("10%")): ?><li class="liveticker-live-sport"><? else: ?>
-					<? if (dumb_luck("10%")): ?><li class="liveticker-live-breaking"><? else: ?>
+					<? if (dumb_luck("10%")): ?><li class="liveticker-breaking"><? else: ?>
 						<? if (dumb_luck("10%")): ?><li class="liveticker-live"><? else: ?>
 							<? if (dumb_luck("10%")): ?><li class="liveticker-comingup"><? else: ?>
 	
