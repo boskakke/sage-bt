@@ -28,6 +28,14 @@
 </h1>
 </div>
 
+<div class="grid_24">
+	<h3 class="demo">Tools</h3>
+
+	<p><code>.nocat</code> Hides the category</p>
+
+	<p><code>.teaser-regular</code> Shows header font in regular</p>
+
+</div>
 
 <div class="grid_24">
 <h2 class="demo">
