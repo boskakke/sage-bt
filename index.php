@@ -12,7 +12,7 @@
 <body>
 
 
-<?php include('includes/demomenu.php'); ?>
+<?php include('includes/testmenu.php'); ?>
 
 <div class="container_24">
 	<div class="row">

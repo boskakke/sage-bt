@@ -32,7 +32,7 @@
 				</div>
 
 				<div class="grid_8">
-					<aside class="box box-theme-6">
+					<aside class="box box-theme-2">
 						<h1 class="box-title">
 							Hitter på Facebook
 						</h1>

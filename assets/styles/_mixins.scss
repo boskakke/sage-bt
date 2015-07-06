@@ -155,7 +155,7 @@
 	.teaser .header a {
 		color: $header-color;
 		&:hover {
-			color: transparentize($header-color, .4);
+			color: transparentize($header-color, .2);
 		}
 	}
 	li {
