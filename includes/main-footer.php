@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="grid_6">
-				<h2>Nyttlige links</h2>
+				<h2>Nyttige links</h2>
 				<ul role="navigation" class="sitemap"> 
 					<li><a href="http://www.btshop.dk" target="_blank">BTshop</a>      </li>
 					<li><a href="http://www.bt.dk/retter" target="_self">BT retter</a>      </li>

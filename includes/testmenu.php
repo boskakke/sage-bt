@@ -20,6 +20,9 @@
 		<a href="list-types.php">Lists</a>	
 	</li>
 	<li>
+		<a href="buttons.php">Buttons</a>	
+	</li>
+	<li>
 		<a href="footer.php">Footer</a>	
 	</li>
 </ul>

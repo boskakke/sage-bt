@@ -14,10 +14,14 @@ button {
 .btn-twitter {
 	@include btn($col-twitter, #fff, 16px, 1);
 }
+.btn-black {
+	@include btn(#000, #fff, 16px, 1);
+}
 .btn-transparent {
 	@include btn(#fff, #666, 16px, 1);
 	box-shadow: none;
 }
+
 .btn-news {
 	@include btn($col-news, #fff, 16px, 1);
 }
@@ -29,11 +33,13 @@ button {
 	padding-right: 10px;
 	line-height: 20px;
 	text-transform: uppercase;
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .btn-sm {
 	font-size: 12px;
-	line-height: 30px;
+	line-height: 20px;
 }
 .btn-lg {
 	font-size: 19px;
@@ -47,4 +53,6 @@ button {
 	width: 100%;
 }
 
-
+.btn + .btn {
+	margin-top: 10px;
+}

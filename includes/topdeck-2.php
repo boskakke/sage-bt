@@ -158,20 +158,12 @@
 	
 	</div>
 	<div class="grid_8">
-		<?php include('includes/liveticker-1.php') ?>
+		<?php include('includes/liveticker-2.php') ?>
 		
-		<article class="teaser teaser-tipbt">
-			Ved du noget?
-			<button class="btn btn-news">Send tip <i class="icon-right-open"></i></button> Sms 1929
-		</article>
+		
 
-		<aside class="teaser-social">
-			Følg BT 
-			<button class="btn btn-facebook"><i class="icon-facebook"></i> Facebook</button>
-			<button class="btn btn-twitter"><i class="icon-twitter"></i> Twitter</button>
-		</aside>
-		<article class="teaser teaser-editorial teaser-regular ">
-			<span class="editorial-tag">mener:</span>
+		
+		<article class="teaser teaser-editorial font-3">
 			<h1 class="header">
 				<a href="article.php"><? dummy("text@headline-bt") ?></a>
 			</h1>

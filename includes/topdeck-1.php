@@ -182,7 +182,7 @@
 	
 	</div>
 	<div class="grid_8">
-		<?php include('includes/liveticker-1.php') ?>
+		<?php include('includes/liveticker.php') ?>
 	</div>
 </div>
 <div class="row">
