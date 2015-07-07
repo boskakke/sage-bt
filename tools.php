@@ -56,7 +56,56 @@
 	border-bottom: 1px solid #ddd;</p>
 
 
+<h2 class="demo">Responsive grid</h2>
+
+<p>I have made a small, percentage driven, nestable grid.</p>
+
+<p>Nest all rows in a <code>.col-row</code></p>
+<code><pre>
+&lt;div="col-row"&gt;
+	&lt;div class="col_6"&gt; 
+		I'm a div
+	&lt;/div&gt;
+
+	&lt;div class="col_6"&gt; 
+		I'm a div
+	&lt;/div&gt;
+&lt;/div&gt;
+	</pre>
+</code>
+
+<div class="col-row testgrid">
+	
+	<div class="col_1"><span>.col_1</span></div>
+	<div class="col_11"><span>.col_11</span></div>
+	
+	<div class="col_2"><span>.col_2</span></div>
+	<div class="col_10"><span>.col_10</span></div>
+	
+	<div class="col_3"><span>.col_3</span></div>
+	<div class="col_9"><span>.col_9</span></div>
+
+	<div class="col_4"><span>.col_4</span></div>
+	<div class="col_8"><span>.col_8</span></div>
+
+	<div class="col_5"><span>.col_5</span></div>
+	<div class="col_7"><span>.col_7</span></div>
+
+
+	<div class="col_6"><span>.col_6</span></div>
+	
+	<div class="col_6">
 		
+		<div class="col-row">
+			<div class="col_6"><span>Nested .col_6</span></div>
+			<div class="col_6"><span>Nested .col_6</span></div>
+		</div>
+
+	</div>
+	
+</div>
+
+<br><br><br><br><br><br>
 
 </div>
 

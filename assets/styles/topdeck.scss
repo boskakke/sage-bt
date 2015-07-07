@@ -308,7 +308,7 @@
 		}
 	}
 	.liveticker-live,
-	.liveticker-commingup {
+	.liveticker-comingup {
 		time {
 			&:after {
 				background-color: $col-news;
@@ -317,7 +317,7 @@
 			}
 		}
 	}
-	.liveticker-commingup {
+	.liveticker-comingup {
 		time {
 			&:after {
 				content: 'OPDATERES...';
