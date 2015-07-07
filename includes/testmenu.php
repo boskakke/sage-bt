@@ -27,6 +27,9 @@
 		<a href="buttons.php">Buttons</a>	
 	</li>
 	<li>
+		<a href="article-elements.php">Article elements</a>	
+	</li>
+	<li>
 		<a href="tools.php">CSS Tools</a>	
 	</li>
 	

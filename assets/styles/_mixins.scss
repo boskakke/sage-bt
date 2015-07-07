@@ -69,6 +69,11 @@
 	.load-more {
 		background-color: $col-header-link;
 		color: $category-text-color;
+		&:hover {
+			background-color: darken($col-header-link, 5%);
+		}
+		
+		
 	}
 	@if $headernav-link-color {
     	.deck-menu a {
