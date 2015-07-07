@@ -37,7 +37,7 @@
 
 				
 				
-					<h3 class="demo">Large slider</h3>
+					<h3 class="demo">Large slider <small>bt.dk > article > imagesize > large</small></h3>
 		
 					<?php include('includes/article-slider.php'); ?>
 						
@@ -61,7 +61,7 @@
 		<div class="grid_16">
 			
 		
-					<h3 class="demo">Small slider</h3>
+					<h3 class="demo">Small slider <small>bt.dk > article > imagesize > large</small></h3>
 					<?php include('includes/article-slider-small.php'); ?>
 					
 					<h3 class="demo">Default image</h3>
@@ -75,7 +75,9 @@
 			
 			<div class="grid_16 alpha article-content">
 				
-				
+				<h3 class="demo"> Summary <small>First paragraph is always bold from css. So just display in a regular <code>P</code>-tag</small></h3>
+				<p><? dummy("text@paragraph") ?></p>
+
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 				<div class="article-embedded-link">
@@ -109,7 +111,7 @@
 				</aside>
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 				
-				<h3 class="demo">Embedded image</h3>
+				<h3 class="demo">Embedded image <small>Show embedded images in natural ratio</small></h3>
 				<figure class="article-image">
 					<img src="<? dummy("image@620x,") ?>" width="" height="" alt="" />
 					<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>

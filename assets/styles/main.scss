@@ -975,6 +975,9 @@ DECKS:
 	}
 	p {
 		margin: 0 0 20px;
+		&:first-of-type {
+			font-weight: 600;
+		}
 	}
 	figure {
 		position: relative;
