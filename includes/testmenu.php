@@ -29,5 +29,15 @@
 	<li>
 		<a href="tools.php">CSS Tools</a>	
 	</li>
+	<li class="empty">Fonts:</li>
+	<li class="font-chooser">
+		<a href="#" class="clearfont">0</a>	
+		<a href="#testfont-1">1</a>	
+		<a href="#testfont-2">2</a>	
+		<a href="#testfont-3">3</a>	
+		<a href="#testfont-4">4</a>	
+		<a href="#testfont-5">5</a>	
+		<a href="#testfont-6">6</a>	
+	</li>
 	
 </ul>

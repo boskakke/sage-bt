@@ -14,6 +14,14 @@
 	}
 }
 
+
+@include fontFace('gothic1', '../fonts/ufonts.com_alternate-gothic-no1-d', 'normal','300');
+@include fontFace('gothic2', '../fonts/ufonts.com_alternate-gothic-no3-d', 'normal','300');
+@include fontFace('swiss1', '../fonts/swiss_721_black_condensed_italic', 'italic','300');
+@include fontFace('swiss2', '../fonts/swiss_721_black_condensed', 'normal','300');
+@include fontFace('swiss3', '../fonts/swiss_721_bold_condensed_italic', 'normal','300');
+@include fontFace('swiss4', '../fonts/swiss_721_bold_condensed', 'normal','300');
+
 @include fontFace('bt-icons', '../fonts/bt-icons', 'normal','300');
 
 /*@include font-face("normal", "bt-icons", "normal", "sans-serif");*/

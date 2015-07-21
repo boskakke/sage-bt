@@ -133,6 +133,15 @@
         $('#live-ticker').removeClass().toggleClass('live-ticker-alt-2');
     });
 
+
+    $('.font-chooser').on('click','a', function(e){
+      e.preventDefault();
+      var link = $(this).attr('href');
+      link = link.substring(1);
+      $('body').removeClass();
+      $('body').toggleClass(link);
+    });
+
 // END DEMO
 
 

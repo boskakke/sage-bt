@@ -62,3 +62,15 @@ h3.demo {
 	
 	margin-bottom: 20px;	
 }
+
+.font-chooser a {
+	display: inline-block!important;
+	width: 20px;
+
+	padding: 5px;
+	line-height: 20px;
+	&:hover {
+		background-color: #ffcc00!important;
+		color: #000;
+	}
+}

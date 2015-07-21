@@ -145,7 +145,7 @@
 
 
 $font-family-base: "helvetica neue", helvetica, arial, sans-serif;
-$font-family-header: 'Oswald', impact, sans-serif;
+$font-family-header: "Oswald", impact, sans-serif;
 
 .header-font {
 	font-family: $font-family-header;
@@ -154,7 +154,45 @@ $font-family-header: 'Oswald', impact, sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	line-height: 1.2;
 	clear: both;
+	
 }
+
+.testfont-1 .header-font {
+	font-family: 'gothic1', impact, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.testfont-2 .header-font {
+	font-family: 'gothic2', impact, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+.testfont-3 .header-font {
+	font-family: 'swiss1', impact, sans-serif;
+	letter-spacing: -0.04em;
+	font-weight: normal;
+	font-style: normal;
+}
+.testfont-4 .header-font {
+	font-family: 'swiss2', impact, sans-serif;
+	letter-spacing: -0.04em;
+	font-weight: normal;
+	font-style: normal;
+	
+}
+.testfont-5 .header-font {
+	font-family: 'swiss3', impact, sans-serif;
+	letter-spacing: -0.04em;
+	font-weight: normal;
+	font-style: normal;
+}
+.testfont-6 .header-font {
+	font-family: 'swiss4', impact, sans-serif;
+	letter-spacing: -0.04em;
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 $col-news:				#cd0403;
 $col-sport:				#c7db47;
