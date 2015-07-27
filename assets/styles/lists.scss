@@ -5,10 +5,14 @@
 	padding: 0;
 	.header {
 		line-height: 1.1;
+		@extend .subheader-font;
 	}
 	li {
 		margin: 0 0 1em;
 		font-weight: normal;
+	}
+	.highlight {
+		text-decoration: none;
 	}
 }
 
@@ -61,7 +65,7 @@
 			content: counter(counter);
 			border-radius: 50%;
 			text-align: center;
-			@extend .header-font;
+			@extend .subheader-font;
 		}
 	}
 }
@@ -167,6 +171,7 @@
 	}
 }
 .box .teaser-list-300 {
+	@extend .clearfix;
 	li {
 		width: 290px;
 	}
@@ -205,16 +210,14 @@
 	padding: 20px;
 	.box-title {
 		font-size: 33px;
-		font-weight: 600;
-		text-transform: uppercase;
 	}
 }
 
 .box-title {
-	font-weight: 300;
-	font-size: 44px;
+	font-size: 33px;
+	font-weight: normal;
 	line-height: 1;
-	@extend .header-font;
+	@extend .subheader-font;
 }
 
 .list-blogs {
@@ -257,11 +260,10 @@
 		display: inline-block;
 		float: left;
 		font-size: 33px;
-		@extend .header-font;
+		@extend .subheader-font;
 		clear: none;
 		padding: 20px 20px 0.67em;
 		margin: 0 0 0;
-		text-transform: uppercase;
 		font-weight: 600;
 	}
 	.tab-active {

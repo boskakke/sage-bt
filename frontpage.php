@@ -285,7 +285,7 @@
 		<section class="deck deck-bite no-cat ">
 		
 			<div class="grid_8">
-				<article class="teaser teaser-bite-1 font-5" >
+				<article class="teaser teaser-bite-1 font-4" >
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
@@ -294,7 +294,7 @@
 				</article>
 			</div>
 			<div class="grid_8">
-				<article class="teaser teaser-bite-2 font-5" >
+				<article class="teaser teaser-bite-2 font-4" >
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>
@@ -303,7 +303,7 @@
 				</article>
 			</div>
 			<div class="grid_8">
-				<article class="teaser teaser-bite-3 font-5" >
+				<article class="teaser teaser-bite-3 font-4" >
 					<figure>
 						<a href="article.php"><img class="lazy" data-original="<? dummy("image/@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 					</figure>

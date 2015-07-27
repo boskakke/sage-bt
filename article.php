@@ -289,7 +289,7 @@
 				</li>	
 			<? endwhile ?>
 			</ul>
-			
+			<br>
 			<h1 class="box-title">Hitter på Facebook</h1>
 
 			<ul class="teaser-list-300 list-top-cirle">

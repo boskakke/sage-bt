@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	p {
-		font-family: georgia, times, "times new roman", serif;
+		@extend .subheader-font;
 		font-weight: normal;
 		margin: 10px 0 0;
 		font-size: 22px;
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .teaser-topstory {
 	p {
-		font-size: 19px;
+		font-size: 25px;
 		
 		line-height: 1.2;
 	}
@@ -537,10 +537,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	&> li {
-		@extend .header-font;
+		@extend .subheader-font;
 		display: inline-block;
 		margin-right: 5px;
-		font-size: 14px;
+		font-size: 16px;
 		text-transform: uppercase;
 		position: relative;
 		&:first-child {
@@ -557,7 +557,7 @@ h1, h2, h3, h4, h5, h6 {
 				width: 160px;
 				position: absolute;
 				right: 0;
-				top: 24px;
+				top: 40px;
 				list-style: none;
 				margin: 0;
 				padding: 0;
@@ -628,10 +628,10 @@ h1, h2, h3, h4, h5, h6 {
 		margin-left: -10px;
 		margin-right: -10px;
 		margin-top: -20px;
-		font-size: 34px;
 		text-transform: none;
 		margin-bottom: 10px;
 	}
+
 }
 
 .deck-header {
@@ -640,6 +640,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 	margin: 0 0 15px;
 	position: relative;
+	@extend .subheader-font;
+	strong {
+		@extend .header-font;
+	}
 	i:before {
 		/*transform: translateY(-.1em);*/
 	}
@@ -1027,7 +1031,8 @@ DECKS:
 .article-header {
 	@extend .bb-20;
 	h1 {
-		font-size: 50px;
+		font-size: 60px;
+		line-height: 1.05;
 		@extend .mb-20;
 	}
 	.category {
@@ -1112,7 +1117,7 @@ DECKS:
 
 .article-byline-container	{
 	font-size: 14px;
-	@extend .header-font;
+	@extend .subheader-font;
 
 }
 .article-byline {
@@ -1191,7 +1196,7 @@ DECKS:
 
 }
 .article-date {
-	@extend .header-font;
+	@extend .subheader-font;
 	@extend .mb-20;
 	color: #999;
 	text-transform: uppercase;

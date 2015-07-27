@@ -17,13 +17,15 @@
 
 /*@include fontFace('gothic1', '../fonts/ufonts.com_alternate-gothic-no1-d', 'normal','300');
 @include fontFace('gothic2', '../fonts/ufonts.com_alternate-gothic-no3-d', 'normal','300');*/
-@include fontFace('SwissBlackItalic', '../fonts/swiss_721_black_condensed_italic', 'normal','300');
-@include fontFace('swissBlack', '../fonts/swiss_721_black_condensed', 'normal','300');
-/*@include fontFace('swiss3', '../fonts/swiss_721_bold_condensed_italic', 'normal','300');*/
-@include fontFace('SwissBold', '../fonts/swiss_721_bold_condensed', 'normal','300');
+/*@include fontFace('SwissBlackItalic', '../fonts/swiss_721_black_condensed_italic', 'normal','300');*/
 
+
+/*@include fontFace('swiss3', '../fonts/swiss_721_bold_condensed_italic', 'normal','300');*/
+@include fontFace('swissBlack', '../fonts/swiss_721_black_condensed', 'normal','300');
+@include fontFace('SwissBold', '../fonts/swiss_721_bold_condensed', 'normal','300');
 @include fontFace('bt-icons', '../fonts/bt-icons', 'normal','300');
-@include fontFace('bt_one-demibold', '../fonts/bt_one-demibold', 'normal','300');
+
+/*@include fontFace('bt_one-demibold', '../fonts/bt_one-demibold', 'normal','300');*/
 /*@include font-face("normal", "bt-icons", "normal", "sans-serif");*/
 
 $font-family-base: "helvetica neue", helvetica, arial, sans-serif;
@@ -32,24 +34,18 @@ $font-family-subheader: 'SwissBold', impact, sans-serif;
 $bt_one-demibold: 'bt_one-demibold', helvetica, arial, sans-serif;
 
 
-.header-font {
-  font-family: $font-family-header;
+.header-font, .subheader-font {
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*clear: both;*/
   letter-spacing: -0.02em;
+}
+.header-font {
+  font-family: $font-family-header;
 }
 
 .subheader-font {
   font-family: $font-family-subheader;
-  text-rendering: optimizelegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  
-  
 }
 
 
