@@ -137,7 +137,7 @@
 	.teaser .header i, .teaser i {
 		color: $color;
 	}
-	.highlight {
+	.highlight, .header i {
 		color: $color;
 		// font-size: 16px;
 		position: relative;
@@ -161,7 +161,7 @@
 		}
 	}
 	li {
-		line-height: 1.4;
+		line-height: 1.2;
 	}
 	footer {
 		color: rgba(0,0,0,.4);

@@ -1,10 +1,10 @@
 .list {
-	@extend .header-font;
+	@extend .subheader-font;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	.header {
-		line-height: 1.4;
+		line-height: 1.1;
 	}
 	li {
 		margin: 0 0 1em;
@@ -213,6 +213,8 @@
 .box-title {
 	font-weight: 300;
 	font-size: 44px;
+	line-height: 1;
+	@extend .header-font;
 }
 
 .list-blogs {
@@ -282,7 +284,7 @@
 	display: block;
 }
 .related-mega {
-	@extend .header-font;
+	@extend .subheader-font;
 	@extend .clearfix;
 	margin: 15px 0 0 0;
 	padding: 0;
@@ -347,7 +349,7 @@
 	margin: 10px 0 0 0;
 	line-height: 1;
 	li {
-		@extend .header-font;
+		@extend .subheader-font;
 		margin: 0 0 20px;
 		font-size: 19px;
 		display: inline;

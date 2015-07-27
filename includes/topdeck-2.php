@@ -76,7 +76,7 @@
 
 
 		<div class="grid_8 alpha">
-			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-4">
+			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-3">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
@@ -86,7 +86,7 @@
 			</article>
 		</div>
 		<div class="grid_8 omega">
-			<article class="teaser <? dummy("text@bt-main-categories") ?> font-4">
+			<article class="teaser <? dummy("text@bt-main-categories") ?> font-3">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
@@ -133,7 +133,7 @@
 
 		
 		<div class="grid_8 alpha">
-			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-4">
+			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-3">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
@@ -143,7 +143,7 @@
 			</article>
 		</div>
 		<div class="grid_8 omega">
-			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-4">
+			<article class="teaser  <? dummy("text@bt-main-categories") ?> font-3">
 				<figure>
 					<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
 				</figure>
