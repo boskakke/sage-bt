@@ -3,7 +3,7 @@
 	
 		<div class="grid_24">
 			<article class="teaser-oneliner-breaking">
-				<a href="article.php"><i class="icon-attention-alt blink"></i> <span>Breaking</span> <? dummy("text@headline-bt") ?></a>
+				<a href="article.php"><span>Breaking</span> <? dummy("text@headline-bt") ?></a>
 			</article>			
 
 		</div>
@@ -40,7 +40,7 @@
 				</ul>
 				<? if (dumb_luck("50%")): ?>
 				<ul class="related list-inline">
-					<? while (dumb_luck("2-10")): ?>
+					<? while (dumb_luck("2-5")): ?>
 					<li><a href="article.php"><? dummy("text@headline-bt") ?></a></li>
 					<? endwhile ?>
 				</ul>
@@ -53,7 +53,7 @@
 <div class="ro w">
 	<div class="grid_16" id="topdeck">
 		
-		<article class="teaser teaser-noimage teaser-noimage-breaking no-cat font-2 <? dummy("text@bt-main-categories") ?>">
+		<article class="teaser teaser-noimage teaser-noimage-breaking  font-2 <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
 					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
@@ -82,7 +82,7 @@
 				</figure>
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-				<?php include('includes/teaser-related.php'); ?>
+				<?php // include('includes/teaser-related.php'); ?>
 			</article>
 		</div>
 		<div class="grid_8 omega">
@@ -121,7 +121,7 @@
 		
 
 		<div class="grid_16 alpha omega ">
-			<article class="teaser teaser-noimage <? dummy("text@bt-main-categories") ?>">
+			<article class="teaser teaser-noimage font-2 <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
 					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
