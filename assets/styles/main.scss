@@ -432,26 +432,45 @@ h1, h2, h3, h4, h5, h6 {
 	@include teaser-tag($col-sport, #000, #000);	
 }
 
+
+.font-1 .header {
+	font-size: 28px;
+}
+.font-2 .header {
+	font-size: 26px;
+}
+.font-3 .header {
+	font-size: 24px;
+}
+.font-4 .header {
+	font-size: 22px;
+}
+.font-5 .header {
+	font-size: 20px;
+}
+.font-6 .header {
+	font-size: 18px;
+}
 .grid_16 {
 	> .teaser .header {
 		font-size: 60px;
 	}
-	.teaser.font-1 .header {
+	&> .teaser.font-1 .header {
 		font-size: 70px;	
 	}
-	.teaser.font-2 .header {
+	&> .teaser.font-2 .header {
 		font-size: 65px;	
 	}
-	.teaser.font-3 .header {
+	&> .teaser.font-3 .header {
 		font-size: 60px;	
 	}
-	.teaser.font-4 .header {
+	&> .teaser.font-4 .header {
 		font-size: 55px;	
 	}
-	.teaser.font-5 .header {
+	&> .teaser.font-5 .header {
 		font-size: 50px;	
 	}
-	.teaser.font-6 .header {
+	&> .teaser.font-6 .header {
 		font-size: 45px;	
 	}
 }
@@ -474,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 24px;	
 	}
 	.teaser.font-6 .header {
-		font-size: 22px;	
+		font-size: 18px;	
 	}
 }
 
