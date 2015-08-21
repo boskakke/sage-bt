@@ -448,13 +448,17 @@ h1, h2, h3, h4, h5, h6 {
 	.font-4 .header {
 		font-size: 55px;	
 	}
-	.font-1 .header {
+	.font-5 .header {
 		font-size: 50px;	
+	}
+	.font-6 .header {
+		font-size: 45px;	
 	}
 }
 
-.grid_8 > .teaser .header {
-	font-size: 32px;
+.grid_8 {
+	.teaser .header {
+		font-size: 32px;
 	}
 	.font-1 .header {
 		font-size: 42px;	
@@ -468,30 +472,15 @@ h1, h2, h3, h4, h5, h6 {
 	.font-4 .header {
 		font-size: 28px;	
 	}
-	.font-1 .header {
+	.font-5 .header {
 		font-size: 24px;	
 	}
+	.font-6 .header {
+		font-size: 22px;	
+	}
+}
 
 
-/*
-.font-1 .header {
-	font-size: 70px;
-}
-.font-2 .header {
-	font-size: 60px;
-}
-.font-3 .header {
-	font-size: 32px;
-}
-.font-4 .header {
-	font-size: 24px;
-}
-.font-5 .header {
-	font-size: 19px;
-}
-.font-6 .header {
-	font-size: 18px;
-}*/
 
 .teaser-topstory {
 	p {
