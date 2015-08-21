@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-size: 14px;
 		line-height: 1.4;
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: normal;
 		padding: 0 6px;
 		text-decoration: none;
 		&:hover {
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.teaser-byline {
 		font-size: 12px;
-		font-weight: 600;
+		font-weight: normal;
 		color: $col-news;
 		text-transform: uppercase;
 		
@@ -360,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 	.header {
 		color: #000;
 		font-size: 21px;
-		font-weight: 600;
+		font-weight: normal;
 	}
 }
 
@@ -1042,7 +1042,7 @@ DECKS:
 		font-size: 14px;
 		line-height: 1.4;
 		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: normal;
 		padding: 0 6px;
 		text-decoration: none;
 		&:hover {
@@ -1139,13 +1139,16 @@ DECKS:
 		display: block;
 		white-space: nowrap;
 		text-transform: uppercase;
-		overflow: hidden;
+		// overflow: hidden;
 		a {
 			color: #999;
 			&:hover{
 				color: #666;
 			}
 		}
+	}
+	&+ .article-byline {
+		margin-left: 25px;
 	}
 }
 .signup-form {
@@ -1294,7 +1297,12 @@ $btn-social-size: 54px;
 		background-color: darken($col-twitter, 5%);
 	}
 }
-
+.marketing-banner {
+	strong {
+		color: $col-news;
+		font-weight: 300;
+	}
+}
 .marketing-offer {
 	text-align: right;
 	a {
@@ -1327,6 +1335,8 @@ $btn-social-size: 54px;
 	position: relative;
 	z-index: 2;
 	display: inline-block;
+	font-weight: normal;
+	color: $col-news;
 
 	&:before {
 		@extend .sun;

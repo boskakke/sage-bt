@@ -39,6 +39,7 @@ $bt_one-demibold: 'bt_one-demibold', helvetica, arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: -0.02em;
+  font-weight: normal;
 }
 .header-font {
   font-family: $font-family-header;
@@ -48,12 +49,6 @@ $bt_one-demibold: 'bt_one-demibold', helvetica, arial, sans-serif;
   font-family: $font-family-subheader;
 }
 
-
-.highlight {
-  // font-family: SwissBlackItalic;
-  text-decoration: underline;
-  // text-transform: none;
-}
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "bt-icons";
