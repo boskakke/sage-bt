@@ -1108,16 +1108,7 @@ DECKS:
 
 }
 .teaser-noimage {
-	background-color: #000;
 	padding: 10px 5px 5px;
-	.header {
-		a {
-			color: #fff;
-		}
-	}
-		a {
-			color: #fff;
-		}
 	.header {
 		margin-bottom: 10px;
 	}
@@ -1147,7 +1138,7 @@ DECKS:
 	@include teaser-color(#000, #fff, #fff, $col-news, $col-news, $col-news, #fff);
 }
 .teaser-news {
-	@include teaser-color($col-news, #fff, #fff, #000, #000, #fff, $col-news);
+	@include teaser-color($col-news, #fff, #fff, #000, #000, #000, #fff);
 }
 .teaser-entertainment {
 	@include teaser-color($col-entertainment, #fff, #fff, #000, $col-breaking, $col-entertainment, #fff);
