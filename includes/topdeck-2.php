@@ -53,7 +53,7 @@
 <div class="ro w">
 	<div class="grid_16" id="topdeck">
 		
-		<article class="teaser teaser-noimage teaser-noimage-breaking  font-2 <? dummy("text@bt-main-categories") ?>">
+		<article class="teaser teaser-noimage  teaser-black font-2 <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
 					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
@@ -121,7 +121,7 @@
 		
 
 		<div class="grid_16 alpha omega ">
-			<article class="teaser teaser-noimage font-2 <? dummy("text@bt-main-categories") ?>">
+			<article class="teaser teaser-noimage teaser-black font-2 <? dummy("text@bt-main-categories") ?>">
 				<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
 				<h1 class="header">
 					<a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
