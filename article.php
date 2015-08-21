@@ -159,7 +159,10 @@
 
 				<figure class="article-image">
 					<img src="<? dummy("image@620x,") ?>" width="" height="" alt="" />
+					<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
 				</figure>
+
 				
 				<aside class="box box-theme-7 box-embedded">
 					<h1 class="box-title box-title-sm">Relaterede</h1>
