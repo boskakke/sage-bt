@@ -195,6 +195,10 @@
 	.clean .icon-angle-right {
 		color: $col-news;
 	}
+	p {
+		margin: 0 0 10px 0;
+		text-transform: none;
+	}
 }
 .menu-item-plus {
 	a {
