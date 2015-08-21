@@ -99,63 +99,8 @@
 		</ul>
 	</nav>
 	
-		<section class="tip-form" id="tip-form">
-	
-			<h1>
-				Send tip til BT 
-			</h1>
-			<span class="close-layer"><i class="icon-cancel"></i></span>
-			<div class="col-row">
-				
-				<div class="col_3">
-					<strong>1. Hvad vil du sende?</strong>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send billede</button>
-					</div>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send video</button>
-					</div>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send dokumenter</button>
-					</div>
-				</div>
-
-				<div class="col_6">
-					<strong>2. Besked til BT</strong>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Skriv din besked her..."></textarea>
-				</div>
-
-				<div class="col_3">
-					<form action="">
-						<strong>3. Kontaktinfo:</strong>
-						<div class="form-item">
-							<input type="text" name="" placeholder="Dit navn" id="tip-name">
-						</div>
-						<div class="form-item">
-							<input type="email" name="" placeholder="Din email" id="tip-email">
-						</div>
-						<div class="form-item">
-							<input type="tel" name="" placeholder="Dit telefonnummer" id="tip-phone">
-						</div>
-						
-					
-					</form>	
-				</div>
-				
-				
-			</div>
-			<div class="col-row tip-footer">
-				<div class="col_9">
-					<div class="form-item">
-						<p>BT DK - Pilestræde 34 - 1147 København K
-						- Telefon: 3333 7533 - SMS: 1929</p>
-					</div>
-				</div>
-				<div class="col_3"><button class="btn-lg btn-block btn-breaking">SEND <i class="icon-right-dir"></i></button></div>
-			</div>
 			
-
-		</section>	
+		<?php include('includes/tip-form.php'); ?>
 
 
 	<section class="header-sitemap" id="header-sitemap">
@@ -296,63 +241,8 @@
 		</ul>
 	</nav>
 	
-		<section class="tip-form" id="tip-form">
-	
-			<h1>
-				Send tip til BT 
-			</h1>
-			<span class="close-layer"><i class="icon-cancel"></i></span>
-			<div class="col-row">
-				
-				<div class="col_3">
-					<strong>1. Hvad vil du sende?</strong>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send billede</button>
-					</div>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send video</button>
-					</div>
-					<div class="form-item">
-						<button class="btn btn-news btn-block mb-10">Send dokumenter</button>
-					</div>
-				</div>
-
-				<div class="col_6">
-					<strong>2. Besked til BT</strong>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Skriv din besked her..."></textarea>
-				</div>
-
-				<div class="col_3">
-					<form action="">
-						<strong>3. Kontaktinfo:</strong>
-						<div class="form-item">
-							<input type="text" name="" placeholder="Dit navn" id="tip-name">
-						</div>
-						<div class="form-item">
-							<input type="email" name="" placeholder="Din email" id="tip-email">
-						</div>
-						<div class="form-item">
-							<input type="tel" name="" placeholder="Dit telefonnummer" id="tip-phone">
-						</div>
-						
-					
-					</form>	
-				</div>
-				
-				
-			</div>
-			<div class="col-row tip-footer">
-				<div class="col_9">
-					<div class="form-item">
-						<p>BT DK - Pilestræde 34 - 1147 København K
-						- Telefon: 3333 7533 - SMS: 1929</p>
-					</div>
-				</div>
-				<div class="col_3"><button class="btn-lg btn-block btn-breaking">SEND <i class="icon-right-dir"></i></button></div>
-			</div>
 			
-
-		</section>	
+		<?php include('includes/tip-form.php'); ?>
 
 
 	<section class="header-sitemap" id="header-sitemap">
