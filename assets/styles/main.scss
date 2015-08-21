@@ -1146,6 +1146,25 @@ DECKS:
 .teaser-black {
 	@include teaser-color(#000, #fff, #fff, $col-news, $col-news, $col-news, #fff);
 }
+.teaser-news {
+	@include teaser-color($col-news, #fff, #fff, #000, #000, #fff, $col-news);
+}
+.teaser-entertainment {
+	@include teaser-color($col-entertainment, #fff, #fff, #000, $col-breaking, $col-entertainment, #fff);
+}
+.teaser-sport {
+	@include teaser-color(#333, #fff, #fff, $col-sport, $col-sport, $col-sport, #333);
+}
+.teaser-health {
+	@include teaser-color($col-health, #fff, #fff, $col-health, darken($col-health, 30%), $col-health, #fff);
+}
+.teaser-consumer {
+	@include teaser-color($col-consumer, #fff, #fff, $col-news, darken($col-consumer, 25%), $col-consumer, #fff);
+}
+.teaser-plus {
+	@include teaser-color($gray-light, #000, #fff, $col-plus, $col-plus, $col-plus, #fff);
+}
+
 
 /*
 .teaser-black {

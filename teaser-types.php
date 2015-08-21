@@ -167,6 +167,265 @@
 		</article>
 	</div>
 </div>
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-news</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-news">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-news">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-news teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-entertainment</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-entertainment">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-entertainment">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-entertainment teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-sport</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-sport">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-sport">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-sport teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-health</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-health">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-health">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-health teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-consumer</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-consumer">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-consumer">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-consumer teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
+
+<div class="grid_24">
+<h2 class="demo">
+	<small>.teaser-plus</small>
+</h2>
+</div>
+
+<div class="row">
+	<div class="grid_16 ">
+		<article class="teaser cat-news font-2 teaser-plus">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@620x,16:9") ?>" width="620" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>	
+	<div class="grid_8">
+		<article class="teaser cat-news font-3 teaser-plus">
+			<figure>
+				
+				<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" alt="" /></a>
+			</figure>
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+		<article class="teaser cat-news font-3 teaser-plus teaser-noimage">
+			
+			<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+			<h1 class="header">
+				<a href="article.php"><? dummy("text@headline-bt") ?></a>
+			</h1>
+			
+		</article>
+	</div>
+</div>
+
 
 <div class="grid_24">
 	

@@ -205,6 +205,9 @@
 	.category {
 		background-color: $category-background-color;
 		color: $category-link-color;
+		&:hover {
+			background-color: darken($category-background-color, 10%)
+		}
 	}
 	.highlight {
 		color: $icon-color;

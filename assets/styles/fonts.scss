@@ -43,6 +43,9 @@ $bt_one-demibold: 'bt_one-demibold', helvetica, arial, sans-serif;
 }
 .header-font {
   font-family: $font-family-header;
+  strong {
+    font-weight: normal;
+  }
 }
 
 .subheader-font {
