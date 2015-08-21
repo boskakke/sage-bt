@@ -160,7 +160,21 @@
 				<figure class="article-image">
 					<img src="<? dummy("image@620x,") ?>" width="" height="" alt="" />
 				</figure>
+				
+				<aside class="box box-theme-7 box-embedded">
+					<h1 class="box-title box-title-sm">Relaterede</h1>
+					<ul class="list list-border list-sm list-bullet list-border-bundlos">
+						<? while (dumb_luck("3-5")): ?>
+						<li class="teaser">
+							<a href="article.php"><? dummy("text@headline") ?></a>
+						</li>
+						<? endwhile ?>
+					</ul>
+				</aside>
 
+				<p><? dummy("text@paragraph") ?></p>
+
+				
 				
 
 			</div>
@@ -200,7 +214,7 @@
 				<h1 class="box-title">
 					Det læser andre
 				</h1>
-				<ul class="list list-top">
+				<ul class="list list-top list-icon-eye">
 					<? while (dumb_luck("5")): ?>
 					<li class="teaser">
 						<div class="list-body">
@@ -242,7 +256,7 @@
 
 				
 				<div class="text-center ">
-					<a href="#" class="load-more">Mere sport <i class="icon-down-dir"></i></a>
+					<a href="#" class="load-more">Mere TV <i class="icon-down-dir"></i></a>
 				</div>
 				
 				

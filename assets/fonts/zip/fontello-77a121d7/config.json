@@ -431,6 +431,12 @@
       "src": "fontawesome"
     },
     {
+      "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
+      "css": "location",
+      "code": 59443,
+      "src": "fontawesome"
+    },
+    {
       "uid": "559647a6f430b3aeadbecd67194451dd",
       "css": "menu",
       "code": 59426,
@@ -512,6 +518,12 @@
       "uid": "rrhco7mfj6ro9yzhe4a1rbln9flw47re",
       "css": "cancel",
       "code": 59439,
+      "src": "modernpics"
+    },
+    {
+      "uid": "frauy9fser6zk9n5ih3rdpz7zzfjbrvu",
+      "css": "eye",
+      "code": 59442,
       "src": "modernpics"
     },
     {
