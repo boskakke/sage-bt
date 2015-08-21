@@ -40,6 +40,14 @@
 		border-top: 1px solid rgba(255,255,255,.1);
 		padding-top: 10px;
 	}	
+	a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: #eee;
+		text-decoration: underline;
+	}
 }
 
 .tip-form.show {

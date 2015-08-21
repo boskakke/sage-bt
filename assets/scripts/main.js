@@ -69,6 +69,12 @@
       $(this).toggleClass('active');
     });
 
+    $('.show-terms').on('click', function(e){
+      e.preventDefault();
+      $('.tip-terms').toggle(1);
+    });
+
+
     
     // var tickerHeight = $('#topdeck').height() - 800;
 
@@ -134,13 +140,7 @@
     });
 
 
-    $('.font-chooser').on('click','a', function(e){
-      e.preventDefault();
-      var link = $(this).attr('href');
-      link = link.substring(1);
-      $('body').removeClass();
-      $('body').toggleClass(link);
-    });
+    
 
 // END DEMO
 
