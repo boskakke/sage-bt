@@ -64,9 +64,10 @@
       e.preventDefault();
     });
 
-    $('.menu-more').on('click', function(e){
+    $('.menu-more > a').on('click', function(e){
       e.preventDefault();
-      $(this).toggleClass('active');
+      $(this).parent().toggleClass("active")
+      // $(this).toggleClass('active');
     });
 
     $('.show-terms').on('click', function(e){
@@ -76,10 +77,7 @@
 
 
     
-    // var tickerHeight = $('#topdeck').height() - 800;
-
-    // $('#live-ticker > ul').css('height',tickerHeight);
-    //$('#live-ticker > ul').css('height','800');
+   
 
 
     
@@ -97,20 +95,20 @@
       // tab-active tab-teasers
       // tab-comments
 
-      $('.tab-comments span').on('click', function(e){
-          e.preventDefault();
-          $('#tab-content-comments').addClass('tab-content-active');
-          $(this).closest('li').addClass('tab-active');
-          $('.tab-teasers').removeClass('tab-active');
-          $('#tab-content-teasers').removeClass('tab-content-active');
-          $.ajax({
-              type: "GET",
-              url: "http://elskak.disqus.com/embed.js",
-              dataType: "script",
-              cache: true
-          });
-          return false;
-      });
+      // $('.tab-comments span').on('click', function(e){
+      //     e.preventDefault();
+      //     $('#tab-content-comments').addClass('tab-content-active');
+      //     $(this).closest('li').addClass('tab-active');
+      //     $('.tab-teasers').removeClass('tab-active');
+      //     $('#tab-content-teasers').removeClass('tab-content-active');
+      //     $.ajax({
+      //         type: "GET",
+      //         url: "http://elskak.disqus.com/embed.js",
+      //         dataType: "script",
+      //         cache: true
+      //     });
+      //     return false;
+      // });
 
       
       $('.tab-teasers a').on('click', function(e){
