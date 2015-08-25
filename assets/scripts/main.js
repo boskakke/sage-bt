@@ -66,7 +66,7 @@
 
     $('.menu-more > a').on('click', function(e){
       e.preventDefault();
-      $(this).parent().toggleClass("active")
+      $(this).parent().toggleClass("active");
       // $(this).toggleClass('active');
     });
 
