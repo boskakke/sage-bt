@@ -457,6 +457,29 @@ h1, h2, h3, h4, h5, h6 {
 .font-6 .header {
 	font-size: 18px;
 }
+.grid_24 {
+	.teaser .header {
+		font-size: 55px;
+	}
+	.teaser.font-1 .header {
+		font-size: 65px;	
+	}
+	.teaser.font-2 .header {
+		font-size: 60px;	
+	}
+	.teaser.font-3 .header {
+		font-size: 55px;	
+	}
+	.teaser.font-4 .header {
+		font-size: 50px;	
+	}
+	.teaser.font-5 .header {
+		font-size: 45px;	
+	}
+	.teaser.font-6 .header {
+		font-size: 40px;	
+	}
+}
 .grid_16 {
 	.teaser .header {
 		font-size: 55px;
@@ -770,12 +793,32 @@ DECKS:
 }
 .deck-breaking-black {
 	@include deck(#000, 0, $col-breaking, #fff, #fff, #fff, $col-breaking);
+	.related a:before {
+		background-color: $col-breaking;
+	}
+	[class*="icon-"]:before, .highlight {
+		color: $col-breaking;
+	}
 }
+
 .deck-breaking {
 	@include deck($col-breaking, 0, #000, $col-news, #000, #000, $col-breaking, $menu-color-hover: $col-news, $category-text-color: #fff);
 }
-.deck-news {
+.deck-black {
 	@include deck(#000, 0, $col-news, #fff, #fff, #fff, $col-news, $category-text-color: #fff);
+}
+
+.deck-news {
+	@include deck($col-news, 0, #000, #fff, #fff, #fff, #000, $category-text-color: #fff);
+	.highlight {
+		color: #000;
+	}
+	.related a:before {
+		background-color: #000;
+	}
+	[class*="icon-"]:before, .highlight {
+		color: #000
+	}
 }
 
 .deck-sport {

@@ -12,9 +12,9 @@
 		<ul class="nav-primary nav-left">
 			<li class="menu-item"><a href="section.php">Nyheder</a></li>
 			<li class="menu-item"><a href="section.php">Sport</a></li>
-			<li class="menu-item menu-item-plus"><a href="section.php"><span>Prøv</span> PLUS</a></li>
+			<li class="menu-item menu-item-plus"><a href="section.php">PLUS</a></li>
 			<li class="menu-item "><a href="section.php">BT TV</a></li>
-			<li class="menu-item"><a href="#" class="toggle-sitemap">A - Å <i class="icon-down-dir"></i></a></li>
+			<li class="menu-item"><a href="#" class="toggle-sitemap">Mere <i class="icon-down-dir"></i></a></li>
 			<li class="menu-item site-search"><a href="#" class="toggle-search show-hide"><i class="icon-search"></i></a>
 
 			<div class="search-form">

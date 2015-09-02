@@ -24,11 +24,11 @@
 	<div class="row">
 		<div class="grid_24 clearfix">
 			<h1 class="demo">Decks <small>class names</small></h1>
-			<h2 class="demo">.deck-breaking</h2>
+			<h2 class="demo">.deck-news</h2>
 		</div>
 	</div>
 	
-	<section class="deck clearfix deck-breaking ">
+	<section class="deck clearfix deck-news ">
 				<div class="grid_24">
 					<h1 class="deck-header deck-header-alt">
 						<i class="icon-dot-circled"></i> <strong>TERROR</strong> <span class="small">Sagen minut for minut</span>
@@ -74,6 +74,108 @@
 			<h2 class="demo">.deck-breaking-black</h2>
 
 			<section class="deck clearfix deck-breaking-black ">
+				<div class="grid_24">
+					<h1 class="deck-header deck-header-alt">
+						<a href="section.php"><i class="icon-dot-circled"></i> <strong>TERROR</strong> <span class="small">Gernimgsmand jagtes i København</span></a>
+					</h1>
+				</div>
+				<div class="row">
+					<div class="grid_24">
+						<ul class="deck-menu">
+							<? while (dumb_luck("7")): ?>
+								<li><a href="section.php"><? dummy("text@bt-sub-categories") ?></a></li>
+							<? endwhile ?>
+							<li class="menu-more"><a href="section.php">Mere sport <i class="icon-angle-down"></i></a>
+								<ul>
+									<? while (dumb_luck("8")): ?><li><a href="section.php"><? dummy("text@cat-sport") ?></a></li><? endwhile ?>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="grid_24">
+						<article class="teaser cat-news font-1 mb-40">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image@940x,16:9") ?>" width="940" height="528" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+
+							<?php include('includes/teaser-related.php'); ?>
+
+						</article>
+					</div>
+				</div>
+
+				<? while (dumb_luck("3")): ?>
+				<div class="grid_8">
+					<article class="teaser cat-news font-3">
+						<figure>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+						</figure>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						
+					</article>
+				</div>
+				<? endwhile ?>
+				
+				<div class="grid_24">
+					<div class="text-center deck-footer">
+						<a href="#" class="load-more">Mere vold <i class="icon-down-dir"></i></a>
+					</div>
+				</div>
+
+			</section><!-- deck -->
+
+			<h2 class="demo">.deck-breaking</h2>
+			<section class="deck clearfix deck-breaking ">
+				<div class="grid_24">
+					<h1 class="deck-header deck-header-alt">
+						<i class="icon-dot-circled"></i> <strong>TERROR</strong> <span class="small">Sagen minut for minut</span>
+					</h1>
+				</div>
+				
+				<div class="row">
+					<div class="grid_24">
+						<article class="teaser cat-news font-1 mb-40">
+							<figure>
+								<a href="article.php"><img class="lazy" data-original="<? dummy("image@940x,16:9") ?>" width="940" height="528" alt="" /></a>
+							</figure>
+							<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+							<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+
+							<?php include('includes/teaser-related.php'); ?>
+
+						</article>
+					</div>
+				</div>
+
+				<? while (dumb_luck("3")): ?>
+				<div class="grid_8">
+					<article class="teaser cat-news font-3">
+						<figure>
+							<a href="article.php"><img class="lazy" data-original="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
+						</figure>
+						<a href="section.php" class="category"><? dummy("text@bt-sub-categories") ?></a>
+						<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
+						<?php include('includes/teaser-related.php'); ?>
+					</article>
+				</div>
+				<? endwhile ?>
+				
+				<div class="grid_24">
+					<div class="text-center deck-footer">
+						<a href="#" class="load-more">Mere terror <i class="icon-down-dir"></i></a>
+					</div>
+				</div>
+
+			</section><!-- deck -->
+
+			<h2 class="demo">.deck-black</h2>
+
+			<section class="deck clearfix deck-black ">
 				<div class="grid_24">
 					<h1 class="deck-header deck-header-alt">
 						<a href="section.php"><i class="icon-dot-circled"></i> <strong>TERROR</strong> <span class="small">Gernimgsmand jagtes i København</span></a>
