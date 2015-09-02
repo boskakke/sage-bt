@@ -10,6 +10,13 @@
 .header-right {
 	width: 710px;
 }
+.user-name {
+	text-overflow: ellipsis;
+	display: inline-block;
+	white-space: nowrap;
+	max-width: 120px;
+	overflow: hidden;
+}
 .nav-primary {
 
 		[class*=" icon-"]:before, 
