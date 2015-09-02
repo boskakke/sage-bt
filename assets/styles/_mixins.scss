@@ -142,6 +142,9 @@
 		// font-size: 16px;
 		position: relative;
 	}
+	.related a:before {
+		background-color: $color;
+	}
 }
 
 
