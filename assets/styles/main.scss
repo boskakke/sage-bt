@@ -458,25 +458,25 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 18px;
 }
 .grid_16 {
-	> .teaser .header {
+	.teaser .header {
 		font-size: 60px;
 	}
-	&> .teaser.font-1 .header {
+	.teaser.font-1 .header {
 		font-size: 70px;	
 	}
-	&> .teaser.font-2 .header {
+	.teaser.font-2 .header {
 		font-size: 65px;	
 	}
-	&> .teaser.font-3 .header {
+	.teaser.font-3 .header {
 		font-size: 60px;	
 	}
-	&> .teaser.font-4 .header {
+	.teaser.font-4 .header {
 		font-size: 55px;	
 	}
-	&> .teaser.font-5 .header {
+	.teaser.font-5 .header {
 		font-size: 50px;	
 	}
-	&> .teaser.font-6 .header {
+	.teaser.font-6 .header {
 		font-size: 45px;	
 	}
 }
