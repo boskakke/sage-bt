@@ -1281,10 +1281,20 @@ DECKS:
 	}
 }
 .signup-form {
+	
 	position: relative;
 	input[type='email'] {
-		margin: 0;
+		margin: 17px 0 0 0;
+		background: url(../images/newsletter_anim.gif) left center no-repeat;
+		transition: background-position .1s ease;
+		&:focus, 
+		&:active {
+			background-position: -120px center;
+			outline: 2px solid $col-news;
+			box-shadow: 0 0 10px $col-news;
+		}
 	}
+
 	button {
 		position: absolute;
 		right: 0;

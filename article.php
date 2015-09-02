@@ -66,7 +66,7 @@
 						<div class="grid_8 omega">
 							<div class="signup-form">
 								<form action="">
-									<input type="email" class="" placeholder="Få nyhedsbrevet. Indtast din mail">
+									<input type="email" class="" placeholder="">
 									<button class="btn btn-news">OK</button>
 								</form>
 							</div>
