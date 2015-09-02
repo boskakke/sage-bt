@@ -82,22 +82,23 @@
 			display: inline-block;
 			width: 35px;
 			height: 35px;
-			left: -10px;
-			
+			left: 0;
 			font-size: 16px;
-			border: 3px solid #fff;
 			font-weight: 600;
 			position: absolute;
-			bottom: -16px;
+			bottom: 0;
 			background-color: $col-facebook;
 			line-height: 35px;
 			color: #fff;
 			counter-increment: counter;
 			content: counter(counter);
-			border-radius: 50%;
 			text-align: center;
 			@extend .subheader-font;
 		}
+	}
+	.header {
+		margin-top: 10px;
+		font-size: 22px;
 	}
 }
 
@@ -347,6 +348,7 @@
 	li {
 		margin: 0 0 10px;
 		padding: 0;
+		line-height: 1.2;
 		font-size: 22px;
 		font-weight: normal;
 		&:last-child {
