@@ -372,12 +372,31 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
+.cat-bttilbud,
 .cat-news {
 	@include cat($col-news);
 }
+.cat-bttilbud {
+	.category {
+		@extend .bt-logo-flat;	
+		max-height: 19px;
+		background-size: 45px;
+		padding-left: 55px;
+		line-height: 1.4;
+		
+		
+		background-position: left 5px center;
+
+	}
+	
+	
+	
+}
 .cat-breaking {
 	@include cat($col-breaking, #000);
+}
+.cat-sweetdeal {
+	@include cat(#003864, #fff);
 }
 .cat-sport {
 	@include cat($col-sport, #000);
