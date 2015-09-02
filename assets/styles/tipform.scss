@@ -1,11 +1,13 @@
 .tip-form {
 	background-color: #333;
+	border-top: 1px solid #fff;
 	min-height: 300px;
 	font-size: 20px;
 	color: #999;
 	padding: 20px;	
 	display: none;
 	position: relative;
+	clear: both;
 	h1 {
 		color: #fff;
 		font-weight: 300;

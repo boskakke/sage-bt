@@ -1,6 +1,17 @@
 @import "tipform.scss";
-
+.header-right,
+.header-left {
+	float: left;
+}
+.header-left {
+	width: 220px;
+	margin-right: 10px;
+}
+.header-right {
+	width: 710px;
+}
 .nav-primary {
+
 		[class*=" icon-"]:before, 
 		[class^=icon-]:before {
 			line-height: 1;
@@ -102,6 +113,7 @@
 
 .site-header {
 	margin-bottom: 10px;
+	@extend .clearfix;
 	nav {
 		display: block;
 		clear: both;
@@ -117,19 +129,18 @@
 		clear: none;
 		font-size: 12px;
 		color: #999;
-		line-height: 49px;
+		line-height: 30px;
 		float: right;
 	}
 	.logo {
 		@extend .bt-logo;
-		height: 49px;
-		width: 149px;
+		width: 220px;
+		height: 70px;
 		display: inline-block;
 		float: left;
 	}
 	.header-top {
 		display: block;
-		margin-bottom: 10px;
 		@extend .clearfix;
 	}
 
@@ -138,13 +149,12 @@
 		clear: none;
 		font-size: 16px;
 		display: inline-block;
-		width: 350px;
-		height: 49px;
+		width: 400px;
+		height: 41px;
 		float: left;
-		margin-left: 10px;
+		
 		a {
 			display: block;
-			margin-top: 15px;
 			color: #000;
 		}
 		span {
@@ -306,6 +316,8 @@
 
 .header-sitemap {
 	@extend .clearfix;
+	border-top: 1px solid #fff;
+	clear:left;
 	background-color: #333;
 	padding: 20px;
 	display: none;
