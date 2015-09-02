@@ -262,15 +262,10 @@
 			
 
 				<h1 class="deck-header">
-
-					<a href="http://www.bite.dk" class="boubles-tricker">
-					<span class="bite-bouble-1"></span>
-					<span class="bite-bouble-2"></span>
-					<span class="bite-bouble-3"></span>
-
-					<span class="no-bouble">www.<strong>BiTE</strong>.dk</span>
+					<div class="bite-header">
+						<a href="http://www.bite.dk" class="bite.header">Bite.dk</a>
+					</div>
 					
-					</a>
 
 					<span class="deck-header-right">
 						Følg BiTE <a href="#"><i class="icon-facebook"></i></a> <a href="#"><i class="icon-twitter"></i></a> <a href="#"><i class="icon-instagramm"></i></a>

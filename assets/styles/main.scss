@@ -872,26 +872,28 @@ DECKS:
 	@include deck($gray-light, .0, $col-news, $category-text-color: #fff);
 }
 
+.bite-header a {
+	background: url(../images/bite-logo.gif) left center no-repeat; 
+	width: 100px;
+	height: 56px;
+	text-indent: -9999px;
+	display: inline-block;
+}
+
 .deck-bite {
 	position: relative;
-	background: linear-gradient(to right, $col-bite-1 0, $col-bite-1 321px, $col-bite-2 322px, $col-bite-2 640px, $col-bite-3 641px);
+	// background: linear-gradient(to right, $col-bite-1 0, $col-bite-1 321px, $col-bite-2 322px, $col-bite-2 640px, $col-bite-3 641px);
+	background: $col-bite-1;
 	z-index: 20;
 	figure {
 		background-color: $col-bite-1;
 	}
+
 	.teaser {
 		padding-top: 20px;
 	}
-	.teaser-bite-2 {
-		figure {
-			background-color: $col-bite-2;
-		}
-	}
-	.teaser-bite-3 {
-		figure {
-			background-color: $col-bite-3;
-		}
-	}
+	
+	
 	img {
 		opacity: .5;
 		filter: grayscale(1);
@@ -905,66 +907,15 @@ DECKS:
 	
 }
 
-.bite-bouble-1,.bite-bouble-2,.bite-bouble-3 {
-	border-radius: 50%;
-	display: inline-block;
-	position: absolute;
-	z-index: 0;
-	transition: all .3s ease;
-}
-.no-bouble {
-	z-index: 11;
-	position: relative;
-}
-
-.bite-bouble-1 {
-	left: -40px;
-	top: 50px;
-	width: 100px;
-	height: 100px;
-	transition-delay: 0;
-	opacity: 0;
-}
-.bite-bouble-2 {
-	left: 80px;
-	width: 100px;
-	height: 100px;	
-	transition-delay: .1s;
-	opacity: 0;
-}
-.bite-bouble-3 {
-	left: 200px;
-	width: 100px;
-	height: 100px;
-	transition-delay: .2s;
-	opacity: 0;
-}	
 
 .boubles-tricker {
 	color: #000;
 	position: relative;
-	
+	&:hover {
+		color: $col-bite-1;
+	}
 	
 
-	&:hover {
-		.bite-bouble-1 {
-			transform: scale(3);
-			background: radial-gradient(transparentize($col-bite-1, .2), transparentize($col-bite-3, .3) 33%, transparentize($col-bite-3, 1) 66%);
-			opacity: 1;
-		}
-		.bite-bouble-2 {
-			transform: scale(2);
-			top: -50px;
-			background: radial-gradient(transparentize($col-bite-3, .2), transparentize($col-bite-1, .6) 33%, transparentize($col-bite-2, 1) 66%);
-			opacity: 1;
-		}
-		.bite-bouble-3 {
-			transform: scale(2.5);
-			top: 50px;
-			background: radial-gradient(transparentize($col-bite-2, .5), transparentize($col-bite-2, 1) 66%);
-			opacity: 1;
-		}	
-	}
 }
 
 
