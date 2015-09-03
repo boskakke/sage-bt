@@ -296,25 +296,6 @@
 </div>
 
 
-
-<div class="grid_24">
-	<h2 class="demo">
-		Consumer sales <small>(note "teaser-regular" to make font less bold)</small>
-	</h2>
-</div>
-	
-
-<div class="grid_8">
-	<article class="teaser  teaser-regular cat-news font-4">
-		<figure>
-			<a href="article.php"><img src="<? dummy("image@300x,16:9") ?>" width="300" height="168" alt="" /></a>
-		</figure>
-		<a href="section.php" class="category">BT Tilbud</a>
-		<h1 class="header"><a href="article.php"><? dummy("text@headline-bt") ?></a></h1>
-		
-	</article>	
-</div>
-
 	
 
 		
