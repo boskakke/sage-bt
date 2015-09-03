@@ -347,7 +347,6 @@ h1, h2, h3, h4, h5, h6 {
 	.header {
 		clear: inherit;
 		margin: 0;
-		font-size: 18px!important;
 		@extend .subheader-font;
 	}
 }
@@ -556,7 +555,7 @@ figure [class*="teaser-tag-"] {
 }
 
 .teaser-tag-btspecial {
-	@include teaser-tag(#000, #fff, green);	
+	@include teaser-tag(#000, #fff, #fff);	
 	b {
 		background-color: $col-news;
 		margin: -3px 5px -3px -5px;
@@ -1226,7 +1225,8 @@ DECKS:
 		margin-top: 10px;
 	}
 	.image-overlay {
-		
+		width: 2rem;
+		height: 2rem;
 		line-height: 0;
 		border-radius: 50%;
 		color: #fff;
@@ -1243,7 +1243,7 @@ DECKS:
 	}
 }
 
-.article-content 
+
 
 .article-header {
 	@extend .bb-20;
@@ -1262,6 +1262,8 @@ DECKS:
 		font-weight: normal;
 		padding: 0 6px;
 		text-decoration: none;
+		overflow: visible;
+		background-image: none;
 		&:hover {
 			text-decoration: none;
 		}

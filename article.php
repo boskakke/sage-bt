@@ -86,7 +86,7 @@
 					<?php include('includes/article-slider.php'); ?>
 					<? else: ?>
 					<figure class="article-image">
-						
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
 						<img data-original="<? dummy("image@940x,16:9") ?>" class="lazy" width="940" height="" alt="" />
 						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
 						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
@@ -104,11 +104,11 @@
 		<div class="grid_16">
 			
 			<?php if($image_size == 1): ?>
-				<? if (dumb_luck("50%")): ?>
+				<? if (dumb_luck("0")): ?>
 					<?php include('includes/article-slider-small.php'); ?>
 				<? else: ?>
 					<figure class="article-image">
-						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
+						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
 						<img data-original="<? dummy("image@620x,16:9") ?>" class="lazy" width="620" height="" alt="" />
 						<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
 					</figure>
@@ -158,6 +158,7 @@
 				<? while (dumb_luck("1-3")): ?><p><? dummy("text@paragraph") ?></p><? endwhile ?>
 
 				<figure class="article-image">
+					<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full-circle"></i></a>
 					<img src="<? dummy("image@620x,") ?>" width="" height="" alt="" />
 					<figcaption class="image-caption"><? dummy("text@teaser") ?> <span class="caption-photo">Foto: <? dummy("text@author") ?></span></figcaption>
 						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>

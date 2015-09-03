@@ -125,15 +125,24 @@
 // Teaser Categories
 
 @mixin cat($color: $col-news, $link-color: #fff) {
+	
+
 	.category {
 		background-color: $color;
 		color: $link-color;
+		display: inline-block;
+		
+		
+		
+		
+		
 		&:hover {
 			background-color: darken($color, 5%);
 			color: $link-color;
 		}
 
-	}
+	}	
+	
 	.teaser .header i, .teaser i {
 		color: $color;
 	}
