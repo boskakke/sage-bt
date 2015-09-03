@@ -1385,11 +1385,29 @@ DECKS:
 		margin-left: 25px;
 	}
 }
-.signup-form {
+
+	.signup-form {
 	
+
 	position: relative;
+	::-webkit-input-placeholder {
+	 	color: transparent;  
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+	   color: transparent;  
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: transparent;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: transparent;  
+	}	
+		
 	input[type='email'] {
-		margin: 17px 0 0 0;
+		margin: 0 0 0 0;
 		background: url(../images/newsletter_anim.gif) left center no-repeat;
 		transition: background-position .1s ease;
 		&:focus, 

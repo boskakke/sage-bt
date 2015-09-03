@@ -145,6 +145,7 @@
 4. $btn-background-color: $col-news,
 5. $btn-text-color: #fff
 6: counter-color: false;
+7: button-text-color: false;
 */
 
 .box-theme-1 {
@@ -180,10 +181,11 @@
 
 // Sport
 .box-theme-6 {
-	@include box-theme($col-sport, #000, #000, #000, #fff);
+	@include box-theme(#333, $col-sport, #fff, $col-sport, #000, $counter-color: $col-sport);
 	.load-more:hover {
 		// color: #fff;
 	}
+	
 }
 
 .box-theme-7 {
