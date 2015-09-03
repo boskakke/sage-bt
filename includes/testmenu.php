@@ -19,6 +19,9 @@
 	<li>
 		<a href="teaser-types.php">Teasers</a>	
 	</li>
+	<li>
+		<a href="teaser-tags.php">Teaser tags</a>	
+	</li>
 
 	<li>
 		<a href="list-types.php">Lists</a>	

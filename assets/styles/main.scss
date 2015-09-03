@@ -213,10 +213,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.category {
 		@extend .header-font;
-		position: relative;
-		float: left;
-		margin-bottom: 5px;
 		display: block;
+		position: relative;
 		color: #fff;
 		font-size: 14px;
 		line-height: 1.4;
@@ -224,6 +222,11 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: normal;
 		padding: 0 6px;
 		text-decoration: none;
+		margin-top: -15px;
+		margin-bottom: 5px;
+		float: left;
+		z-index: 99;
+
 		&:hover {
 			text-decoration: none;
 		}
@@ -427,12 +430,89 @@ h1, h2, h3, h4, h5, h6 {
 .cat-plus {
 	@include cat($col-plus, #fff);
 }
+.plus-label {
+  position: relative;
+
+}
+
+.plus-label{
+	:before {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #8fc447;
+		content: '\e801';
+		font-size: 13px;
+		line-height: 16px;
+		text-align: center;
+		font-family: bt-icons;
+		color: #fff;
+		vertical-align: middle;
+	}
+	i {
+		color: #fff;
+	}
+}
+
+
+.no-price .plus-label {
+  display: none;
+}
+h4.sub.header + .plus-label {
+  top: -4px;
+}
+
+
+
+.header-paradise-hotel,
+.header-live {
+  top: -2px;
+  left: -5px;
+  position: absolute;
+  &:after {
+  	content: 'Opdateres';
+  	display: inline-block;
+  	@extend .header-font;
+  	background-color: $col-news;
+  	color: #fff;
+  	padding: 3px 5px;
+  	font-size: 18px;
+  	line-height: 1;
+  	text-transform: uppercase;
+  	z-index: 99;
+  }
+}
+
+.header-live:after {
+	content: 'Live';
+}
+
+
+.live-no-image .header-paradise-hotel,
+.live-no-image .header-live {
+  position: inherit;
+  left: 10px;
+  top: 0;
+}
+.teaser-flat .header-paradise-hotel,
+.teaser-flat .header-live {
+  top: 5px;
+}
+
+.grid_8 .header-live,
+.grid_6 .header-live,
+.grid_5 .header-live,
+.grid_4 .header-live {
+  width: 80px;
+  height: 26px;
+  background: url(images/live-header-small.gif) top center no-repeat #cd0403;
+}
+
+
 
 [class*="teaser-tag-"]{
 	display: inline-block;
-	position: absolute;
-	top: 5px;
-	left: 5px;
 	padding: 3px 5px;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -443,19 +523,55 @@ h1, h2, h3, h4, h5, h6 {
 	i:before {
 		transform: translateY(-1px);
 	}
+	b {
+		@extend .bt-logo-flat;
+		background-position: right 5px center;
+		display: inline-block;
+		width: 60px;
+		height: 24px;
+		background-size: 45px;
+		background-color: $col-news;
+		margin: -3px 10px -3px -5px;
+		float: right;
+	}
+}
+[class*="teaser-tag-"] + .category {
+	display: none!important;
+}
+figure [class*="teaser-tag-"] {
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+.teaser > [class*="teaser-tag-"] {
+	margin-bottom: 4px;
 }
 .teaser-tag-tip {
 	@include teaser-tag($col-breaking, #000, #000);	
-	padding: 0;
+	background-color: #000;
+	color: #fff;
 	b {
-		display: inline-block;
-		background-color: #000;
-		color: $col-breaking;
-		padding: 0 5px;
+		margin: -3px -5px -3px 10px;
+	}
+}
+
+.teaser-tag-btspecial {
+	@include teaser-tag(#000, #fff, green);	
+	b {
+		background-color: $col-news;
+		margin: -3px 5px -3px -5px;
+		float: left;
+		background-position: left 5px center;
+		width: 55px;
+
 	}
 }
 .teaser-tag-breaking {
 	@include teaser-tag($col-breaking, #000, #000);	
+}
+.teaser > .teaser-tag-breaking {
+	background-color: #000;
+	color: $col-breaking;
 }
 .teaser-tag-live, 
 .teaser-tag-comingup {
