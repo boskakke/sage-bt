@@ -12,6 +12,7 @@
 @import "buttons.scss";
 @import "topdeck.scss";
 @import "royalslider2.scss";
+@import "bt-hacks.scss";
 
 [class*="col_"] {
 	float: left;
@@ -120,7 +121,7 @@ a {
 	margin-bottom: 5px;
 }
 .mb-10 {
-	margin-bottom: 10px;
+	margin-bottom: 10px!important;
 }
 .mb-20 {
 	margin-bottom: 20px!important;
@@ -190,7 +191,6 @@ h1, h2, h3, h4, h5, h6 {
 .highlight {
 	background: transparent;
 }
-
 
 
 .teaser {
@@ -333,6 +333,17 @@ h1, h2, h3, h4, h5, h6 {
 .teaser-body {
 	overflow: hidden;
 }
+.topic-teaser {
+	img {
+		float: left;
+		margin-right: 10px;		
+	}
+	.header-teaser {
+		color: #000;
+		line-height: 1.2;
+	}
+}
+.topic-teaser,
 .teaser-img-left-100 {
 	figure {
 		float: left;
@@ -344,6 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 		display: inline-block;
 	}
 	
+	.header-teaser,
 	.header {
 		clear: inherit;
 		margin: 0;
@@ -355,8 +367,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 22px!important;
 }
 .teaser-bb {
-	border-bottom: 4px solid #ccc;
-	margin-bottom: 20px!important;
+	margin-bottom: 5px!important;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ddd;
+	@extend .clearfix;
+}
+.teaser-bt {
+	margin-top: 5px!important;
+	padding-top: 5px;
+	border-top: 1px solid #ddd;
+	@extend .clearfix;
+}
+.teaser-img-left {
+	clear:left;
+	figure {
+		float: left;
+		max-width: 200px;
+		margin: 0 10px 0 0;
+	}
+	h1 {
+		clear: none!important;
+	}
 }
 .teaser-light {
 	.header {
@@ -431,7 +462,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .plus-label {
   position: relative;
-
+  &:after {
+  	content: '\e801';
+  	font-family: bt-icons;
+  	background-color: $col-plus;
+  	width: 16px;
+  	height: 16px;
+  	border-radius: 50%;
+  	color: #fff;
+  	line-height: 16px;
+  	text-align: center;
+  	display: inline-block;
+  	font-size: 14px;
+  	float: left;
+  }
 }
 
 .plus-label{
@@ -601,6 +645,8 @@ figure [class*="teaser-tag-"] {
 .font-6 .header {
 	font-size: 18px;
 }
+
+
 .grid_24 {
 	.teaser .header {
 		font-size: 55px;
@@ -624,6 +670,7 @@ figure [class*="teaser-tag-"] {
 		font-size: 40px;	
 	}
 }
+
 .grid_16 {
 	.teaser .header {
 		font-size: 55px;
@@ -646,21 +693,25 @@ figure [class*="teaser-tag-"] {
 	.teaser.font-6 .header {
 		font-size: 40px;	
 	}
+	.teaser.font-7 .header {
+		font-size: 24px;
+	}
 }
 
 .grid_8 {
-	
+
 	.teaser.font-1 .header {
-		font-size: 42px;	
+		font-size: 40px;	
 	}
 	.teaser.font-2 .header {
-		font-size: 37px;	
+		font-size: 35px;	
 	}
+	.teaser .header, 
 	.teaser.font-3 .header {
-		font-size: 32px;	
+		font-size: 30px;	
 	}
 	.teaser.font-4 .header {
-		font-size: 28px;	
+		font-size: 27px;	
 	}
 	.teaser.font-5 .header {
 		font-size: 24px;	
@@ -668,7 +719,17 @@ figure [class*="teaser-tag-"] {
 	.teaser.font-6 .header {
 		font-size: 18px;	
 	}
+	
 }
+.grid_8 li.teaser .header {
+	font-size: 18px;
+}
+.list-blogs li.teaser .header,
+.grid_5ish .teaser .header {
+	font-size: 24px;
+}
+
+.grid_5ish,
 .grid_6 {
 	.teaser.font-1 .header {
 		font-size: 28px;
@@ -676,6 +737,7 @@ figure [class*="teaser-tag-"] {
 	.teaser.font-2 .header {
 		font-size: 26px;
 	}
+	.teaser .header, 
 	.teaser.font-3 .header {
 		font-size: 24px;
 	}
@@ -709,12 +771,6 @@ figure [class*="teaser-tag-"] {
 .row {
 	@extend .clearfix;
 }
-.section-header {
-	h1 {
-		margin: 10px 0 10px;
-		text-transform: uppercase;
-	}
-}
 
 .loader {
 	background: url('data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMzMyLjk2NiAzMzIuOTMzIj4NCjxwYXRoIGZpbGw9IiNDRDA0MDMiIGQ9Ik01MS4wNzcsNTFjLTYzLjc0NSw2My43NDUtNjMuNzQ1LDE2Ny4wOTksMCwyMzAuODQ0YzUwLjc3MSw1MC43NywxMjYuNjQ5LDYxLjA1NywxODcuNjQ4LDMwLjk1NQ0KCWwtMjYuNzY3LTM4LjU2NWMtNDIuNTQ2LDE3LjkyMi05My41MzIsOS41NzktMTI4LjE5MS0yNS4wNzljLTQ1LjY5MS00NS42OTEtNDUuNjktMTE5Ljc3MywwLTE2NS40NjQNCgljNDUuNjkyLTQ1LjY5MiwxMTkuNzc0LTQ1LjY5MywxNjUuNDY2LTAuMDAyYzM0LjY1OSwzNC42NTksNDMuMDAyLDg1LjY0NCwyNS4wOCwxMjguMTlsMzguNTYzLDI2Ljc2OQ0KCUMzNDIuOTc5LDE3Ny42NDgsMzMyLjY5LDEwMS43NjksMjgxLjkyMiw1MUMyMTguMTc3LTEyLjc0NiwxMTQuODIzLTEyLjc0NSw1MS4wNzcsNTF6Ii8+DQo8L3N2Zz4=') center center no-repeat;
@@ -737,6 +793,9 @@ figure [class*="teaser-tag-"] {
 	}
 }
 
+.section-header {
+	position: relative;
+}
 .section-menu {
 	@extend .clearfix;
 	border-bottom: 1px solid #ddd;
@@ -751,7 +810,8 @@ figure [class*="teaser-tag-"] {
 .grid_5ish {
 	width: 193px;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	position: relative;
 	margin-right: 20px;
 	&:nth-child(3n+1) {
 		clear: left;
@@ -761,6 +821,18 @@ figure [class*="teaser-tag-"] {
 	&:nth-child(3n+0) {
 		margin-right: 0;
 		
+	}
+	&:after {
+		content: '';
+		background-color: #ddd;
+		height: 1px;
+		position: absolute;
+		top: -30px;
+		left: 0;
+		right: 0;
+	}
+	.teaser figure {
+		margin-top: -20px;
 	}
 }
 
@@ -825,6 +897,27 @@ figure [class*="teaser-tag-"] {
 		}
 	}
 
+}
+
+.topic {
+	.deck-menu {
+		background-color: #000;
+		&> li {
+			background-color: #000;
+			border-right: 1px solid rgba(255,255,255,.2);
+			&:first-child {
+				padding-left: 8px;
+			}
+
+			a {
+				color: #fff;
+			}
+		}
+		.menu-more .icon-angle-down {
+			color: #fff;
+		}
+		
+	}
 }
 .deck-footer {
 	position: relative;
@@ -921,7 +1014,9 @@ figure [class*="teaser-tag-"] {
 .no-cat .category {
 	display: none;
 }
-
+.no-summary .teaser p {
+	display: none;
+}
 
 
 
@@ -1015,6 +1110,7 @@ DECKS:
 .deck-blogs {
 	@include deck($gray-light, .0, $col-news, $category-text-color: #fff);
 }
+
 
 .bite-header a {
 	background: url(../images/bite-logo.gif) left center no-repeat; 
@@ -1209,6 +1305,28 @@ DECKS:
 		position: relative;
 	}
 
+	blockquote {
+		@extend .subheader-font;
+		font-size: 24px;
+		margin: 20px 0;
+		padding: 0 0 0 40px;
+		.icon-quote {
+			color: $col-news;
+			@extend .header-font;
+			font-style: normal;
+			float: left;
+			display: inline-block;
+			margin: 0 0 0 -40px;
+			font-size: 60px;
+			line-height: 1;
+
+			&:after {
+				content: open-quote;
+			}
+
+		}
+	}
+
 }
 #thread-subscribe-button {
 	display: none;
@@ -1310,7 +1428,7 @@ DECKS:
 	@include teaser-color(#333, #fff, #fff, $col-sport, $col-sport, $col-sport, #333);
 }
 .teaser-health {
-	@include teaser-color($col-health, #fff, #fff, $col-health, darken($col-health, 30%), $col-health, #fff);
+	@include teaser-color($col-health, #fff, #fff, $col-health, #ffdd40, $col-health, #fff);
 }
 .teaser-consumer {
 	@include teaser-color($col-consumer, #fff, #fff, $col-news, darken($col-consumer, 25%), $col-consumer, #fff);
@@ -1345,7 +1463,9 @@ DECKS:
 }*/
 
 
-
+.article-byline-container.mb-20 {
+	margin-bottom: 10px!important
+}
 .article-byline-container	{
 	font-size: 14px;
 	@extend .subheader-font;
@@ -1357,6 +1477,7 @@ DECKS:
 	font-size: 14px;
 	.open-modal {
 		color: $col-news;
+		line-height: 1.4!important;
 	}
 	img {
 		border-radius: 50%;
@@ -1405,7 +1526,7 @@ DECKS:
 	:-ms-input-placeholder {  
 	   color: transparent;  
 	}	
-		
+
 	input[type='email'] {
 		margin: 0 0 0 0;
 		background: url(../images/newsletter_anim.gif) left center no-repeat;
@@ -1435,6 +1556,24 @@ DECKS:
 		color: $col-news;
 	}
 }
+.article-content-wrapper,
+.fact-column {
+	ul, ol {
+		margin: 20px 0;
+		padding: 0 0 0 30px;
+		li {
+			padding-left: 0;
+		}
+	}
+}
+.fact-column {
+
+	p, li {
+		font-size: 15px;
+		margin: 10px 0;
+	}
+}
+
 .article-fact {
 	background-color: #eee;
 	padding: 10px;
@@ -1472,7 +1611,7 @@ DECKS:
 }
 
 .social-container {
-	@extend .mb-20;
+	@extend .mb-10;
 }
 
 .site-footer {
@@ -1487,10 +1626,9 @@ DECKS:
 		margin: 0 0 15px;
 	}
 	h2 {
-		font-weight: 16px;
+		font-weight: normal;
 		color: #999;
 		margin: 0 0 10px;
-		font-weight: 300;
 	}
 	.small, li {
 		font-size: 15px;
@@ -1517,6 +1655,10 @@ DECKS:
 	a {
 		color: #fff;
 	}
+}
+
+.logo-wrapper .logo {
+	@extend .bt-logo-flat;
 }
 .logo-footer {
 	width: 120px;

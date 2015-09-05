@@ -8,11 +8,29 @@ button {
 	border: 0;
 	background-color: transparent;
 }
+.btn-facebook,
+.btn-twitter,
+.social-button-comments {
+	span + ins {
+		display: inline-block;
+		border-radius: 2px;
+		min-width: 20px;
+		min-height: 20px; 
+		text-align: center;
+		line-height: 20px;
+		top: -3px;
+		position: relative;
+		font-size: 12px;
+		@extend .subheader-font;
+	}	
+}
+ 
+
 .btn-facebook {
-	@include btn($col-facebook, #fff, 16px, 1);
+	@include btn($col-facebook, #fff, 16px, 1, $col-counter:true);
 }
 .btn-twitter {
-	@include btn($col-twitter, #fff, 16px, 1);
+	@include btn($col-twitter, #fff, 16px, 1, $col-counter:true);
 }
 .btn-black {
 	@include btn(#000, #fff, 16px, 1);
@@ -23,7 +41,7 @@ button {
 }
 
 .btn-news {
-	@include btn($col-news, #fff, 16px, 1);
+	@include btn($col-news, #fff, 16px, 1, $col-counter:true);
 }
 .btn-breaking {
 	@include btn($col-breaking, #000, 16px, 1);

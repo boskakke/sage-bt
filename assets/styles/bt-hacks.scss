@@ -1,0 +1,22 @@
+
+.plus-article-buy-options .plus-button, 
+#bempay-blocker-voucher-id-access-form .form-submit {
+	@extend .header-font;
+	text-transform: uppercase;
+}
+
+.deck-header h3,
+.wrapper.block > .header,
+.page-longread .facts-longread .related-node-facts h2 {
+	@extend .header-font;
+}
+
+fieldset {
+	border: none;
+}
+
+.topic {
+	.deck-menu {
+		@extend .mb-20;
+	}
+}

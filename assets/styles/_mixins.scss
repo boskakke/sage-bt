@@ -57,6 +57,9 @@
 				color: $category-text-color;
 			}
 		}
+		i {
+			color: $col-header-link;
+		}
 	}
 	.teaser .header a, 
 	.related a,
@@ -94,7 +97,8 @@
 }
 
 // Buttons
-@mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding-left: 10px, $padding-right: 10px) {
+
+@mixin btn($background-color: $col-news, $text-color: #fff, $font-size: 15px, $line-height: 20px, $padding-left: 10px, $padding-right: 10px, $col-counter: false) {
 	background-color: $background-color;
 	color: $text-color;
 	font-size: $font-size;
@@ -119,6 +123,11 @@
 	}
 	&:focus {
 		outline: none;
+	}
+	@if $col-counter {
+		ins {
+			background-color: darken($background-color, 10%);
+		}
 	}
 }	
 
