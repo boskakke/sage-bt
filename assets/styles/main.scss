@@ -1,8 +1,8 @@
 @charset "UTF-8";
 // @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import "_normalize.scss";
-@import "demo.scss";
-@import "grid_24.scss";
+// @import "_normalize.scss";
+// @import "demo.scss";
+// @import "grid_24.scss";
 @import "forms.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
@@ -191,16 +191,38 @@ h1, h2, h3, h4, h5, h6 {
 .highlight {
 	background: transparent;
 }
+.article-main span .category {
+	@extend .header-font;
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+	line-height: 1.4;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0 6px;
+	text-decoration: none;
+	
+	z-index: 99;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.cat-plus + .article-date {
+	line-height: 1.4;
+	margin-left: 10px;
+	display: inline-block;
+}
 
 
+.article-main .cat-plus,
 .teaser {
 	position: relative;
-	margin-bottom: 30px;
-	
+	margin-bottom: 20px;
 	img {
 		transition: opacity .1s ease;
 		@extend .img-responsive;
-
 		&:hover {
 			opacity: .9;
 		}
@@ -226,21 +248,24 @@ h1, h2, h3, h4, h5, h6 {
 		margin-bottom: 5px;
 		float: left;
 		z-index: 99;
-
 		&:hover {
 			text-decoration: none;
 		}
-		
+	}
+	&> .category {
+		margin-top: 0;
 	}
 	figure + .category {
 		margin-top: -11px;
 	}
 	.header {
+		margin-top: 0;
 		clear: left;
 		line-height: 1.05;
 		margin-bottom: 5px;
-		a {
+		> a {
 			color: #000;
+			font-weight: normal;
 		}
 		i:before {
 			transform: translateY(-.1em);
@@ -264,11 +289,105 @@ h1, h2, h3, h4, h5, h6 {
 			color: #000;
 		}
 	}
-	/*&:not(.no-cat) .header {
-		margin-top: -10px
-	}*/
 }
 
+
+.teaser-external {
+	.category {
+		display: none!important;
+	}
+
+	.header {
+		position: relative;
+		a:before {
+			font-size: 14px;
+			@extend .header-font;
+			position: relative;
+			color: #fff;
+			display: inline-block;
+			line-height: 1.4;
+			text-transform: uppercase;
+			font-weight: normal;
+			padding: 0 6px;
+			text-decoration: none;
+			margin-bottom: 5px;
+			z-index: 99;
+			background-color: #333;
+			text-decoration: none;
+			position: absolute;
+			top: -24px;
+			left: 0;
+		}
+	}
+	figure {
+		margin-bottom: 15px;
+	}
+}
+
+
+.teaser-external .header a[href^="http://www.business.dk"],
+.teaser-external .header a[href^="http://business.dk"] {
+	&:before {
+		content: 'Business.dk';
+	}
+}
+.teaser-external .header a[href^="http://bt.bilen.dk"],
+.teaser-external .header a[href^="http://www.bilen.dk"],
+.teaser-external .header a[href^="http://bilen.dk"] {
+	&:before {
+		content: 'Bilen.dk';
+	}
+}
+
+.teaser-external .header a[href^="http://www.aok.dk"],
+.teaser-external .header a[href^="http://aok.dk"] {
+	&:before {
+		content: 'Aok.dk';
+	}
+}
+.teaser-external .header a[href^="http://www.bite.dk"],
+.teaser-external .header a[href^="http://bite.dk"] {
+	&:before {
+		content: 'Bite.dk';
+		background-color: darken($col-bite-1, 30%);
+		
+	}
+}
+.teaser-external .header a[href^="http://www.politiko.dk"],
+.teaser-external .header a[href^="http://politiko.dk"] {
+	&:before {
+		content: 'Politiko.dk';
+	}
+}
+.teaser-external .header a[href^="http://www.sweedteal.dk"],
+.teaser-external .header a[href^="http://sweetdeal.dk"] {
+	&:before {
+		content: 'Sweetdeal';
+	}
+}
+.teaser-external .header a[href^="http://www.b.dk"],
+.teaser-external .header a[href^="http://b.dk"] {
+	&:before {
+		content: 'Berlingske.dk';
+	}
+}
+.teaser-external .header a[href^="http://lidtmere.dk"],
+.teaser-external .header a[href^="http://www.btshop.dk"],
+.teaser-external .header a[href^="http://www.lidtmere.dk"],
+.teaser-external .header a[href^="http://lidtmere.dk"] {
+	&:before {
+		content: 'BT Tilbud';
+	}
+}
+
+.teaser-external .header a[href^="http://blogs.bt.dk"] {
+	&:before {
+		content: 'Blogs.bt.dk';
+	}
+}
+.teaser-editorial.teaser-external .header a:before {
+	display: none;
+}
 
 [class*="grid_"] .teaser:last-child {
 	margin-bottom: 20px;
@@ -280,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.header {
 		font-size: 35px;
-
+		margin-top: 0!important;
 		&:before {
 			display: block;
 			content: 'MENER:';
@@ -389,6 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 		clear: none!important;
 	}
 }
+
 .teaser-light {
 	.header {
 		font-weight: 300;
@@ -460,7 +580,24 @@ h1, h2, h3, h4, h5, h6 {
 .cat-plus {
 	@include cat($col-plus, #fff);
 }
-.plus-label {
+.teaser.cat-plus .header:after {
+  background: none repeat scroll 0 0 #8fc447;
+  clear: left;
+  color: #fff;
+  content: "PLUS";
+  @extend .header-font;
+  display: inline-block;
+  font-size: 11px;
+  margin-right: 2px;
+  padding: 1px 4px;
+  position: relative;
+  text-transform: uppercase;
+  line-height: 1.1;
+  top: -3px;
+}
+
+
+/*.plus-label {
   position: relative;
   &:after {
   	content: '\e801';
@@ -474,7 +611,6 @@ h1, h2, h3, h4, h5, h6 {
   	text-align: center;
   	display: inline-block;
   	font-size: 14px;
-  	float: left;
   }
 }
 
@@ -497,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
 		color: #fff;
 	}
 }
-
+*/
 
 .no-price .plus-label {
   display: none;
@@ -561,7 +697,7 @@ h4.sub.header + .plus-label {
 	font-size: 18px;
 	line-height: 1;
 	@extend .header-font;
-	font-weight: 600;
+	font-weight: normal;
 	z-index: 99;
 	i:before {
 		transform: translateY(-1px);
@@ -730,7 +866,8 @@ figure [class*="teaser-tag-"] {
 }
 
 .grid_5ish,
-.grid_6 {
+.grid_6,
+.grid_5 {
 	.teaser.font-1 .header {
 		font-size: 28px;
 	}
@@ -795,6 +932,24 @@ figure [class*="teaser-tag-"] {
 
 .section-header {
 	position: relative;
+	h1 {
+		font-size: 50px;
+		border-bottom: 4px solid #000;
+		margin: 0;
+		.small {
+			@extend .subheader-font;
+			font-size: 80%;
+		}
+	}
+	h2 {
+		font-size: 35px;
+		border-bottom: 1px solid #000;
+		margin: 0;
+		.small {
+			@extend .subheader-font;
+			font-size: 80%;
+		}
+	}
 }
 .section-menu {
 	@extend .clearfix;
@@ -919,12 +1074,16 @@ figure [class*="teaser-tag-"] {
 		
 	}
 }
+
+
 .deck-footer {
 	position: relative;
-	height: 19px;
+	margin-bottom: 20px;
 }
+
 .box > .deck-footer {
 	height: auto;
+	margin-bottom: 0;
 }
 .load-more {
 	background-color: rgba(0,0,0,.05);
@@ -964,8 +1123,11 @@ figure [class*="teaser-tag-"] {
 		margin-top: -20px;
 		text-transform: none;
 		margin-bottom: 10px;
+		a span {
+			color: #000;
+		}	
 	}
-
+	
 }
 
 .deck-header {
@@ -1125,6 +1287,9 @@ DECKS:
 	// background: linear-gradient(to right, $col-bite-1 0, $col-bite-1 321px, $col-bite-2 322px, $col-bite-2 640px, $col-bite-3 641px);
 	background: $col-bite-1;
 	z-index: 20;
+	.load-more {
+		background-color: $col-bite-3;
+	}
 	figure {
 		background-color: $col-bite-1;
 	}
@@ -1143,7 +1308,11 @@ DECKS:
 			opacity: 1;
 		}
 	}
-	
+	&.deck-alt {
+		.deck-heaader strong {
+			color: $col-bite-2;
+		}
+	}
 	
 }
 
@@ -1361,7 +1530,16 @@ DECKS:
 	}
 }
 
-
+.wrapper.plus ul {
+	@extend .clean;
+}
+.article-headline {
+	font-size: 60px;
+	line-height: 1.05;
+	margin-top: 0;
+	@extend .mb-20;
+	clear: left;
+}
 
 .article-header {
 	@extend .bb-20;
@@ -1369,6 +1547,7 @@ DECKS:
 		font-size: 60px;
 		line-height: 1.05;
 		@extend .mb-20;
+		margin-top: 0;
 	}
 	.category {
 		@extend .header-font;
@@ -1422,7 +1601,7 @@ DECKS:
 	@include teaser-color($col-news, #fff, #fff, #000, #000, #000, #fff);
 }
 .teaser-entertainment {
-	@include teaser-color($col-entertainment, #fff, #fff, #000, $col-breaking, $col-entertainment, #fff);
+	@include teaser-color($col-entertainment, #fff, #fff, #000, darken($col-entertainment, 40%), $col-entertainment, #fff);
 }
 .teaser-sport {
 	@include teaser-color(#333, #fff, #fff, $col-sport, $col-sport, $col-sport, #333);
@@ -1610,8 +1789,11 @@ DECKS:
 	}
 }
 
-.social-container {
+.article-header {
 	@extend .mb-10;
+	.signup-form {
+		margin-top: 17px;
+	}
 }
 
 .site-footer {
@@ -1701,14 +1883,55 @@ $btn-social-size: 54px;
 		background-color: darken($col-twitter, 5%);
 	}
 }
+
+.site-header {
+	.marketing-banner {
+		padding-left: 60px;
+		background: url(http://www.bt.dk/upload/css/dynamite/bt.gif) left center no-repeat;
+		@extend .header-font;
+		clear: none;
+		font-size: 16px;
+		display: inline-block;
+		width: 400px;
+		height: 41px;
+		float: left;
+		padding-top: 4px;
+
+		a {
+			color: #000;
+			display: block; 
+			line-height: .9;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		span {
+			color: $col-news;
+		}
+	}
+}
 .marketing-banner {
+	b {
+		font-weight: normal;
+	}
 	strong {
 		color: $col-news;
 		font-weight: 300;
 	}
+	i, em {
+		font-weight: normal;
+		font-style: normal;
+		text-decoration: none;
+	}
+	i {
+		color: #999;
+		font-family: 'helvetica neue', helvetica, arial, sans-serif;
+		font-size: 11px;
+	}
 }
 .marketing-offer {
 	text-align: right;
+	
 	a {
 		color: #000;
 	}
@@ -1735,30 +1958,37 @@ $btn-social-size: 54px;
 		}
 	}
 }
-.summer-offer strong {
-	position: relative;
-	z-index: 2;
-	display: inline-block;
-	font-weight: normal;
-	color: $col-news;
 
-	&:before {
-		@extend .sun;
-		display: inline-block;
-		content: '';
-		width: 25px;
-		height: 25px;
-		background-position: center center;
-		position: absolute;
-		right: 0px;
-		top: -8px;
-		z-index: -1;
-		animation:glow 2s linear infinite;
-		background-repeat: no-repeat;
+
+
+.box-article-related {
+	padding: 10px 20px 20px;
+	background: transparentize($yellow, 0.9);
+	.list-header {
+		font-size: 24px;
+		text-transform: none;
+		color: $col-news;
 	}
+	ul {
+		li {
+			font-size: 15px;
+			font-weight: normal;
+			padding-left: 16px;
+			line-height: 1.1;
+			margin-bottom: 5px;
+			i {
+				float: left;
+				margin-left: -16px;
+				width: 16px;
+				display: inline-block;
+			}
+			a {
+				color: #000;
+			}
+		}
+	}
+
 }
-
-
 .container-wide {
 	max-width: 1280px;
 	margin: 0 auto;
@@ -1873,3 +2103,53 @@ $btn-social-size: 54px;
 		transform: skew(-20deg,-10deg);
 	}
 }
+
+/* Stylesheet for defining eventheaders on teasers using presentationtags */
+
+
+
+[class*="event-header-"] a:before {
+	font-size: 18px;
+	color: #fff;
+	display: inline-block;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 3px 5px;
+	text-decoration: none;
+	z-index: 99;
+	background-color: #333;
+	text-decoration: none;
+	position: absolute;
+    left: 5px;
+	@extend .header-font;
+}
+
+
+/*Billedserier*/
+.event-header.event-header-01 a {
+	background-position: 0 0;
+	background-color: #cd0403;
+}
+
+
+
+/*Tour*/
+.event-header.event-header-03 a {
+	background-position: 0 -40px;
+}
+
+/* Kontrovers */
+.event-header.event-header-04 a {
+	background-position: 0 -60px;
+	background-color: #cd0403;
+}
+
+/*Mandagstræner*/
+.event-header.event-header-05 a:before {
+	background: $col-news;
+	content: 'Mandagstræner';
+}
+
+
+

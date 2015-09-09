@@ -25,6 +25,19 @@
 	}
 }
 
+.box.list li {
+	h2 {
+		line-height: 1.05;
+		font-size: 18px;
+	}
+}
+.list.no-summary {
+	li {
+		p {
+			display: none;
+		}
+	}
+}
 
 .list-sm { 
 	font-size: 85%	
@@ -225,6 +238,9 @@
 		&:nth-child(odd) {
 			clear: left;
 		}
+		img {
+			margin-bottom: 5px;
+		}
 		
 		
 		&.font-1 .header {
@@ -259,6 +275,7 @@
 
 .box-icon-video {
 	position: relative;
+	margin-top: 30px; 
 	.box-title:before {
 		display: inline-block;
 		background-color: $col-news;
@@ -298,6 +315,7 @@
 	font-weight: normal;
 	line-height: 1;
 	@extend .subheader-font;
+	margin-top: 0;
 }
 .box-title-sm {
 	font-size: 18px;
@@ -344,9 +362,9 @@
 		font-size: 33px;
 		@extend .subheader-font;
 		clear: none;
-		padding: 20px 20px 0.67em;
+		padding: 10px 20px 10px;
 		margin: 0 0 0;
-		font-weight: 600;
+		font-weight: normal;
 	}
 	.tab-active {
 		background-color: $gray-light;

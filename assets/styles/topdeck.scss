@@ -5,12 +5,21 @@
 	padding: 5px 10px;
 	font-weight: normal;
 	line-height: 1.2;
-	span {
+	/*span {
 		text-transform: uppercase;
 		text-decoration: underline;
+	}*/
+	span, i {
+		display: none;
 	}
+
 	a {
 		color: #000;
+		&:before {
+			text-decoration: underline;
+			display: inline-block;
+			margin-right: 5px;
+		}
 	}
 	.icon-right-open {
 		font-size: 80%;
@@ -24,23 +33,76 @@
 .blink {
 	animation:blink 1.5s linear infinite;
 }
+.blink-alt {
+	animation:blink-alt 1.5s ease infinite;
+}
+
 
 .teaser-oneliner-breaking {
 	background-color: $col-breaking;
-	i {
-		font-size: 34px;
+	a:before {
+		content: 'BREAKING';
+		@extend .blink-alt;
+	}
+}
+.teaser-oneliner-live {
+	background-color: #000;
+
+	a {
+		color: #fff;
+		&:before {
+			content: 'LIVE';
+			color: $col-news;
+		}
+		&:after {
+			float: left;
+			content: '\e81e ';
+			font-family: bt-icons;
+			@extend .blink-alt;
+			margin-right: 5px;
+			color: $col-news;
+		}
 	}
 }
 .teaser-oneliner-comingup {
 	background-color: $col-news;
 	a, a:hover {
 		color: #fff;
-
+	}
+	a:before {
+		content: 'OPDATERES';
+		@extend .blink-alt;
+	}
+}
+.teaser-oneliner-now {
+	background-color: $col-news;
+	a, a:hover {
+		color: #fff;
+	}
+	a:before {
+		content: 'LIGE NU';
+		color: #000;
+		@extend .blink-alt;
 	}
 }
 
 .teaser-oneliner-live-sport {
 	background-color: $col-sport;
+	a {
+		&:before {
+			content: 'LIVE';
+		}
+	&:after {
+			float: left;
+			content: '\e81e ';
+			font-family: bt-icons;
+			@extend .blink-alt;
+			margin-right: 5px;
+		}
+	}
+	i, span {
+		display: none;
+	}
 }
 
 
@@ -53,32 +115,23 @@
 
 
 .live-ticker-2 {
-	/*background: linear-gradient(to right, darken(#fff, 10%) 0, darken(#fff, 0%) 5px);*/
-	padding-right: 10px;
+
 	margin-bottom: 20px;
 	position: relative;
-
-
-
+	
+	.module-padding {
+		padding: 0;
+	}
 	h1 {
 		background-color: $col-news;
-		
 		color: #fff;
-		margin-right: -10px;
 		@extend .font-header;
-		font-size: 19px;
-		padding: 8px 5px 8px 10px;
+		font-size: 30px;
+		padding: 3px 5px ;
 		position: relative;
-		&:before {
-			font-family: bt-icons;
-			display: inline-block;
-			position: absolute;
-			bottom: -15px;
-			left: 20px;
-			content: '\e820';
-			color: $col-news;
-			transform: rotate(90deg);
-		}
+		margin: 0;
+		line-height: 1;
+		
 		span {
 			float: right;
 			font-weight: 400;
@@ -100,6 +153,7 @@
 		li {
 			padding: 10px 0 0 30px;
 			position: relative;
+			margin: 0;
 			margin: 0;
 
 			&:before {
@@ -139,14 +193,11 @@
 		h2 {
 			font-size: 18px;
 			margin: 0 0 0;
+			line-height: 1.1;
 			
 		}
 		p {
-			font-size: 13px;
-			margin: 5px 0 0 0;
-
-			
-
+			display: none;			
 		}
 		a {
 			color: #000;
@@ -159,8 +210,9 @@
 		time {
 			color: $col-news;
 			@extend .header-font;
-			font-size: 20px;
+			font-size: 18px;
 			padding-top: 5px;
+			@extend .subheader-font;
 			
 		}
 	}

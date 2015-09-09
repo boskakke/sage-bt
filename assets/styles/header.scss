@@ -10,6 +10,12 @@
 .header-right {
 	width: 710px;
 }
+.site-login.logged-in {
+	 i {
+		position: absolute;
+		left: 0;
+	}
+}
 .user-name {
 	text-overflow: ellipsis;
 	display: inline-block;
@@ -119,13 +125,16 @@
 
 
 .site-header {
-	margin-bottom: 10px;
 	@extend .clearfix;
+	margin-bottom: 10px;
 	nav {
 		display: block;
 		clear: both;
 		height: 29px;
 		background-color: #000;
+	}
+	form {
+		margin-bottom: 0;
 	}
 	.cookies {
 		@extend .subheader-font;
@@ -149,25 +158,6 @@
 	.header-top {
 		display: block;
 		@extend .clearfix;
-	}
-
-	.marketing-banner {
-		@extend .header-font;
-		clear: none;
-		font-size: 16px;
-		display: inline-block;
-		width: 400px;
-		height: 41px;
-		float: left;
-		
-		a {
-			display: block;
-			color: #000;
-		}
-		span {
-			color: $col-news;
-			text-decoration: underline;
-		}
 	}
 
 }
@@ -332,6 +322,8 @@
 	h1 {
 		font-weight: 300;
 		color: #fff;
+		margin: 0;
+		
 	}
 }
 

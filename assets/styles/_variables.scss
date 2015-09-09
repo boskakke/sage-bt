@@ -86,6 +86,13 @@ $col-facebook: 			#4c66a4;
 	50% { opacity: 1; } 
 	100% { opacity: 0;} 
 }
+@keyframes blink-alt { 
+	0% { opacity: 0; } 
+	20%, 95% { opacity: 1; } 
+	100% { opacity: 0;} 
+}
+
+
 @keyframes left-right { 
 	0% { 
 		transform: translateX(-5px);
