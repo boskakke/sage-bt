@@ -163,9 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 .topbanner {
 	margin: 0 auto 10px;
 	position: relative;
-	background-color: rgba(0,0,0,.05);
 	width: 960px;
-	height: 180px;
 	line-height: 0;
 	.banner-left,
 	.banner-right {
@@ -293,6 +291,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .teaser-external {
+	padding-top: 30px!important;
+	figure {
+		margin-top: -30px;
+	}
 	.category {
 		display: none!important;
 	}
@@ -312,7 +314,7 @@ h1, h2, h3, h4, h5, h6 {
 			text-decoration: none;
 			margin-bottom: 5px;
 			z-index: 99;
-			background-color: #333;
+			background-color: #000;
 			text-decoration: none;
 			position: absolute;
 			top: -24px;
@@ -384,6 +386,7 @@ h1, h2, h3, h4, h5, h6 {
 .teaser-external .header a[href^="http://blogs.bt.dk"] {
 	&:before {
 		content: 'Blogs.bt.dk';
+		background-color: $col-news;	
 	}
 }
 .teaser-editorial.teaser-external .header a:before {
@@ -760,7 +763,7 @@ figure [class*="teaser-tag-"] {
 
 
 .cat-sport .teaser-tag-live {
-	@include teaser-tag($col-sport, #000, #000);	
+	@include teaser-tag($col-news, #fff, #fff);	
 }
 
 
@@ -1732,6 +1735,7 @@ DECKS:
 	line-height: 1.4;
 	margin-bottom: 20px;
 	@extend .header-font;
+	font-weight: normal;
 	a {
 		color: $col-news;
 	}
@@ -2021,7 +2025,7 @@ $btn-social-size: 54px;
 		.header {
 			margin: 0;
 			line-height: 40px;
-			font-weight: 400;
+			font-weight: normal;
 			white-space: nowrap;
   			overflow: hidden;
   			text-overflow: ellipsis;
@@ -2030,9 +2034,7 @@ $btn-social-size: 54px;
 				content: 'NÆSTE:';
 				color: #fff;
 				margin-right: 5px;
-				font-weight: 600;
 				text-decoration: underline;
-
 			}
 			span {
 				font-weight: 600;

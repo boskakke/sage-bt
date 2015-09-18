@@ -5,21 +5,14 @@
 	padding: 5px 10px;
 	font-weight: normal;
 	line-height: 1.2;
-	/*span {
-		text-transform: uppercase;
-		text-decoration: underline;
-	}*/
+	position: relative;
 	span, i {
 		display: none;
 	}
 
 	a {
 		color: #000;
-		&:before {
-			text-decoration: underline;
-			display: inline-block;
-			margin-right: 5px;
-		}
+		
 	}
 	.icon-right-open {
 		font-size: 80%;
@@ -37,7 +30,6 @@
 	animation:blink-alt 1.5s ease infinite;
 }
 
-
 .teaser-oneliner-breaking {
 	background-color: $col-breaking;
 	a:before {
@@ -45,6 +37,7 @@
 		@extend .blink-alt;
 	}
 }
+
 .teaser-oneliner-live {
 	background-color: #000;
 
@@ -55,12 +48,10 @@
 			color: $col-news;
 		}
 		&:after {
-			float: left;
 			content: '\e81e ';
-			font-family: bt-icons;
 			@extend .blink-alt;
-			margin-right: 5px;
 			color: $col-news;
+			
 		}
 	}
 }
@@ -72,6 +63,7 @@
 	a:before {
 		content: 'OPDATERES';
 		@extend .blink-alt;
+		margin-right: 5px;
 	}
 }
 .teaser-oneliner-now {
@@ -93,11 +85,8 @@
 			content: 'LIVE';
 		}
 	&:after {
-			float: left;
 			content: '\e81e ';
-			font-family: bt-icons;
 			@extend .blink-alt;
-			margin-right: 5px;
 		}
 	}
 	i, span {
@@ -105,6 +94,23 @@
 	}
 }
 
+.teaser-oneliner-live-sport,
+.teaser-oneliner-live {
+	a {
+		&:before {
+			text-decoration: underline;
+			display: inline-block;
+			margin-right: 5px;
+			padding-left: 28px
+		}
+		&:after {
+			position: absolute;
+			left: 9px;
+			top: 6px;
+			font-family: bt-icons;
+		}	
+	}
+}
 
 
 
