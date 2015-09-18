@@ -102,7 +102,9 @@ $col-facebook: 			#4c66a4;
 		transform: translateX(5px);
 	} 
 }
-
+.animate-left-right	{
+	animation: left-right 1s infinite linear;
+}
 .animate-spin {
 	animation: spin 2s infinite linear;
 	display: inline-block;

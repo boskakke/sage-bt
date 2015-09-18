@@ -1,8 +1,10 @@
 @charset "UTF-8";
-// @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-// @import "_normalize.scss";
-// @import "demo.scss";
-// @import "grid_24.scss";
+ 
+ @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+ @import "_normalize.scss";
+ @import "demo.scss";
+ @import "grid_24.scss";
+
 @import "forms.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
@@ -1975,17 +1977,35 @@ $btn-social-size: 54px;
 		color: $col-news;
 	}
 	ul {
+		list-style: none;
+		padding-left: 0;
 		li {
-			font-size: 15px;
-			font-weight: normal;
+			font-size: 16px;
+			@extend .subheader-font;
 			padding-left: 16px;
 			line-height: 1.1;
 			margin-bottom: 5px;
+			
+			
+
 			i {
 				float: left;
 				margin-left: -16px;
 				width: 16px;
 				display: inline-block;
+				&:before {
+					display: inline-block;
+				    width: 8px;
+				    height: 8px;
+				    content: '';
+				    vertical-align: top;
+					margin-top: 4px;
+						
+				    
+				    
+				    
+				    background-color: $col-news;
+				}
 			}
 			a {
 				color: #000;
@@ -2154,5 +2174,14 @@ $btn-social-size: 54px;
 	content: 'Mandagstræner';
 }
 
+
+.facebook-like-container {
+	background-color: #eee;
+	padding: 10px;
+	iframe {
+		border: 0;
+		margin-top: 10px;
+	}
+}
 
 

@@ -12,7 +12,25 @@
 
 (function($) {
 
-    
+      var clicked = 0;
+      $('.btn-like-trigger').on('click', function() {
+      var facebookBtn = '<div class="fadebook-container"><iframe src="facebook.html" height="30" width="100%"></iframe></div>';
+      
+
+      if (clicked === 0) {
+        $('.facebook-like-container').append(facebookBtn);  
+        clicked = clicked + 1;
+        console.log (clicked);
+
+
+      } else {
+        
+      }
+      
+      
+    });
+
+
     // STICKY HEADER
     var sticky_navigation_offset_top = $('.site-header').offset().top;
     

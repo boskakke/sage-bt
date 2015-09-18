@@ -178,7 +178,7 @@
 	.teaser .header a {
 		color: $header-color;
 		&:hover {
-			color: transparentize($header-color, .2);
+			color: transparentize($header-color, .3);
 		}
 	}
 	li {

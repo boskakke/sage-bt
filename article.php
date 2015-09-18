@@ -1,4 +1,3 @@
-
 <? require_once("../dummy/dummy.php") ?>
 
 <?php $image_size = rand(0,1);
@@ -164,19 +163,43 @@
 						<a href="#" class="image-overlay" title="Se stort billede"><i class="icon-resize-full"></i></a>
 				</figure>
 
-				
-				<aside class="box box-theme-7 box-embedded">
-					<h1 class="box-title box-title-sm">Relaterede</h1>
-					<ul class="list list-border list-sm list-bullet list-border-bundlos">
-						<? while (dumb_luck("3-5")): ?>
-						<li class="teaser">
-							<a href="article.php"><? dummy("text@headline") ?></a>
-						</li>
-						<? endwhile ?>
-					</ul>
-				</aside>
 
 				<p><? dummy("text@paragraph") ?></p>
+
+				<div class="box-tnt list-6 box-article-related">
+    <h2 class="list-header">
+      Relaterede    </h2>
+      
+<ul>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/sort-boks-afsloerer-andreas-lubitz-satte-farten-op-under-katastrofe-styrt" target="_self">Sort boks afslører: Andreas Lubitz satte farten op under katastrofe-styrt
+</a>    </li>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/28-aarige-andreas-lubitz-floej-149-i-doeden-det-ved-vi-om-ham" target="_self">28-årige Andreas Lubitz fløj 149 i døden: Det ved vi om ham
+</a>    </li>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/andreas-lubitz-blev-behandlet-for-selvmordstanker" target="_self">Andreas Lubitz blev behandlet for selvmordstanker
+</a>    </li>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/ny-chokerende-viden-germanwings-piloten-oevede-sig-paa-doedsstyrtet" target="_self">Ny chokerende viden: Germanwings-piloten øvede sig på dødsstyrtet
+</a>    </li>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/kaeresten-om-doedspiloten-han-vidste-hans-droem-var-naesten-umulig" target="_self">Kæresten om dødspiloten: Han vidste, hans drøm var næsten umulig
+</a>    </li>
+          <li>
+      <i class="icon-angle-right"></i><a href="/udland/den-sorte-boks-afsloerer-lubitz-bad-kaptajnen-om-at-gaa-paa-toilettet" target="_self">Den sorte boks afslører: Lubitz bad kaptajnen om at gå på toilettet
+</a>    </li>
+  </ul>
+
+  </div>
+
+
+	<div class="facebook-like-container mt-20">
+		<button class="btn btn-facebook btn-lg btn-block btn-like-trigger">Følg BT.dk på Facebook <i class="icon-thumbs-up"></i></button>
+	</div>
+
+
+				
 
 				
 				
@@ -307,6 +330,8 @@
 				</li>	
 			<? endwhile ?>
 			</ul>
+
+			<div class="text-center">	<button class="btn btn-black btn-lg"><i class="icon-left-dir"></i> Til forsiden </button></div>
 			<br>
 			<h1 class="box-title">Hitter på Facebook</h1>
 
@@ -322,6 +347,8 @@
 				</li>	
 			<? endwhile ?>
 			</ul>
+
+			<div class="text-center">	<button class="btn btn-facebook btn-lg">Hent flere <i class="icon-down-dir"></i></button></div>
 
 		</aside>
 		<aside class="tab-content box box-theme-2 box-small-alt" id="tab-content-comments">
