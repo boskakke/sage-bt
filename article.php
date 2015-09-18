@@ -81,7 +81,7 @@
 				
 				
 				<?php if($image_size == 0): ?>
-					<? if (dumb_luck("50%")): ?>
+					<? if (dumb_luck("0%")): ?>
 					<?php include('includes/article-slider.php'); ?>
 					<? else: ?>
 					<figure class="article-image">
