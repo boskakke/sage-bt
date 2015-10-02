@@ -16,6 +16,11 @@
 @import "royalslider2.scss";
 @import "bt-hacks.scss";
 
+body, html body {
+	opacity: 1!important;
+	filter: alpha(opacity=1) !important;
+}
+
 [class*="col_"] {
 	float: left;
 	position: relative;
