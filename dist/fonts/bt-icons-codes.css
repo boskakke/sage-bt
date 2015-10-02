@@ -49,3 +49,5 @@
 .icon-cancel:before { content: '\e82f'; } /* '' */
 .icon-picture:before { content: '\e830'; } /* '' */
 .icon-camera:before { content: '\e831'; } /* '' */
+.icon-eye:before { content: '\e832'; } /* '' */
+.icon-location:before { content: '\e833'; } /* '' */

@@ -12,6 +12,11 @@
       ],
       "main": true
     },
+    "demo.css": {
+      "files": [
+        "styles/demo.scss"
+      ]
+    },
     
     "modernizr.js": {
       "bower": ["modernizr"]

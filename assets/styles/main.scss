@@ -1742,6 +1742,13 @@ DECKS:
 		color: $col-news;
 	}
 }
+
+.article-content h4.summary,
+.article-content-wrapper > p > strong {
+	@extend .subheader-font;
+	font-weight: normal;
+	font-size: 21px;
+}
 .article-content-wrapper,
 .fact-column {
 	ul, ol {
@@ -1983,8 +1990,8 @@ $btn-social-size: 54px;
 			font-size: 16px;
 			@extend .subheader-font;
 			padding-left: 16px;
-			line-height: 1.1;
-			margin-bottom: 5px;
+			line-height: 1.2;
+			margin-bottom: 10px;
 			
 			
 
