@@ -1749,7 +1749,7 @@ DECKS:
 }
 
 .article-content h4.summary,
-.article-content-wrapper > p > strong {
+.article-content-wrapper > p:first-child > strong {
 	@extend .subheader-font;
 	font-weight: normal;
 	font-size: 21px;
