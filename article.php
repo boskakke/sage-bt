@@ -198,6 +198,11 @@
 		<button class="btn btn-facebook btn-lg btn-block btn-like-trigger">Følg BT.dk på Facebook <i class="icon-thumbs-up"></i></button>
 	</div>
 
+	<div class="facebook-like-container-ajax mt-20">
+		<button class="btn btn-facebook btn-lg btn-block btn-like-trigger-ajax">Følg BT.dk på Facebook <i class="icon-thumbs-up"></i></button>
+		<div id="facebook-content"></div>
+	</div>
+
 
 				
 

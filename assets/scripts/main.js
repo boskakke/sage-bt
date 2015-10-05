@@ -21,14 +21,21 @@
         $('.facebook-like-container').append(facebookBtn);  
         clicked = clicked + 1;
         console.log (clicked);
-
-
-      } else {
-        
-      }
-      
-      
+      } 
     });
+
+
+    var fbClicked = 0;
+    $('.btn-like-trigger-ajax').on('click', function(){
+      if (fbClicked === 0) {
+        $.get( "facebook-ajax.html", function( response ) {
+        // console.log( response ); // server response 
+        $('#facebook-content').append(response);
+        fbClicked++;
+      });
+    }
+  });
+
 
 
     // STICKY HEADER
